@@ -9,7 +9,7 @@ dict1 = {}
 
 with open(filename) as fh:
     
-    for row in fh:
+    for line in fh:
         
         command, description = row.strip().split(None, 1)
         
