@@ -46,7 +46,7 @@ transformed parameters {
     // using c/H₀ ≈ 2.9979/h (Gpc)
     // new approximation gives c/H₀ ≈ 3000h^-1 = 3000/0.7
     dL[i] = (1+zcmb[i]) * integrate_1d(integrand, 0, zcmb[i], theta, x_r, x_i);
-    mbtheo[i] = M + log10(dL[i]);
+    mbtheo[i] = M + 5 * log10(dL[i]);
   }
 
 //need to deal with the likelihood function

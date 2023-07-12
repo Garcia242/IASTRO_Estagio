@@ -20,7 +20,7 @@ static constexpr std::array<const char*, 33> locations_array__ =
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 57, column 2 to column 13)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 58, column 2 to column 17)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 48, column 4 to column 79)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 49, column 4 to column 33)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 49, column 4 to column 37)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 45, column 18 to line 50, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 45, column 2 to line 50, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 62, column 4 to column 105)",
@@ -225,8 +225,9 @@ class Supernova_dL_model final : public model_base_crtp<Supernova_dL_model> {
         current_statement__ = 11;
         stan::model::assign(mbtheo,
           (M +
-            stan::math::log10(
-              stan::model::rvalue(dL, "dL", stan::model::index_uni(i)))),
+            (5 *
+              stan::math::log10(
+                stan::model::rvalue(dL, "dL", stan::model::index_uni(i))))),
           "assigning variable mbtheo", stan::model::index_uni(i));
       }
       local_scalar_t__ A = DUMMY_VAR__;
@@ -360,8 +361,9 @@ class Supernova_dL_model final : public model_base_crtp<Supernova_dL_model> {
         current_statement__ = 11;
         stan::model::assign(mbtheo,
           (M +
-            stan::math::log10(
-              stan::model::rvalue(dL, "dL", stan::model::index_uni(i)))),
+            (5 *
+              stan::math::log10(
+                stan::model::rvalue(dL, "dL", stan::model::index_uni(i))))),
           "assigning variable mbtheo", stan::model::index_uni(i));
       }
       current_statement__ = 6;
