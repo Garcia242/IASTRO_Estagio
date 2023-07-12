@@ -34,14 +34,14 @@ parameters {
 // allows new variables to be defined in terms of data and/or parameters, this is where you should compute your model's predictions
 // will be evaluated on each step
 transformed parameters {
-    array[2] real theta = {M, Om};
+    array[2] real theta = {H0, Om};
 
     array[32] real H_theo;
 
     
   for (i in 1:32) {
     // Creating the theoretical values 
-    H_theo[i] = H0*(Om*(1+x)^3 + 1 - Om)^0.5
+    H_theo[i] = H0*(Om*(1+z[i])^3 + 1 - Om)^0.5;
   }
 
 //need to deal with the likelihood function
@@ -51,7 +51,7 @@ transformed parameters {
 
   for (i in 1:32) {
 
-    A+= ((H[i] - H_theo[i])/error)^2
+    A+= ((H[i] - H_theo[i])/error[i])^2;
   }
   
 }
@@ -68,5 +68,5 @@ model {
 
   //changin the pre planned likelihood function and adding the chi^2 just calculated
 
- target += -A/2
+ target += -A/2;
 }
