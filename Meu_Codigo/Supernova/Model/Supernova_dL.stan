@@ -47,8 +47,20 @@ transformed parameters {
     // new approximation gives c/H₀ ≈ 3000h^-1 = 3000/0.7
     dL[i] = (1+zcmb[i]) * integrate_1d(integrand, 0, zcmb[i], theta, x_r, x_i);
     mbtheo[i] = M + log10(dL[i]);
-    
   }
+
+//need to deal with the likelihood function
+// stan uses log likelihoods as a basis for its calculations and we now thats -1/2 of chi^2
+
+  real A = 0;
+  real B = 0;
+  real C = 0;
+  for (i in 1:40) {
+
+    A += ((mb[i] - log10(dL[i]))/dmb[i])^2
+    B += (mb[i] - log10(dL[i]))/(dmb[i]^2)
+    C += 1 / (dmb[i]^2)
+  
 }
 
 // likelihood and priors
@@ -60,4 +72,8 @@ model {
 
   // likelihood
   mbtheo ~ normal(mb, dmb);
+
+  //changin the pre planned likelihood function and adding the chi^2 just calculated
+
+  target += -(A - ((B^2)/C))/2 
 }
