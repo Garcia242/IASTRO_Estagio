@@ -8,7 +8,7 @@ functions {
     return 1/(Om*(1+x)^3 + 1 - Om)^0.5;
   }
 
-  real 
+
 }
 
 // block to declare the variables that will hold the data being used
@@ -38,7 +38,7 @@ transformed parameters {
 
     array[40] real dL;
 
-    array[40] real mbtheo
+    array[40] real mbtheo;
 
     
   
@@ -55,11 +55,16 @@ transformed parameters {
   real A = 0;
   real B = 0;
   real C = 0;
+  real Delta[40];
+
   for (i in 1:40) {
 
-    A += ((mb[i] - log10(dL[i]))/dmb[i])^2
-    B += (mb[i] - log10(dL[i]))/(dmb[i]^2)
-    C += 1 / (dmb[i]^2)
+    Delta[i] = mb[i] - 5.0*log10((1.0+zcmb[i]) * integrate_1d(integrand, 0, zcmb[i], {M, Om}, x_r, x_i));
+    A += (Delta[i]/dmb[i])^2;
+    B += Delta[i]/dmb[i]^2;
+    C += dmb[i]^(-2);
+
+  }
   
 }
 
@@ -67,7 +72,7 @@ transformed parameters {
 // will be evaluated on each step
 model {
   // priors
-  M ~ normal(0.7, 0.3);
+  M ~ normal(10, 10);
   Om ~ normal(0.3, 0.1);
 
   // likelihood
@@ -75,5 +80,5 @@ model {
 
   //changin the pre planned likelihood function and adding the chi^2 just calculated
 
-  target += -(A - ((B^2)/C))/2 
+ target += -A + B^2/C;
 }
