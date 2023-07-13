@@ -30,9 +30,9 @@ transformed data {
 }
 
 parameters {
-  real<lower=0> H0;
-  real<lower=0> Om;
-  real<lower=0> M;
+  real H0;
+  real Om;
+  real M;
 
 }
 
@@ -52,12 +52,12 @@ transformed parameters {
 //need to deal with the likelihood function
 //stan uses log likelihoods as a basis for its calculations and we now thats -1/2 of chi^2
 
-    real A = 0;
+    // real A = 0;
 
-    for (i in 1:32) {
+    // for (i in 1:32) {
 
-      A+= ((H[i] - H_theo[i])/error[i])^2;
-    }
+    //   A+= ((H[i] - H_theo[i])/error[i])^2;
+    // }
 
     array[40] real dL;
 
@@ -68,8 +68,8 @@ transformed parameters {
   for (i in 1:40) {
     // using c/H₀ ≈ 2.9979/h (Gpc)
     // new approximation gives c/H₀ ≈ 3000h^-1 = 3000/0.7
-    dL[i] = (1+zcmb[i]) * integrate_1d(integrand, 0, zcmb[i], theta, x_r, x_i);
-    mbtheo[i] = M + 25 + 5*log10(2.9979*10^8/H0) + 5 * log10(dL[i]);
+    dL[i] = (1+zcmb[i]) * ((2.9979*10^5)/H0) * integrate_1d(integrand, 0, zcmb[i], theta, x_r, x_i);
+    mbtheo[i] = M + 25 + 5*log10(dL[i]);
   }
 }
 
@@ -77,7 +77,7 @@ transformed parameters {
 // will be evaluated on each step
 model {
   // priors
-  H0 ~ normal(70, 10);
+  H0 ~ normal(70, 50);
   Om ~ normal(0.3, 0.1);
   M ~ normal (0, 5);
 

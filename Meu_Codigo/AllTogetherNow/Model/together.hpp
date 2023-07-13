@@ -8,24 +8,20 @@ using namespace stan::math;
 
 
 stan::math::profile_map profiles__;
-static constexpr std::array<const char*, 38> locations_array__ = 
+static constexpr std::array<const char*, 33> locations_array__ = 
 {" (found before start of program)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 33, column 2 to column 19)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 34, column 2 to column 19)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 35, column 2 to column 18)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 33, column 2 to column 10)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 34, column 2 to column 10)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 35, column 2 to column 9)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 42, column 4 to column 38)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 44, column 4 to column 26)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 55, column 4 to column 15)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 62, column 4 to column 22)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 64, column 4 to column 26)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 49, column 4 to column 48)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 47, column 18 to line 50, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 47, column 2 to line 50, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 59, column 6 to column 42)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 57, column 20 to line 60, column 5)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 57, column 4 to line 60, column 5)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 71, column 4 to column 79)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 72, column 4 to column 68)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 71, column 4 to column 100)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 72, column 4 to column 40)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 68, column 18 to line 73, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 68, column 2 to line 73, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 80, column 2 to column 22)",
@@ -33,7 +29,6 @@ static constexpr std::array<const char*, 38> locations_array__ =
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 82, column 2 to column 20)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 85, column 2 to column 28)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 86, column 2 to column 28)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 90, column 1 to column 16)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 17, column 2 to column 22)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 18, column 2 to column 20)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together.stan', line 19, column 2 to column 21)",
@@ -77,15 +72,15 @@ template <typename T0__, typename T1__, typename T2__, typename T3__,
     (void) DUMMY_VAR__;  // suppress unused var warning
     try {
       local_scalar_t__ H0 = DUMMY_VAR__;
-      current_statement__ = 33;
+      current_statement__ = 28;
       H0 = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
       local_scalar_t__ Om = DUMMY_VAR__;
-      current_statement__ = 34;
+      current_statement__ = 29;
       Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(2));
       local_scalar_t__ M = DUMMY_VAR__;
-      current_statement__ = 35;
+      current_statement__ = 30;
       M = stan::model::rvalue(theta, "theta", stan::model::index_uni(3));
-      current_statement__ = 36;
+      current_statement__ = 31;
       return (1 /
                stan::math::pow(
                  (((Om * stan::math::pow((1 + x), 3)) + 1) - Om), 0.5));
@@ -146,62 +141,62 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
     try {
       int pos__ = std::numeric_limits<int>::min();
       pos__ = 1;
-      current_statement__ = 25;
+      current_statement__ = 20;
       context__.validate_dims("data initialization","zcmb","double",
            std::vector<size_t>{static_cast<size_t>(40)});
       zcmb = 
         std::vector<double>(40, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 25;
+      current_statement__ = 20;
       zcmb = context__.vals_r("zcmb");
-      current_statement__ = 26;
+      current_statement__ = 21;
       context__.validate_dims("data initialization","mb","double",
            std::vector<size_t>{static_cast<size_t>(40)});
       mb = std::vector<double>(40, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 26;
+      current_statement__ = 21;
       mb = context__.vals_r("mb");
-      current_statement__ = 27;
+      current_statement__ = 22;
       context__.validate_dims("data initialization","dmb","double",
            std::vector<size_t>{static_cast<size_t>(40)});
       dmb = 
         std::vector<double>(40, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 27;
+      current_statement__ = 22;
       dmb = context__.vals_r("dmb");
-      current_statement__ = 28;
+      current_statement__ = 23;
       context__.validate_dims("data initialization","z","double",
            std::vector<size_t>{static_cast<size_t>(32)});
       z = std::vector<double>(32, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 28;
+      current_statement__ = 23;
       z = context__.vals_r("z");
-      current_statement__ = 29;
+      current_statement__ = 24;
       context__.validate_dims("data initialization","H","double",
            std::vector<size_t>{static_cast<size_t>(32)});
       H = std::vector<double>(32, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 29;
+      current_statement__ = 24;
       H = context__.vals_r("H");
-      current_statement__ = 30;
+      current_statement__ = 25;
       context__.validate_dims("data initialization","error","double",
            std::vector<size_t>{static_cast<size_t>(32)});
       error = 
         std::vector<double>(32, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 30;
+      current_statement__ = 25;
       error = context__.vals_r("error");
-      current_statement__ = 31;
+      current_statement__ = 26;
       x_r = std::vector<double>(0, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 32;
+      current_statement__ = 27;
       x_i = std::vector<int>(0, std::numeric_limits<int>::min());
       
       
@@ -232,16 +227,13 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
     try {
       local_scalar_t__ H0 = DUMMY_VAR__;
       current_statement__ = 1;
-      H0 = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(0,
-             lp__);
+      H0 = in__.template read<local_scalar_t__>();
       local_scalar_t__ Om = DUMMY_VAR__;
       current_statement__ = 2;
-      Om = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(0,
-             lp__);
+      Om = in__.template read<local_scalar_t__>();
       local_scalar_t__ M = DUMMY_VAR__;
       current_statement__ = 3;
-      M = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(0,
-            lp__);
+      M = in__.template read<local_scalar_t__>();
       std::vector<local_scalar_t__> theta =
          std::vector<local_scalar_t__>(3, DUMMY_VAR__);
       current_statement__ = 4;
@@ -249,9 +241,9 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
         "assigning variable theta");
       std::vector<local_scalar_t__> H_theo =
          std::vector<local_scalar_t__>(32, DUMMY_VAR__);
-      current_statement__ = 11;
+      current_statement__ = 10;
       for (int i = 1; i <= 32; ++i) {
-        current_statement__ = 9;
+        current_statement__ = 8;
         stan::model::assign(H_theo,
           (H0 *
             stan::math::pow(
@@ -262,58 +254,40 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
                     3)) + 1) - Om), 0.5)),
           "assigning variable H_theo", stan::model::index_uni(i));
       }
-      local_scalar_t__ A = DUMMY_VAR__;
-      current_statement__ = 6;
-      A = 0;
-      current_statement__ = 14;
-      for (int i = 1; i <= 32; ++i) {
-        current_statement__ = 12;
-        A = (A +
-              stan::math::pow(
-                ((stan::model::rvalue(H, "H", stan::model::index_uni(i)) -
-                   stan::model::rvalue(H_theo, "H_theo",
-                     stan::model::index_uni(i))) /
-                  stan::model::rvalue(error, "error",
-                    stan::model::index_uni(i))), 2));
-      }
       std::vector<local_scalar_t__> dL =
          std::vector<local_scalar_t__>(40, DUMMY_VAR__);
       std::vector<local_scalar_t__> mbtheo =
          std::vector<local_scalar_t__>(40, DUMMY_VAR__);
-      current_statement__ = 18;
+      current_statement__ = 14;
       for (int i = 1; i <= 40; ++i) {
-        current_statement__ = 15;
+        current_statement__ = 11;
         stan::model::assign(dL,
-          ((1 + stan::model::rvalue(zcmb, "zcmb", stan::model::index_uni(i)))
-            *
+          (((1 +
+              stan::model::rvalue(zcmb, "zcmb", stan::model::index_uni(i))) *
+             ((2.9979 * stan::math::pow(10, 5)) / H0)) *
             stan::math::integrate_1d(integrand_functor__(), 0,
               stan::model::rvalue(zcmb, "zcmb", stan::model::index_uni(i)),
               theta, x_r, x_i, pstream__)),
           "assigning variable dL", stan::model::index_uni(i));
-        current_statement__ = 16;
+        current_statement__ = 12;
         stan::model::assign(mbtheo,
-          (((M + 25) +
-             (5 *
-               stan::math::log10(((2.9979 * stan::math::pow(10, 8)) / H0))))
-            +
+          ((M + 25) +
             (5 *
               stan::math::log10(
                 stan::model::rvalue(dL, "dL", stan::model::index_uni(i))))),
           "assigning variable mbtheo", stan::model::index_uni(i));
       }
       {
-        current_statement__ = 19;
-        lp_accum__.add(stan::math::normal_lpdf<propto__>(H0, 70, 10));
-        current_statement__ = 20;
+        current_statement__ = 15;
+        lp_accum__.add(stan::math::normal_lpdf<propto__>(H0, 70, 50));
+        current_statement__ = 16;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(Om, 0.3, 0.1));
-        current_statement__ = 21;
+        current_statement__ = 17;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(M, 0, 5));
-        current_statement__ = 22;
+        current_statement__ = 18;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(H_theo, H, error));
-        current_statement__ = 23;
+        current_statement__ = 19;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(mbtheo, mb, dmb));
-        current_statement__ = 24;
-        lp_accum__.add((-A / 2));
       }
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
@@ -349,21 +323,17 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
     try {
       double H0 = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 1;
-      H0 = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(0,
-             lp__);
+      H0 = in__.template read<local_scalar_t__>();
       double Om = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 2;
-      Om = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(0,
-             lp__);
+      Om = in__.template read<local_scalar_t__>();
       double M = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 3;
-      M = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(0,
-            lp__);
+      M = in__.template read<local_scalar_t__>();
       std::vector<double> theta =
          std::vector<double>(3, std::numeric_limits<double>::quiet_NaN());
       std::vector<double> H_theo =
          std::vector<double>(32, std::numeric_limits<double>::quiet_NaN());
-      double A = std::numeric_limits<double>::quiet_NaN();
       std::vector<double> dL =
          std::vector<double>(40, std::numeric_limits<double>::quiet_NaN());
       std::vector<double> mbtheo =
@@ -379,9 +349,9 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
       current_statement__ = 4;
       stan::model::assign(theta, std::vector<local_scalar_t__>{H0, Om, M},
         "assigning variable theta");
-      current_statement__ = 11;
+      current_statement__ = 10;
       for (int i = 1; i <= 32; ++i) {
-        current_statement__ = 9;
+        current_statement__ = 8;
         stan::model::assign(H_theo,
           (H0 *
             stan::math::pow(
@@ -392,35 +362,20 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
                     3)) + 1) - Om), 0.5)),
           "assigning variable H_theo", stan::model::index_uni(i));
       }
-      current_statement__ = 6;
-      A = 0;
       current_statement__ = 14;
-      for (int i = 1; i <= 32; ++i) {
-        current_statement__ = 12;
-        A = (A +
-              stan::math::pow(
-                ((stan::model::rvalue(H, "H", stan::model::index_uni(i)) -
-                   stan::model::rvalue(H_theo, "H_theo",
-                     stan::model::index_uni(i))) /
-                  stan::model::rvalue(error, "error",
-                    stan::model::index_uni(i))), 2));
-      }
-      current_statement__ = 18;
       for (int i = 1; i <= 40; ++i) {
-        current_statement__ = 15;
+        current_statement__ = 11;
         stan::model::assign(dL,
-          ((1 + stan::model::rvalue(zcmb, "zcmb", stan::model::index_uni(i)))
-            *
+          (((1 +
+              stan::model::rvalue(zcmb, "zcmb", stan::model::index_uni(i))) *
+             ((2.9979 * stan::math::pow(10, 5)) / H0)) *
             stan::math::integrate_1d(integrand_functor__(), 0,
               stan::model::rvalue(zcmb, "zcmb", stan::model::index_uni(i)),
               theta, x_r, x_i, pstream__)),
           "assigning variable dL", stan::model::index_uni(i));
-        current_statement__ = 16;
+        current_statement__ = 12;
         stan::model::assign(mbtheo,
-          (((M + 25) +
-             (5 *
-               stan::math::log10(((2.9979 * stan::math::pow(10, 8)) / H0))))
-            +
+          ((M + 25) +
             (5 *
               stan::math::log10(
                 stan::model::rvalue(dL, "dL", stan::model::index_uni(i))))),
@@ -429,7 +384,6 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
       if (emit_transformed_parameters__) {
         out__.write(theta);
         out__.write(H_theo);
-        out__.write(A);
         out__.write(dL);
         out__.write(mbtheo);
       } 
@@ -458,13 +412,13 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
       pos__ = 1;
       local_scalar_t__ H0 = DUMMY_VAR__;
       H0 = in__.read<local_scalar_t__>();
-      out__.write_free_lb(0, H0);
+      out__.write(H0);
       local_scalar_t__ Om = DUMMY_VAR__;
       Om = in__.read<local_scalar_t__>();
-      out__.write_free_lb(0, Om);
+      out__.write(Om);
       local_scalar_t__ M = DUMMY_VAR__;
       M = in__.read<local_scalar_t__>();
-      out__.write_free_lb(0, M);
+      out__.write(M);
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }
@@ -473,7 +427,7 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
   inline void get_param_names(std::vector<std::string>& names__) const {
     
     names__ = std::vector<std::string>{"H0", "Om", "M", "theta", "H_theo",
-      "A", "dL", "mbtheo"};
+      "dL", "mbtheo"};
     
     } // get_param_names() 
     
@@ -482,8 +436,8 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
     dimss__ = std::vector<std::vector<size_t>>{std::vector<size_t>{},
       std::vector<size_t>{}, std::vector<size_t>{},
       std::vector<size_t>{static_cast<size_t>(3)},
-      std::vector<size_t>{static_cast<size_t>(32)}, std::vector<size_t>{
-      }, std::vector<size_t>{static_cast<size_t>(40)},
+      std::vector<size_t>{static_cast<size_t>(32)},
+      std::vector<size_t>{static_cast<size_t>(40)},
       std::vector<size_t>{static_cast<size_t>(40)}};
     
     } // get_dims() 
@@ -508,7 +462,6 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
           param_names__.emplace_back(std::string() + "H_theo" + '.' + std::to_string(sym1__));
         } 
       }
-      param_names__.emplace_back(std::string() + "A");
       for (int sym1__ = 1; sym1__ <= 40; ++sym1__) {
         {
           param_names__.emplace_back(std::string() + "dL" + '.' + std::to_string(sym1__));
@@ -547,7 +500,6 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
           param_names__.emplace_back(std::string() + "H_theo" + '.' + std::to_string(sym1__));
         } 
       }
-      param_names__.emplace_back(std::string() + "A");
       for (int sym1__ = 1; sym1__ <= 40; ++sym1__) {
         {
           param_names__.emplace_back(std::string() + "dL" + '.' + std::to_string(sym1__));
@@ -568,13 +520,13 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
     
   inline std::string get_constrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"H0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"Om\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"M\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"theta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(3) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"H_theo\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(32) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"A\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"dL\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(40) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"mbtheo\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(40) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"}]");
+    return std::string("[{\"name\":\"H0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"Om\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"M\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"theta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(3) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"H_theo\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(32) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"dL\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(40) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"mbtheo\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(40) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"}]");
     
     } // get_constrained_sizedtypes() 
     
   inline std::string get_unconstrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"H0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"Om\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"M\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"theta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(3) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"H_theo\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(32) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"A\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"dL\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(40) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"mbtheo\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(40) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"}]");
+    return std::string("[{\"name\":\"H0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"Om\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"M\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"theta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(3) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"H_theo\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(32) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"dL\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(40) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"mbtheo\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(40) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"}]");
     
     } // get_unconstrained_sizedtypes() 
     
@@ -590,7 +542,7 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
       const size_t num_params__ = 
   ((1 + 1) + 1);
       const size_t num_transformed = emit_transformed_parameters * 
-  ((((3 + 32) + 1) + 40) + 40);
+  (((3 + 32) + 40) + 40);
       const size_t num_gen_quantities = emit_generated_quantities * 0;
       const size_t num_to_write = num_params__ + num_transformed +
         num_gen_quantities;
@@ -611,7 +563,7 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
       const size_t num_params__ = 
   ((1 + 1) + 1);
       const size_t num_transformed = emit_transformed_parameters * 
-  ((((3 + 32) + 1) + 40) + 40);
+  (((3 + 32) + 40) + 40);
       const size_t num_gen_quantities = emit_generated_quantities * 0;
       const size_t num_to_write = num_params__ + num_transformed +
         num_gen_quantities;
