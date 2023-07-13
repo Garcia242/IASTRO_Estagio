@@ -8,37 +8,26 @@ using namespace stan::math;
 
 
 stan::math::profile_map profiles__;
-static constexpr std::array<const char*, 33> locations_array__ = 
+static constexpr std::array<const char*, 22> locations_array__ = 
 {" (found before start of program)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 29, column 2 to column 18)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 30, column 2 to column 19)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 37, column 4 to column 34)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 39, column 4 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 41, column 4 to column 26)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 55, column 2 to column 13)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 56, column 2 to column 13)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 57, column 2 to column 13)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 58, column 2 to column 17)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 48, column 4 to column 79)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 49, column 4 to column 37)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 45, column 18 to line 50, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 45, column 2 to line 50, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 62, column 4 to column 105)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 62, column 4 to column 102)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 63, column 4 to column 29)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 64, column 4 to column 27)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 65, column 4 to column 21)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 60, column 18 to line 67, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 60, column 2 to line 67, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 75, column 2 to column 21)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 76, column 2 to column 24)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 79, column 2 to column 27)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 83, column 1 to column 22)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 16, column 2 to column 22)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 17, column 2 to column 20)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 18, column 2 to column 21)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 24, column 2 to column 20)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 25, column 2 to column 19)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 4, column 4 to column 22)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 5, column 4 to column 23)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 8, column 4 to column 39)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Supernova/Model/Supernova_dL.stan', line 3, column 89 to line 9, column 3)"};
@@ -71,13 +60,10 @@ template <typename T0__, typename T1__, typename T2__, typename T3__,
     local_scalar_t__ DUMMY_VAR__(std::numeric_limits<double>::quiet_NaN());
     (void) DUMMY_VAR__;  // suppress unused var warning
     try {
-      local_scalar_t__ M = DUMMY_VAR__;
-      current_statement__ = 29;
-      M = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
       local_scalar_t__ Om = DUMMY_VAR__;
-      current_statement__ = 30;
-      Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(2));
-      current_statement__ = 31;
+      current_statement__ = 19;
+      Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
+      current_statement__ = 20;
       return (1 /
                stan::math::pow(
                  (((Om * stan::math::pow((1 + x), 3)) + 1) - Om), 0.5));
@@ -136,44 +122,44 @@ class Supernova_dL_model final : public model_base_crtp<Supernova_dL_model> {
     try {
       int pos__ = std::numeric_limits<int>::min();
       pos__ = 1;
-      current_statement__ = 24;
+      current_statement__ = 14;
       context__.validate_dims("data initialization","zcmb","double",
            std::vector<size_t>{static_cast<size_t>(40)});
       zcmb = 
         std::vector<double>(40, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 24;
+      current_statement__ = 14;
       zcmb = context__.vals_r("zcmb");
-      current_statement__ = 25;
+      current_statement__ = 15;
       context__.validate_dims("data initialization","mb","double",
            std::vector<size_t>{static_cast<size_t>(40)});
       mb = std::vector<double>(40, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 25;
+      current_statement__ = 15;
       mb = context__.vals_r("mb");
-      current_statement__ = 26;
+      current_statement__ = 16;
       context__.validate_dims("data initialization","dmb","double",
            std::vector<size_t>{static_cast<size_t>(40)});
       dmb = 
         std::vector<double>(40, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 26;
+      current_statement__ = 16;
       dmb = context__.vals_r("dmb");
-      current_statement__ = 27;
+      current_statement__ = 17;
       x_r = std::vector<double>(0, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 28;
+      current_statement__ = 18;
       x_i = std::vector<int>(0, std::numeric_limits<int>::min());
       
       
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }
-    num_params_r__ = 1 + 1;
+    num_params_r__ = 1;
     
   }
   
@@ -195,55 +181,24 @@ class Supernova_dL_model final : public model_base_crtp<Supernova_dL_model> {
     (void) function__;  // suppress unused var warning
     
     try {
-      local_scalar_t__ M = DUMMY_VAR__;
-      current_statement__ = 1;
-      M = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(0,
-            lp__);
       local_scalar_t__ Om = DUMMY_VAR__;
-      current_statement__ = 2;
+      current_statement__ = 1;
       Om = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(0,
              lp__);
-      std::vector<local_scalar_t__> theta =
-         std::vector<local_scalar_t__>(2, DUMMY_VAR__);
-      current_statement__ = 3;
-      stan::model::assign(theta, std::vector<local_scalar_t__>{M, Om},
-        "assigning variable theta");
-      std::vector<local_scalar_t__> dL =
-         std::vector<local_scalar_t__>(40, DUMMY_VAR__);
-      std::vector<local_scalar_t__> mbtheo =
-         std::vector<local_scalar_t__>(40, DUMMY_VAR__);
-      current_statement__ = 13;
-      for (int i = 1; i <= 40; ++i) {
-        current_statement__ = 10;
-        stan::model::assign(dL,
-          ((1 + stan::model::rvalue(zcmb, "zcmb", stan::model::index_uni(i)))
-            *
-            stan::math::integrate_1d(integrand_functor__(), 0,
-              stan::model::rvalue(zcmb, "zcmb", stan::model::index_uni(i)),
-              theta, x_r, x_i, pstream__)),
-          "assigning variable dL", stan::model::index_uni(i));
-        current_statement__ = 11;
-        stan::model::assign(mbtheo,
-          (M +
-            (5 *
-              stan::math::log10(
-                stan::model::rvalue(dL, "dL", stan::model::index_uni(i))))),
-          "assigning variable mbtheo", stan::model::index_uni(i));
-      }
       local_scalar_t__ A = DUMMY_VAR__;
-      current_statement__ = 6;
+      current_statement__ = 2;
       A = 0;
       local_scalar_t__ B = DUMMY_VAR__;
-      current_statement__ = 7;
+      current_statement__ = 3;
       B = 0;
       local_scalar_t__ C = DUMMY_VAR__;
-      current_statement__ = 8;
+      current_statement__ = 4;
       C = 0;
       std::vector<local_scalar_t__> Delta =
          std::vector<local_scalar_t__>(40, DUMMY_VAR__);
-      current_statement__ = 19;
+      current_statement__ = 11;
       for (int i = 1; i <= 40; ++i) {
-        current_statement__ = 14;
+        current_statement__ = 6;
         stan::model::assign(Delta,
           (stan::model::rvalue(mb, "mb", stan::model::index_uni(i)) -
             (5.0 *
@@ -254,37 +209,32 @@ class Supernova_dL_model final : public model_base_crtp<Supernova_dL_model> {
                   stan::math::integrate_1d(integrand_functor__(), 0,
                     stan::model::rvalue(zcmb, "zcmb",
                       stan::model::index_uni(i)),
-                    std::vector<local_scalar_t__>{M, Om}, x_r, x_i,
-                    pstream__))))),
+                    std::vector<local_scalar_t__>{Om}, x_r, x_i, pstream__))))),
           "assigning variable Delta", stan::model::index_uni(i));
-        current_statement__ = 15;
+        current_statement__ = 7;
         A = (A +
               stan::math::pow(
                 (stan::model::rvalue(Delta, "Delta",
                    stan::model::index_uni(i)) /
                   stan::model::rvalue(dmb, "dmb", stan::model::index_uni(i))),
                 2));
-        current_statement__ = 16;
+        current_statement__ = 8;
         B = (B +
               (stan::model::rvalue(Delta, "Delta", stan::model::index_uni(i))
                 /
                 stan::math::pow(
                   stan::model::rvalue(dmb, "dmb", stan::model::index_uni(i)),
                   2)));
-        current_statement__ = 17;
+        current_statement__ = 9;
         C = (C +
               stan::math::pow(
                 stan::model::rvalue(dmb, "dmb", stan::model::index_uni(i)),
                 -2));
       }
       {
-        current_statement__ = 20;
-        lp_accum__.add(stan::math::normal_lpdf<propto__>(M, 10, 10));
-        current_statement__ = 21;
+        current_statement__ = 12;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(Om, 0.3, 0.1));
-        current_statement__ = 22;
-        lp_accum__.add(stan::math::normal_lpdf<propto__>(mbtheo, mb, dmb));
-        current_statement__ = 23;
+        current_statement__ = 13;
         lp_accum__.add((-A + (stan::math::pow(B, 2) / C)));
       }
     } catch (const std::exception& e) {
@@ -319,62 +269,30 @@ class Supernova_dL_model final : public model_base_crtp<Supernova_dL_model> {
     (void) function__;  // suppress unused var warning
     
     try {
-      double M = std::numeric_limits<double>::quiet_NaN();
-      current_statement__ = 1;
-      M = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(0,
-            lp__);
       double Om = std::numeric_limits<double>::quiet_NaN();
-      current_statement__ = 2;
+      current_statement__ = 1;
       Om = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(0,
              lp__);
-      std::vector<double> theta =
-         std::vector<double>(2, std::numeric_limits<double>::quiet_NaN());
-      std::vector<double> dL =
-         std::vector<double>(40, std::numeric_limits<double>::quiet_NaN());
-      std::vector<double> mbtheo =
-         std::vector<double>(40, std::numeric_limits<double>::quiet_NaN());
       double A = std::numeric_limits<double>::quiet_NaN();
       double B = std::numeric_limits<double>::quiet_NaN();
       double C = std::numeric_limits<double>::quiet_NaN();
       std::vector<double> Delta =
          std::vector<double>(40, std::numeric_limits<double>::quiet_NaN());
-      out__.write(M);
       out__.write(Om);
       if (stan::math::logical_negation((stan::math::primitive_value(
             emit_transformed_parameters__) || stan::math::primitive_value(
             emit_generated_quantities__)))) {
         return ;
       } 
-      current_statement__ = 3;
-      stan::model::assign(theta, std::vector<local_scalar_t__>{M, Om},
-        "assigning variable theta");
-      current_statement__ = 13;
-      for (int i = 1; i <= 40; ++i) {
-        current_statement__ = 10;
-        stan::model::assign(dL,
-          ((1 + stan::model::rvalue(zcmb, "zcmb", stan::model::index_uni(i)))
-            *
-            stan::math::integrate_1d(integrand_functor__(), 0,
-              stan::model::rvalue(zcmb, "zcmb", stan::model::index_uni(i)),
-              theta, x_r, x_i, pstream__)),
-          "assigning variable dL", stan::model::index_uni(i));
-        current_statement__ = 11;
-        stan::model::assign(mbtheo,
-          (M +
-            (5 *
-              stan::math::log10(
-                stan::model::rvalue(dL, "dL", stan::model::index_uni(i))))),
-          "assigning variable mbtheo", stan::model::index_uni(i));
-      }
-      current_statement__ = 6;
+      current_statement__ = 2;
       A = 0;
-      current_statement__ = 7;
+      current_statement__ = 3;
       B = 0;
-      current_statement__ = 8;
+      current_statement__ = 4;
       C = 0;
-      current_statement__ = 19;
+      current_statement__ = 11;
       for (int i = 1; i <= 40; ++i) {
-        current_statement__ = 14;
+        current_statement__ = 6;
         stan::model::assign(Delta,
           (stan::model::rvalue(mb, "mb", stan::model::index_uni(i)) -
             (5.0 *
@@ -385,33 +303,29 @@ class Supernova_dL_model final : public model_base_crtp<Supernova_dL_model> {
                   stan::math::integrate_1d(integrand_functor__(), 0,
                     stan::model::rvalue(zcmb, "zcmb",
                       stan::model::index_uni(i)),
-                    std::vector<local_scalar_t__>{M, Om}, x_r, x_i,
-                    pstream__))))),
+                    std::vector<local_scalar_t__>{Om}, x_r, x_i, pstream__))))),
           "assigning variable Delta", stan::model::index_uni(i));
-        current_statement__ = 15;
+        current_statement__ = 7;
         A = (A +
               stan::math::pow(
                 (stan::model::rvalue(Delta, "Delta",
                    stan::model::index_uni(i)) /
                   stan::model::rvalue(dmb, "dmb", stan::model::index_uni(i))),
                 2));
-        current_statement__ = 16;
+        current_statement__ = 8;
         B = (B +
               (stan::model::rvalue(Delta, "Delta", stan::model::index_uni(i))
                 /
                 stan::math::pow(
                   stan::model::rvalue(dmb, "dmb", stan::model::index_uni(i)),
                   2)));
-        current_statement__ = 17;
+        current_statement__ = 9;
         C = (C +
               stan::math::pow(
                 stan::model::rvalue(dmb, "dmb", stan::model::index_uni(i)),
                 -2));
       }
       if (emit_transformed_parameters__) {
-        out__.write(theta);
-        out__.write(dL);
-        out__.write(mbtheo);
         out__.write(A);
         out__.write(B);
         out__.write(C);
@@ -440,9 +354,6 @@ class Supernova_dL_model final : public model_base_crtp<Supernova_dL_model> {
     try {
       int pos__ = std::numeric_limits<int>::min();
       pos__ = 1;
-      local_scalar_t__ M = DUMMY_VAR__;
-      M = in__.read<local_scalar_t__>();
-      out__.write_free_lb(0, M);
       local_scalar_t__ Om = DUMMY_VAR__;
       Om = in__.read<local_scalar_t__>();
       out__.write_free_lb(0, Om);
@@ -453,19 +364,15 @@ class Supernova_dL_model final : public model_base_crtp<Supernova_dL_model> {
     
   inline void get_param_names(std::vector<std::string>& names__) const {
     
-    names__ = std::vector<std::string>{"M", "Om", "theta", "dL", "mbtheo",
-      "A", "B", "C", "Delta"};
+    names__ = std::vector<std::string>{"Om", "A", "B", "C", "Delta"};
     
     } // get_param_names() 
     
   inline void get_dims(std::vector<std::vector<size_t>>& dimss__) const {
     
     dimss__ = std::vector<std::vector<size_t>>{std::vector<size_t>{},
-      std::vector<size_t>{}, std::vector<size_t>{static_cast<size_t>(2)},
-      std::vector<size_t>{static_cast<size_t>(40)},
-      std::vector<size_t>{static_cast<size_t>(40)}, std::vector<size_t>{
-      }, std::vector<size_t>{}, std::vector<size_t>{},
-      std::vector<size_t>{static_cast<size_t>(40)}};
+      std::vector<size_t>{}, std::vector<size_t>{}, std::vector<size_t>{
+      }, std::vector<size_t>{static_cast<size_t>(40)}};
     
     } // get_dims() 
     
@@ -475,24 +382,8 @@ class Supernova_dL_model final : public model_base_crtp<Supernova_dL_model> {
                                       bool emit_generated_quantities__ = true) const
     final {
     
-    param_names__.emplace_back(std::string() + "M");
     param_names__.emplace_back(std::string() + "Om");
     if (emit_transformed_parameters__) {
-      for (int sym1__ = 1; sym1__ <= 2; ++sym1__) {
-        {
-          param_names__.emplace_back(std::string() + "theta" + '.' + std::to_string(sym1__));
-        } 
-      }
-      for (int sym1__ = 1; sym1__ <= 40; ++sym1__) {
-        {
-          param_names__.emplace_back(std::string() + "dL" + '.' + std::to_string(sym1__));
-        } 
-      }
-      for (int sym1__ = 1; sym1__ <= 40; ++sym1__) {
-        {
-          param_names__.emplace_back(std::string() + "mbtheo" + '.' + std::to_string(sym1__));
-        } 
-      }
       param_names__.emplace_back(std::string() + "A");
       param_names__.emplace_back(std::string() + "B");
       param_names__.emplace_back(std::string() + "C");
@@ -515,24 +406,8 @@ class Supernova_dL_model final : public model_base_crtp<Supernova_dL_model> {
                                         bool emit_generated_quantities__ = true) const
     final {
     
-    param_names__.emplace_back(std::string() + "M");
     param_names__.emplace_back(std::string() + "Om");
     if (emit_transformed_parameters__) {
-      for (int sym1__ = 1; sym1__ <= 2; ++sym1__) {
-        {
-          param_names__.emplace_back(std::string() + "theta" + '.' + std::to_string(sym1__));
-        } 
-      }
-      for (int sym1__ = 1; sym1__ <= 40; ++sym1__) {
-        {
-          param_names__.emplace_back(std::string() + "dL" + '.' + std::to_string(sym1__));
-        } 
-      }
-      for (int sym1__ = 1; sym1__ <= 40; ++sym1__) {
-        {
-          param_names__.emplace_back(std::string() + "mbtheo" + '.' + std::to_string(sym1__));
-        } 
-      }
       param_names__.emplace_back(std::string() + "A");
       param_names__.emplace_back(std::string() + "B");
       param_names__.emplace_back(std::string() + "C");
@@ -551,13 +426,13 @@ class Supernova_dL_model final : public model_base_crtp<Supernova_dL_model> {
     
   inline std::string get_constrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"M\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"Om\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"theta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(2) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"dL\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(40) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"mbtheo\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(40) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"A\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"B\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"C\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"Delta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(40) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"}]");
+    return std::string("[{\"name\":\"Om\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"A\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"B\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"C\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"Delta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(40) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"}]");
     
     } // get_constrained_sizedtypes() 
     
   inline std::string get_unconstrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"M\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"Om\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"theta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(2) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"dL\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(40) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"mbtheo\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(40) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"A\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"B\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"C\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"Delta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(40) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"}]");
+    return std::string("[{\"name\":\"Om\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"A\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"B\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"C\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"Delta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(40) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"}]");
     
     } // get_unconstrained_sizedtypes() 
     
@@ -570,10 +445,9 @@ class Supernova_dL_model final : public model_base_crtp<Supernova_dL_model> {
                             const bool emit_transformed_parameters = true,
                             const bool emit_generated_quantities = true,
                             std::ostream* pstream = nullptr) const {
-      const size_t num_params__ = 
-  (1 + 1);
+      const size_t num_params__ = 1;
       const size_t num_transformed = emit_transformed_parameters * 
-  ((((((2 + 40) + 40) + 1) + 1) + 1) + 40);
+  (((1 + 1) + 1) + 40);
       const size_t num_gen_quantities = emit_generated_quantities * 0;
       const size_t num_to_write = num_params__ + num_transformed +
         num_gen_quantities;
@@ -591,10 +465,9 @@ class Supernova_dL_model final : public model_base_crtp<Supernova_dL_model> {
                             bool emit_transformed_parameters = true,
                             bool emit_generated_quantities = true,
                             std::ostream* pstream = nullptr) const {
-      const size_t num_params__ = 
-  (1 + 1);
+      const size_t num_params__ = 1;
       const size_t num_transformed = emit_transformed_parameters * 
-  ((((((2 + 40) + 40) + 1) + 1) + 1) + 40);
+  (((1 + 1) + 1) + 40);
       const size_t num_gen_quantities = emit_generated_quantities * 0;
       const size_t num_to_write = num_params__ + num_transformed +
         num_gen_quantities;
@@ -633,8 +506,8 @@ class Supernova_dL_model final : public model_base_crtp<Supernova_dL_model> {
                               std::vector<int>& params_i,
                               std::vector<double>& vars,
                               std::ostream* pstream__ = nullptr) const {
-     constexpr std::array<const char*, 2> names__{"M", "Om"};
-      const std::array<Eigen::Index, 2> constrain_param_sizes__{1, 1};
+     constexpr std::array<const char*, 1> names__{"Om"};
+      const std::array<Eigen::Index, 1> constrain_param_sizes__{1};
       const auto num_constrained_params__ = std::accumulate(
         constrain_param_sizes__.begin(), constrain_param_sizes__.end(), 0);
     
