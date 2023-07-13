@@ -29,13 +29,13 @@ print(fit.diagnose())
 
 # show the traceplot
 posterior = az.from_cmdstanpy(posterior=fit)
-az.plot_trace(posterior, var_names=('H0', 'Om', "M"), compact=False, combined=False)
+az.plot_trace(posterior, var_names=('H0', 'Om'), compact=False, combined=False)
 plt.tight_layout()
 plt.show()
 
 # show corner plot
-samples = [fit.stan_variable("H0"), fit.stan_variable("Om"), fit.stan_variable("M")]
-mcsamples = MCSamples(samples=samples, names=["H0", "Om", "M"], labels=["H0", "Om", "M"])
+samples = [fit.stan_variable("H0"), fit.stan_variable("Om")]
+mcsamples = MCSamples(samples=samples, names=["H0", "Om"], labels=["H0", "Om"])
 g = plots.get_subplot_plotter()
 g.triangle_plot(mcsamples, filled=True)
 plt.show()
