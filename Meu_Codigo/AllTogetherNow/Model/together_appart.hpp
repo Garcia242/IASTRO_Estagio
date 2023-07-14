@@ -28,9 +28,9 @@ static constexpr std::array<const char*, 34> locations_array__ =
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together_appart.stan', line 59, column 18 to line 66, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together_appart.stan', line 59, column 2 to line 66, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together_appart.stan', line 77, column 2 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together_appart.stan', line 78, column 2 to column 24)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together_appart.stan', line 78, column 2 to column 25)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together_appart.stan', line 82, column 2 to column 28)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together_appart.stan', line 83, column 2 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together_appart.stan', line 83, column 2 to column 33)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together_appart.stan', line 16, column 2 to column 22)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together_appart.stan', line 17, column 2 to column 20)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/together_appart.stan', line 18, column 2 to column 21)",
@@ -301,11 +301,11 @@ class together_appart_model final : public model_base_crtp<together_appart_model
         current_statement__ = 18;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(H0, 70, 50));
         current_statement__ = 19;
-        lp_accum__.add(stan::math::normal_lpdf<propto__>(Om, 0.3, 0.1));
+        lp_accum__.add(stan::math::normal_lpdf<propto__>(Om, 0.28, 0.1));
         current_statement__ = 20;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(H_theo, H, error));
         current_statement__ = 21;
-        lp_accum__.add((-A + (stan::math::pow(B, 2) / C)));
+        lp_accum__.add(((1 / 2) * (-A + (stan::math::pow(B, 2) / C))));
       }
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);

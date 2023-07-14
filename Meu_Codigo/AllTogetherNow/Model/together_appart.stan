@@ -75,12 +75,12 @@ transformed parameters {
 model {
   // priors
   H0 ~ normal(70, 50);
-  Om ~ normal(0.3, 0.1);
+  Om ~ normal(0.28, 0.1);
   
 
   // likelihood
   H_theo ~ normal(H, error);
-  target+= -A + B^2/C;
+  target+= (1/2) * (- A + B^2/C);
 
   //changin the pre planned likelihood function and adding the chi^2 just calculated
 
