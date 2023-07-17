@@ -8,16 +8,16 @@ functions {
     return 1/(Om*(1+x)^3 + 1 - Om)^0.5;
   }
 
-//   real rs(array[] real theta) {
-//     real H0 = theta[1];
-//     real Om = theta[2];
+  real rs(array[] real theta) {
+    real H0 = theta[1];
+    real Om = theta[2];
 
-//     real wm = Om*(H0/100)^2;
-//     real wb = 0.02226;      // baryonic density
-//     real wn = 0.0107*0.06;  // neutrinos sum m = 0.06 eV
-//     return 55.154 * exp(-72.3*(wn+0.0006)^2) / (wm^0.25351*wb^0.12807);
+    real wm = Om*(H0/100)^2;
+    real wb = 0.02226;      // baryonic density
+    real wn = 0.0107*0.06;  // neutrinos sum m = 0.06 eV
+    return 55.154 * exp(-72.3*(wn+0.0006)^2) / (wm^0.25351*wb^0.12807);
 
-// }
+}
 
 }
 
@@ -52,16 +52,16 @@ transformed parameters {
 
     real c = 2.9979 * 10^5;
 
-    real rs;
+    // real rs;
 
-    real wm = Om*(H0/100)^2;
-    real wb = 0.02226;      // baryonic density
-    real wn = 0.0107*0.06;  // neutrinos sum m = 0.06 eV
-    rs = 55.154 * exp(-72.3*(wn+0.0006)^2) / (wm^0.25351*wb^0.12807);
+    // real wm = Om*(H0/100)^2;
+    // real wb = 0.02226;      // baryonic density
+    // real wn = 0.0107*0.06;  // neutrinos sum m = 0.06 eV
+    // rs = 55.154 * exp(-72.3*(wn+0.0006)^2) / (wm^0.25351*wb^0.12807);
     
   for (i in 1:6) {
     
-    dv_theo[i] = (rf/rs)*((c/H0)^3 * (1/(Om*(1+z[i])^3 + 1 - Om)^(1/2)) * (integrate_1d(integrand, 0, z[i], theta, x_r, x_i))^2)^(1/3);
+    dv_theo[i] = (rf/rs(theta))*((c/H0)^3 * (1/(Om*(1+z[i])^3 + 1 - Om)^(1/2)) * (integrate_1d(integrand, 0, z[i], theta, x_r, x_i))^2)^(1/3);
     
   }
 
