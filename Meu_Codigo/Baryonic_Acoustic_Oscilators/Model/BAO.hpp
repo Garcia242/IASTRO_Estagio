@@ -8,7 +8,7 @@ using namespace stan::math;
 
 
 stan::math::profile_map profiles__;
-static constexpr std::array<const char*, 30> locations_array__ = 
+static constexpr std::array<const char*, 36> locations_array__ = 
 {" (found before start of program)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 39, column 2 to column 10)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 40, column 2 to column 10)",
@@ -16,13 +16,19 @@ static constexpr std::array<const char*, 30> locations_array__ =
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 49, column 4 to column 26)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 51, column 4 to column 18)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 53, column 4 to column 27)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 64, column 4 to column 142)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 62, column 17 to line 66, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 62, column 2 to line 66, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 79, column 2 to column 21)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 80, column 2 to column 24)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 83, column 2 to column 30)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 87, column 1 to column 2)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 62, column 4 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 63, column 4 to column 20)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 64, column 4 to column 21)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 69, column 4 to column 76)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 70, column 4 to column 45)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 71, column 4 to column 71)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 72, column 4 to column 39)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 17 to line 75, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 2 to line 75, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 88, column 2 to column 21)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 89, column 2 to column 24)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 92, column 2 to column 30)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 96, column 1 to column 2)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 26, column 2 to column 18)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 27, column 2 to column 19)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 28, column 2 to column 22)",
@@ -75,12 +81,12 @@ template <typename T0__, typename T1__, typename T2__, typename T3__,
     (void) DUMMY_VAR__;  // suppress unused var warning
     try {
       local_scalar_t__ H0 = DUMMY_VAR__;
-      current_statement__ = 19;
+      current_statement__ = 25;
       H0 = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
       local_scalar_t__ Om = DUMMY_VAR__;
-      current_statement__ = 20;
+      current_statement__ = 26;
       Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(2));
-      current_statement__ = 21;
+      current_statement__ = 27;
       return (1 /
                stan::math::pow(
                  (((Om * stan::math::pow((1 + x), 3)) + 1) - Om), 0.5));
@@ -100,21 +106,21 @@ template <typename T0__,
     (void) DUMMY_VAR__;  // suppress unused var warning
     try {
       local_scalar_t__ H0 = DUMMY_VAR__;
-      current_statement__ = 23;
+      current_statement__ = 29;
       H0 = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
       local_scalar_t__ Om = DUMMY_VAR__;
-      current_statement__ = 24;
+      current_statement__ = 30;
       Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(2));
       local_scalar_t__ wm = DUMMY_VAR__;
-      current_statement__ = 25;
+      current_statement__ = 31;
       wm = (Om * stan::math::pow((H0 / 100), 2));
       local_scalar_t__ wb = DUMMY_VAR__;
-      current_statement__ = 26;
+      current_statement__ = 32;
       wb = 0.02226;
       local_scalar_t__ wn = DUMMY_VAR__;
-      current_statement__ = 27;
+      current_statement__ = 33;
       wn = (0.0107 * 0.06);
-      current_statement__ = 28;
+      current_statement__ = 34;
       return ((55.154 *
                 stan::math::exp((-72.3 * stan::math::pow((wn + 0.0006), 2))))
                /
@@ -180,36 +186,36 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
     try {
       int pos__ = std::numeric_limits<int>::min();
       pos__ = 1;
-      current_statement__ = 14;
+      current_statement__ = 20;
       context__.validate_dims("data initialization","z","double",
            std::vector<size_t>{static_cast<size_t>(6)});
       z = std::vector<double>(6, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 14;
+      current_statement__ = 20;
       z = context__.vals_r("z");
-      current_statement__ = 15;
+      current_statement__ = 21;
       context__.validate_dims("data initialization","dv","double",
            std::vector<size_t>{static_cast<size_t>(6)});
       dv = std::vector<double>(6, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 15;
+      current_statement__ = 21;
       dv = context__.vals_r("dv");
-      current_statement__ = 16;
+      current_statement__ = 22;
       context__.validate_dims("data initialization","error","double",
            std::vector<size_t>{static_cast<size_t>(6)});
       error = 
         std::vector<double>(6, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 16;
+      current_statement__ = 22;
       error = context__.vals_r("error");
-      current_statement__ = 17;
+      current_statement__ = 23;
       x_r = std::vector<double>(0, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 18;
+      current_statement__ = 24;
       x_i = std::vector<int>(0, std::numeric_limits<int>::min());
       
       
@@ -256,34 +262,59 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
       rf = 150;
       local_scalar_t__ c = DUMMY_VAR__;
       current_statement__ = 6;
-      c = (2.9979 * stan::math::pow(10, 2));
-      current_statement__ = 9;
+      c = (2.9979 * stan::math::pow(10, 5));
+      std::vector<local_scalar_t__> D_A =
+         std::vector<local_scalar_t__>(6, DUMMY_VAR__);
+      std::vector<local_scalar_t__> H =
+         std::vector<local_scalar_t__>(6, DUMMY_VAR__);
+      std::vector<local_scalar_t__> Dv =
+         std::vector<local_scalar_t__>(6, DUMMY_VAR__);
+      current_statement__ = 15;
       for (int i = 1; i <= 6; ++i) {
-        current_statement__ = 7;
-        stan::model::assign(dv_theo,
-          ((rf / rs(theta, pstream__)) *
+        current_statement__ = 10;
+        stan::model::assign(D_A,
+          (stan::math::integrate_1d(integrand_functor__(), 0,
+             stan::model::rvalue(z, "z", stan::model::index_uni(i)), theta,
+             x_r, x_i, pstream__) /
+            (1 +
+              stan::math::pow(
+                stan::model::rvalue(z, "z", stan::model::index_uni(i)), 2))),
+          "assigning variable D_A", stan::model::index_uni(i));
+        current_statement__ = 11;
+        stan::model::assign(H,
+          (H0 *
             stan::math::pow(
-              ((stan::math::pow((c / H0), 3) *
-                 (1 /
-                   stan::math::pow(
-                     (((Om *
-                         stan::math::pow(
-                           (1 +
-                             stan::model::rvalue(z, "z",
-                               stan::model::index_uni(i))), 3)) + 1) - Om),
-                     (1 / 2)))) *
-                stan::math::pow(
-                  stan::math::integrate_1d(integrand_functor__(), 0,
-                    stan::model::rvalue(z, "z", stan::model::index_uni(i)),
-                    theta, x_r, x_i, pstream__), 2)), (1 / 3))),
+              (((Om *
+                  stan::math::pow(
+                    (1 +
+                      stan::model::rvalue(z, "z", stan::model::index_uni(i))),
+                    3)) + 1) - Om), (1 / 2))),
+          "assigning variable H", stan::model::index_uni(i));
+        current_statement__ = 12;
+        stan::model::assign(Dv,
+          stan::math::pow(
+            ((((stan::math::pow(
+                  (1 +
+                    stan::model::rvalue(z, "z", stan::model::index_uni(i))),
+                  2) *
+                 stan::math::pow(
+                   stan::model::rvalue(D_A, "D_A", stan::model::index_uni(i)),
+                   2)) * (2.9979 * stan::math::pow(10, 5))) *
+               stan::model::rvalue(z, "z", stan::model::index_uni(i))) /
+              stan::model::rvalue(H, "H", stan::model::index_uni(i))),
+            (1 / 3)), "assigning variable Dv", stan::model::index_uni(i));
+        current_statement__ = 13;
+        stan::model::assign(dv_theo,
+          ((150 / rs(theta, pstream__)) *
+            stan::model::rvalue(Dv, "Dv", stan::model::index_uni(i))),
           "assigning variable dv_theo", stan::model::index_uni(i));
       }
       {
-        current_statement__ = 10;
+        current_statement__ = 16;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(H0, 70, 5));
-        current_statement__ = 11;
+        current_statement__ = 17;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(Om, 0.3, 0.1));
-        current_statement__ = 12;
+        current_statement__ = 18;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(dv_theo, dv, error));
         ;
       }
@@ -331,6 +362,12 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
          std::vector<double>(6, std::numeric_limits<double>::quiet_NaN());
       double rf = std::numeric_limits<double>::quiet_NaN();
       double c = std::numeric_limits<double>::quiet_NaN();
+      std::vector<double> D_A =
+         std::vector<double>(6, std::numeric_limits<double>::quiet_NaN());
+      std::vector<double> H =
+         std::vector<double>(6, std::numeric_limits<double>::quiet_NaN());
+      std::vector<double> Dv =
+         std::vector<double>(6, std::numeric_limits<double>::quiet_NaN());
       out__.write(H0);
       out__.write(Om);
       if (stan::math::logical_negation((stan::math::primitive_value(
@@ -344,26 +381,45 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
       current_statement__ = 5;
       rf = 150;
       current_statement__ = 6;
-      c = (2.9979 * stan::math::pow(10, 2));
-      current_statement__ = 9;
+      c = (2.9979 * stan::math::pow(10, 5));
+      current_statement__ = 15;
       for (int i = 1; i <= 6; ++i) {
-        current_statement__ = 7;
-        stan::model::assign(dv_theo,
-          ((rf / rs(theta, pstream__)) *
+        current_statement__ = 10;
+        stan::model::assign(D_A,
+          (stan::math::integrate_1d(integrand_functor__(), 0,
+             stan::model::rvalue(z, "z", stan::model::index_uni(i)), theta,
+             x_r, x_i, pstream__) /
+            (1 +
+              stan::math::pow(
+                stan::model::rvalue(z, "z", stan::model::index_uni(i)), 2))),
+          "assigning variable D_A", stan::model::index_uni(i));
+        current_statement__ = 11;
+        stan::model::assign(H,
+          (H0 *
             stan::math::pow(
-              ((stan::math::pow((c / H0), 3) *
-                 (1 /
-                   stan::math::pow(
-                     (((Om *
-                         stan::math::pow(
-                           (1 +
-                             stan::model::rvalue(z, "z",
-                               stan::model::index_uni(i))), 3)) + 1) - Om),
-                     (1 / 2)))) *
-                stan::math::pow(
-                  stan::math::integrate_1d(integrand_functor__(), 0,
-                    stan::model::rvalue(z, "z", stan::model::index_uni(i)),
-                    theta, x_r, x_i, pstream__), 2)), (1 / 3))),
+              (((Om *
+                  stan::math::pow(
+                    (1 +
+                      stan::model::rvalue(z, "z", stan::model::index_uni(i))),
+                    3)) + 1) - Om), (1 / 2))),
+          "assigning variable H", stan::model::index_uni(i));
+        current_statement__ = 12;
+        stan::model::assign(Dv,
+          stan::math::pow(
+            ((((stan::math::pow(
+                  (1 +
+                    stan::model::rvalue(z, "z", stan::model::index_uni(i))),
+                  2) *
+                 stan::math::pow(
+                   stan::model::rvalue(D_A, "D_A", stan::model::index_uni(i)),
+                   2)) * (2.9979 * stan::math::pow(10, 5))) *
+               stan::model::rvalue(z, "z", stan::model::index_uni(i))) /
+              stan::model::rvalue(H, "H", stan::model::index_uni(i))),
+            (1 / 3)), "assigning variable Dv", stan::model::index_uni(i));
+        current_statement__ = 13;
+        stan::model::assign(dv_theo,
+          ((150 / rs(theta, pstream__)) *
+            stan::model::rvalue(Dv, "Dv", stan::model::index_uni(i))),
           "assigning variable dv_theo", stan::model::index_uni(i));
       }
       if (emit_transformed_parameters__) {
@@ -371,6 +427,9 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
         out__.write(dv_theo);
         out__.write(rf);
         out__.write(c);
+        out__.write(D_A);
+        out__.write(H);
+        out__.write(Dv);
       } 
       if (stan::math::logical_negation(emit_generated_quantities__)) {
         return ;
@@ -409,7 +468,7 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
   inline void get_param_names(std::vector<std::string>& names__) const {
     
     names__ = std::vector<std::string>{"H0", "Om", "theta", "dv_theo", "rf",
-      "c"};
+      "c", "D_A", "H", "Dv"};
     
     } // get_param_names() 
     
@@ -418,7 +477,9 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
     dimss__ = std::vector<std::vector<size_t>>{std::vector<size_t>{},
       std::vector<size_t>{}, std::vector<size_t>{static_cast<size_t>(2)},
       std::vector<size_t>{static_cast<size_t>(6)}, std::vector<size_t>{
-      }, std::vector<size_t>{}};
+      }, std::vector<size_t>{}, std::vector<size_t>{static_cast<size_t>(6)},
+      std::vector<size_t>{static_cast<size_t>(6)},
+      std::vector<size_t>{static_cast<size_t>(6)}};
     
     } // get_dims() 
     
@@ -443,6 +504,21 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
       }
       param_names__.emplace_back(std::string() + "rf");
       param_names__.emplace_back(std::string() + "c");
+      for (int sym1__ = 1; sym1__ <= 6; ++sym1__) {
+        {
+          param_names__.emplace_back(std::string() + "D_A" + '.' + std::to_string(sym1__));
+        } 
+      }
+      for (int sym1__ = 1; sym1__ <= 6; ++sym1__) {
+        {
+          param_names__.emplace_back(std::string() + "H" + '.' + std::to_string(sym1__));
+        } 
+      }
+      for (int sym1__ = 1; sym1__ <= 6; ++sym1__) {
+        {
+          param_names__.emplace_back(std::string() + "Dv" + '.' + std::to_string(sym1__));
+        } 
+      }
     }
     
     if (emit_generated_quantities__) {
@@ -472,6 +548,21 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
       }
       param_names__.emplace_back(std::string() + "rf");
       param_names__.emplace_back(std::string() + "c");
+      for (int sym1__ = 1; sym1__ <= 6; ++sym1__) {
+        {
+          param_names__.emplace_back(std::string() + "D_A" + '.' + std::to_string(sym1__));
+        } 
+      }
+      for (int sym1__ = 1; sym1__ <= 6; ++sym1__) {
+        {
+          param_names__.emplace_back(std::string() + "H" + '.' + std::to_string(sym1__));
+        } 
+      }
+      for (int sym1__ = 1; sym1__ <= 6; ++sym1__) {
+        {
+          param_names__.emplace_back(std::string() + "Dv" + '.' + std::to_string(sym1__));
+        } 
+      }
     }
     
     if (emit_generated_quantities__) {
@@ -482,13 +573,13 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
     
   inline std::string get_constrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"H0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"Om\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"theta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(2) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"dv_theo\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(6) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"rf\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"c\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"}]");
+    return std::string("[{\"name\":\"H0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"Om\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"theta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(2) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"dv_theo\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(6) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"rf\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"c\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"D_A\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(6) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"H\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(6) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"Dv\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(6) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"}]");
     
     } // get_constrained_sizedtypes() 
     
   inline std::string get_unconstrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"H0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"Om\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"theta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(2) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"dv_theo\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(6) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"rf\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"c\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"}]");
+    return std::string("[{\"name\":\"H0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"Om\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"theta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(2) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"dv_theo\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(6) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"rf\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"c\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"D_A\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(6) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"H\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(6) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"Dv\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(6) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"}]");
     
     } // get_unconstrained_sizedtypes() 
     
@@ -504,7 +595,7 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
       const size_t num_params__ = 
   (1 + 1);
       const size_t num_transformed = emit_transformed_parameters * 
-  (((2 + 6) + 1) + 1);
+  ((((((2 + 6) + 1) + 1) + 6) + 6) + 6);
       const size_t num_gen_quantities = emit_generated_quantities * 0;
       const size_t num_to_write = num_params__ + num_transformed +
         num_gen_quantities;
@@ -525,7 +616,7 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
       const size_t num_params__ = 
   (1 + 1);
       const size_t num_transformed = emit_transformed_parameters * 
-  (((2 + 6) + 1) + 1);
+  ((((((2 + 6) + 1) + 1) + 6) + 6) + 6);
       const size_t num_gen_quantities = emit_generated_quantities * 0;
       const size_t num_to_write = num_params__ + num_transformed +
         num_gen_quantities;
