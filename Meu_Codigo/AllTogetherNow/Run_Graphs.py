@@ -101,18 +101,18 @@ g.triangle_plot(mcsamples1, filled=True)
 
 # show corner plot
 samples2 = [fit2.stan_variable("H0"), fit2.stan_variable("Om")]
-mcsamples2 = MCSamples(samples=samples2, names=["H0", "Om"], labels=["H0", "Om"])
+mcsamples2 = MCSamples(samples=samples2, names=["\\H_0", "\\Omega_m"], labels=["\\H_0", "\\Omega_m"])
 g = plots.get_subplot_plotter()
 g.triangle_plot([mcsamples1 ,mcsamples2], filled=True)
 
 
 
-# show corner plot
-samples3 = [ fit3.stan_variable("Om")]
-mcsamples = MCSamples(samples=samples3, names=["Om"], labels=["Om"])
-g = plots.get_subplot_plotter()
-g.triangle_plot(mcsamples, filled=True)
-plt.show()
+# # show corner plot
+# samples3 = [ fit3.stan_variable("Om")]
+# mcsamples = MCSamples(samples=samples3, names=["Om"], labels=["Om"])
+# g = plots.get_subplot_plotter()
+# g.triangle_plot(mcsamples, filled=True)
+# plt.show()
 
 # samples1, samples2 = gaussian_mixtures.randomTestMCSamples(ndim=2, nMCSamples=2)
 # g = plots.get_single_plotter(width_inch=4)
