@@ -50,7 +50,7 @@ transformed parameters {
 
     real rf = 150; //defining one of the constants 
 
-    real c = 2.9979 * 10^5;
+    real c = 2.9979 * 10^2;
 
     // real rs;
 
@@ -76,7 +76,7 @@ transformed parameters {
 // will be evaluated on each step
 model {
   // priors
-  H0 ~ normal(70, 10);
+  H0 ~ normal(70, 5);
   Om ~ normal(0.3, 0.1);
 
   // likelihood

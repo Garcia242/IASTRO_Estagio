@@ -19,7 +19,7 @@ static constexpr std::array<const char*, 30> locations_array__ =
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 64, column 4 to column 142)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 62, column 17 to line 66, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 62, column 2 to line 66, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 79, column 2 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 79, column 2 to column 21)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 80, column 2 to column 24)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 83, column 2 to column 30)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 87, column 1 to column 2)",
@@ -256,7 +256,7 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
       rf = 150;
       local_scalar_t__ c = DUMMY_VAR__;
       current_statement__ = 6;
-      c = (2.9979 * stan::math::pow(10, 5));
+      c = (2.9979 * stan::math::pow(10, 2));
       current_statement__ = 9;
       for (int i = 1; i <= 6; ++i) {
         current_statement__ = 7;
@@ -280,7 +280,7 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
       }
       {
         current_statement__ = 10;
-        lp_accum__.add(stan::math::normal_lpdf<propto__>(H0, 70, 10));
+        lp_accum__.add(stan::math::normal_lpdf<propto__>(H0, 70, 5));
         current_statement__ = 11;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(Om, 0.3, 0.1));
         current_statement__ = 12;
@@ -344,7 +344,7 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
       current_statement__ = 5;
       rf = 150;
       current_statement__ = 6;
-      c = (2.9979 * stan::math::pow(10, 5));
+      c = (2.9979 * stan::math::pow(10, 2));
       current_statement__ = 9;
       for (int i = 1; i <= 6; ++i) {
         current_statement__ = 7;
