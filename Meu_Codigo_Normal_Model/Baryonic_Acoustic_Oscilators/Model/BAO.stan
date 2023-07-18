@@ -69,7 +69,7 @@ transformed parameters {
 
 //   for (i in 1:6){
 
-
+//     D_A[i] = integrate_1d(integrand, 0, z[i], theta, x_r, x_i) / (1+z[i]^2);
 //     H[i] = H0*(Om*(1+z[i])^3 + 1 - Om)^(0.5);
 //     Dv[i] = (((1+z[i])^2 * D_A[i]^2 * (2.9979*10^5)* z[i]/H[i]))^(1.0/3);
 //     dv_theo[i] = rf/rs(theta) * Dv[i];
