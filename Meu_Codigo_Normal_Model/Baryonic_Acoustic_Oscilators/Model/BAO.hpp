@@ -8,17 +8,16 @@ using namespace stan::math;
 
 
 stan::math::profile_map profiles__;
-static constexpr std::array<const char*, 32> locations_array__ = 
+static constexpr std::array<const char*, 31> locations_array__ = 
 {" (found before start of program)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 39, column 2 to column 10)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 40, column 2 to column 10)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 39, column 2 to column 21)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 40, column 2 to column 21)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 47, column 4 to column 35)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 49, column 4 to column 26)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 51, column 4 to column 19)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 53, column 4 to column 27)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 61, column 4 to column 21)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 153)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 67, column 4 to column 76)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 62, column 17 to line 68, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 62, column 2 to line 68, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 94, column 2 to column 22)",
@@ -77,12 +76,12 @@ template <typename T0__, typename T1__, typename T2__, typename T3__,
     (void) DUMMY_VAR__;  // suppress unused var warning
     try {
       local_scalar_t__ H0 = DUMMY_VAR__;
-      current_statement__ = 21;
+      current_statement__ = 20;
       H0 = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
       local_scalar_t__ Om = DUMMY_VAR__;
-      current_statement__ = 22;
+      current_statement__ = 21;
       Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(2));
-      current_statement__ = 23;
+      current_statement__ = 22;
       return (1 /
                stan::math::pow(
                  (((Om * stan::math::pow((1 + x), 3)) + 1) - Om), 0.5));
@@ -102,21 +101,21 @@ template <typename T0__,
     (void) DUMMY_VAR__;  // suppress unused var warning
     try {
       local_scalar_t__ H0 = DUMMY_VAR__;
-      current_statement__ = 25;
+      current_statement__ = 24;
       H0 = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
       local_scalar_t__ Om = DUMMY_VAR__;
-      current_statement__ = 26;
+      current_statement__ = 25;
       Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(2));
       local_scalar_t__ wm = DUMMY_VAR__;
-      current_statement__ = 27;
+      current_statement__ = 26;
       wm = (Om * stan::math::pow((H0 / 100), 2));
       local_scalar_t__ wb = DUMMY_VAR__;
-      current_statement__ = 28;
+      current_statement__ = 27;
       wb = 0.02226;
       local_scalar_t__ wn = DUMMY_VAR__;
-      current_statement__ = 29;
+      current_statement__ = 28;
       wn = (0.0107 * 0.06);
-      current_statement__ = 30;
+      current_statement__ = 29;
       return ((55.154 *
                 stan::math::exp((-72.3 * stan::math::pow((wn + 0.0006), 2))))
                /
@@ -182,36 +181,36 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
     try {
       int pos__ = std::numeric_limits<int>::min();
       pos__ = 1;
-      current_statement__ = 16;
+      current_statement__ = 15;
       context__.validate_dims("data initialization","z","double",
            std::vector<size_t>{static_cast<size_t>(6)});
       z = std::vector<double>(6, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 16;
+      current_statement__ = 15;
       z = context__.vals_r("z");
-      current_statement__ = 17;
+      current_statement__ = 16;
       context__.validate_dims("data initialization","dv","double",
            std::vector<size_t>{static_cast<size_t>(6)});
       dv = std::vector<double>(6, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 17;
+      current_statement__ = 16;
       dv = context__.vals_r("dv");
-      current_statement__ = 18;
+      current_statement__ = 17;
       context__.validate_dims("data initialization","error","double",
            std::vector<size_t>{static_cast<size_t>(6)});
       error = 
         std::vector<double>(6, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 18;
+      current_statement__ = 17;
       error = context__.vals_r("error");
-      current_statement__ = 19;
+      current_statement__ = 18;
       x_r = std::vector<double>(0, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 20;
+      current_statement__ = 19;
       x_i = std::vector<int>(0, std::numeric_limits<int>::min());
       
       
@@ -242,10 +241,12 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
     try {
       local_scalar_t__ H0 = DUMMY_VAR__;
       current_statement__ = 1;
-      H0 = in__.template read<local_scalar_t__>();
+      H0 = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(
+             -5, lp__);
       local_scalar_t__ Om = DUMMY_VAR__;
       current_statement__ = 2;
-      Om = in__.template read<local_scalar_t__>();
+      Om = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(
+             -5, lp__);
       std::vector<local_scalar_t__> theta =
          std::vector<local_scalar_t__>(2, DUMMY_VAR__);
       current_statement__ = 3;
@@ -261,42 +262,34 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
       c = (2.9979 * stan::math::pow(10, 5));
       std::vector<local_scalar_t__> dL =
          std::vector<local_scalar_t__>(6, DUMMY_VAR__);
-      current_statement__ = 11;
+      current_statement__ = 10;
       for (int i = 1; i <= 6; ++i) {
         current_statement__ = 8;
         stan::model::assign(dv_theo,
           ((rf / rs(theta, pstream__)) *
             stan::math::pow(
               (((stan::model::rvalue(z, "z", stan::model::index_uni(i)) *
-                  stan::math::pow((c / H0), 3)) *
+                  stan::math::pow((c / H0), 3.0)) *
                  (1.0 /
                    stan::math::pow(
                      (((Om *
                          stan::math::pow(
                            (1 +
                              stan::model::rvalue(z, "z",
-                               stan::model::index_uni(i))), 3)) + 1) - Om),
-                     (1.0 / 2)))) *
+                               stan::model::index_uni(i))), 3.0)) + 1) - Om),
+                     (1.0 / 2.0)))) *
                 stan::math::pow(
                   stan::math::integrate_1d(integrand_functor__(), 0,
                     stan::model::rvalue(z, "z", stan::model::index_uni(i)),
-                    theta, x_r, x_i, pstream__), 2)), (1.0 / 3))),
+                    theta, x_r, x_i, pstream__), 2)), (1.0 / 3.0))),
           "assigning variable dv_theo", stan::model::index_uni(i));
-        current_statement__ = 9;
-        stan::model::assign(dL,
-          ((1 + stan::model::rvalue(z, "z", stan::model::index_uni(i))) *
-            stan::math::pow(
-              stan::math::integrate_1d(integrand_functor__(), 0,
-                stan::model::rvalue(z, "z", stan::model::index_uni(i)),
-                theta, x_r, x_i, pstream__), 2)),
-          "assigning variable dL", stan::model::index_uni(i));
       }
       {
-        current_statement__ = 12;
+        current_statement__ = 11;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(H0, 70, 10));
-        current_statement__ = 13;
+        current_statement__ = 12;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(Om, 0.3, 0.1));
-        current_statement__ = 14;
+        current_statement__ = 13;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(dv_theo, dv, error));
         ;
       }
@@ -334,10 +327,12 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
     try {
       double H0 = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 1;
-      H0 = in__.template read<local_scalar_t__>();
+      H0 = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(
+             -5, lp__);
       double Om = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 2;
-      Om = in__.template read<local_scalar_t__>();
+      Om = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(
+             -5, lp__);
       std::vector<double> theta =
          std::vector<double>(2, std::numeric_limits<double>::quiet_NaN());
       std::vector<double> dv_theo =
@@ -360,35 +355,27 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
       rf = 150;
       current_statement__ = 6;
       c = (2.9979 * stan::math::pow(10, 5));
-      current_statement__ = 11;
+      current_statement__ = 10;
       for (int i = 1; i <= 6; ++i) {
         current_statement__ = 8;
         stan::model::assign(dv_theo,
           ((rf / rs(theta, pstream__)) *
             stan::math::pow(
               (((stan::model::rvalue(z, "z", stan::model::index_uni(i)) *
-                  stan::math::pow((c / H0), 3)) *
+                  stan::math::pow((c / H0), 3.0)) *
                  (1.0 /
                    stan::math::pow(
                      (((Om *
                          stan::math::pow(
                            (1 +
                              stan::model::rvalue(z, "z",
-                               stan::model::index_uni(i))), 3)) + 1) - Om),
-                     (1.0 / 2)))) *
+                               stan::model::index_uni(i))), 3.0)) + 1) - Om),
+                     (1.0 / 2.0)))) *
                 stan::math::pow(
                   stan::math::integrate_1d(integrand_functor__(), 0,
                     stan::model::rvalue(z, "z", stan::model::index_uni(i)),
-                    theta, x_r, x_i, pstream__), 2)), (1.0 / 3))),
+                    theta, x_r, x_i, pstream__), 2)), (1.0 / 3.0))),
           "assigning variable dv_theo", stan::model::index_uni(i));
-        current_statement__ = 9;
-        stan::model::assign(dL,
-          ((1 + stan::model::rvalue(z, "z", stan::model::index_uni(i))) *
-            stan::math::pow(
-              stan::math::integrate_1d(integrand_functor__(), 0,
-                stan::model::rvalue(z, "z", stan::model::index_uni(i)),
-                theta, x_r, x_i, pstream__), 2)),
-          "assigning variable dL", stan::model::index_uni(i));
       }
       if (emit_transformed_parameters__) {
         out__.write(theta);
@@ -422,10 +409,10 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
       pos__ = 1;
       local_scalar_t__ H0 = DUMMY_VAR__;
       H0 = in__.read<local_scalar_t__>();
-      out__.write(H0);
+      out__.write_free_lb(-5, H0);
       local_scalar_t__ Om = DUMMY_VAR__;
       Om = in__.read<local_scalar_t__>();
-      out__.write(Om);
+      out__.write_free_lb(-5, Om);
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }

@@ -36,8 +36,8 @@ transformed data {
 }
 
 parameters {
-  real H0;
-  real Om;
+  real <lower=-5> H0;
+  real <lower=-5> Om;
 
 }
 
@@ -63,7 +63,7 @@ transformed parameters {
     
 
     // D_A[i] = integrate_1d(integrand, 0, z[i], theta, x_r, x_i) / (1+z[i]^2);
-    dv_theo[i] = (rf/rs(theta))*(z[i]*(c/H0)^3 * (1.0/(Om*(1+z[i])^3 + 1 - Om)^(1.0/2)) * (integrate_1d(integrand, 0, z[i], theta, x_r, x_i))^2)^(1.0/3);
+    dv_theo[i] = (rf/rs(theta))*(z[i]*(c/H0)^3.0 * (1.0/(Om*(1+z[i])^3.0 + 1 - Om)^(1.0/2.0)) * (integrate_1d(integrand, 0, z[i], theta, x_r, x_i))^2)^(1.0/3.0);
   
   }
 
