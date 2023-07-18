@@ -48,7 +48,7 @@ transformed parameters {
 
     array[6] real dv_theo;
 
-    real rf = 150; //defining one of the constants 
+    real rf = 150 ; //defining one of the constants 
 
     real c = 2.9979 * 10^5;
 
@@ -62,22 +62,33 @@ transformed parameters {
     array[6] real D_A;
     array[6] real H;
     array[6] real Dv;
+    array[6] real ztest;
     
   for (i in 1:6) {
     
 
-    D_A[i] = integrate_1d(integrand, 0, z[i], theta, x_r, x_i) / (1+z[i]^2);
-    H[i] = H0*(Om*(1+z[i])^3 + 1 - Om)^(1/2);
-    Dv[i] = (((1+z[i])^2 * D_A[i]^2 * (2.9979*10^5)* z[i]/H[i]))^(1/3);
-    dv_theo[i] = 150/rs(theta) * Dv[i];
-    //dv_theo[i] = (rf/rs(theta))*((c/H0)^3 * (1/(Om*(1+z[i])^3 + 1 - Om)^(1/2)) * (integrate_1d(integrand, 0, z[i], theta, x_r, x_i))^2)^(1/3);
+    // D_A[i] = integrate_1d(integrand, 0, z[i], theta, x_r, x_i) / (1+z[i]^2);
+    dv_theo[i] = (rf/rs(theta))*(z[i]*(c/H0)^3 * (1.0/(Om*(1+z[i])^3 + 1 - Om)^(1.0/2)) * (integrate_1d(integrand, 0, z[i], theta, x_r, x_i))^2)^(1.0/3);
     
   }
 
+//   for (i in 1:6){
+
+
+//     H[i] = H0*(Om*(1+z[i])^3 + 1 - Om)^(0.5);
+//     Dv[i] = (((1+z[i])^2 * D_A[i]^2 * (2.9979*10^5)* z[i]/H[i]))^(1.0/3);
+//     dv_theo[i] = rf/rs(theta) * Dv[i];
+//     ztest[i] = z[i];
+//   }
+
 //need to deal with the likelihood function
 // stan uses log likelihoods as a basis for its calculations and we now thats -1/2 of chi^2
+    // real chi ;
 
- 
+    // for (i in 1:6){
+    //     chi +=(((dv_theo[i] - dv[i])^2)/error[i]^2);
+
+    // }
   
 }
 
@@ -90,6 +101,8 @@ model {
 
   // likelihood
   dv_theo ~ normal(dv, error);
+
+  //target += -chi;
 
   //changin the pre planned likelihood function and adding the chi^2 just calculated
 
