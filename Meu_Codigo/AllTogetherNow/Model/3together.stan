@@ -82,7 +82,7 @@ transformed parameters {
 
     real rf = 150; //defining one of the constants 
 
-    real c = 2.9979 * 10^2;
+    real c = 2.9979 * 10^5;
 
     // real rs;
 
@@ -93,7 +93,7 @@ transformed parameters {
     
   for (i in 1:6) {
     
-    dv_theo[i] = (rf/rs(theta))*((c/H0)^3 * (1/(Om*(1+Baoz[i])^3 + 1 - Om)^(1/2)) * (integrate_1d(integrand, 0, Baoz[i], theta, x_r, x_i))^2)^(1/3);
+    dv_theo[i] = (rf/rs(theta))*((c/H0)^3 * Baoz[i] * (1.0/(Om*(1+Baoz[i])^3 + 1 - Om)^(1.0/2)) * (integrate_1d(integrand, 0, Baoz[i], theta, x_r, x_i))^2)^(1.0/3);
     
   }
 }

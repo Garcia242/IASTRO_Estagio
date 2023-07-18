@@ -58,18 +58,13 @@ transformed parameters {
     // real wb = 0.02226;      // baryonic density
     // real wn = 0.0107*0.06;  // neutrinos sum m = 0.06 eV
     // rs = 55.154 * exp(-72.3*(wn+0.0006)^2) / (wm^0.25351*wb^0.12807);
-
-    array[6] real D_A;
-    array[6] real H;
-    array[6] real Dv;
-    array[6] real ztest;
-    
+    array[6] real dL;
   for (i in 1:6) {
     
 
     // D_A[i] = integrate_1d(integrand, 0, z[i], theta, x_r, x_i) / (1+z[i]^2);
     dv_theo[i] = (rf/rs(theta))*(z[i]*(c/H0)^3 * (1.0/(Om*(1+z[i])^3 + 1 - Om)^(1.0/2)) * (integrate_1d(integrand, 0, z[i], theta, x_r, x_i))^2)^(1.0/3);
-    
+  
   }
 
 //   for (i in 1:6){
@@ -96,7 +91,7 @@ transformed parameters {
 // will be evaluated on each step
 model {
   // priors
-  H0 ~ normal(70, 5);
+  H0 ~ normal(70, 10);
   Om ~ normal(0.3, 0.1);
 
   // likelihood

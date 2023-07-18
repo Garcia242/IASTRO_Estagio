@@ -27,7 +27,7 @@ static constexpr std::array<const char*, 51> locations_array__ =
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 78, column 4 to column 40)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 74, column 18 to line 79, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 74, column 2 to line 79, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 96, column 4 to column 148)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 96, column 4 to column 164)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 94, column 17 to line 98, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 94, column 2 to line 98, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 105, column 2 to column 22)",
@@ -383,27 +383,29 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
       rf = 150;
       local_scalar_t__ c = DUMMY_VAR__;
       current_statement__ = 10;
-      c = (2.9979 * stan::math::pow(10, 2));
+      c = (2.9979 * stan::math::pow(10, 5));
       current_statement__ = 20;
       for (int i = 1; i <= 6; ++i) {
         current_statement__ = 18;
         stan::model::assign(dv_theo,
           ((rf / rs(theta, pstream__)) *
             stan::math::pow(
-              ((stan::math::pow((c / H0), 3) *
-                 (1 /
+              (((stan::math::pow((c / H0), 3) *
+                  stan::model::rvalue(Baoz, "Baoz",
+                    stan::model::index_uni(i))) *
+                 (1.0 /
                    stan::math::pow(
                      (((Om *
                          stan::math::pow(
                            (1 +
                              stan::model::rvalue(Baoz, "Baoz",
                                stan::model::index_uni(i))), 3)) + 1) - Om),
-                     (1 / 2)))) *
+                     (1.0 / 2)))) *
                 stan::math::pow(
                   stan::math::integrate_1d(integrand_functor__(), 0,
                     stan::model::rvalue(Baoz, "Baoz",
                       stan::model::index_uni(i)), theta, x_r, x_i, pstream__),
-                  2)), (1 / 3))),
+                  2)), (1.0 / 3))),
           "assigning variable dv_theo", stan::model::index_uni(i));
       }
       {
@@ -520,27 +522,29 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
       current_statement__ = 9;
       rf = 150;
       current_statement__ = 10;
-      c = (2.9979 * stan::math::pow(10, 2));
+      c = (2.9979 * stan::math::pow(10, 5));
       current_statement__ = 20;
       for (int i = 1; i <= 6; ++i) {
         current_statement__ = 18;
         stan::model::assign(dv_theo,
           ((rf / rs(theta, pstream__)) *
             stan::math::pow(
-              ((stan::math::pow((c / H0), 3) *
-                 (1 /
+              (((stan::math::pow((c / H0), 3) *
+                  stan::model::rvalue(Baoz, "Baoz",
+                    stan::model::index_uni(i))) *
+                 (1.0 /
                    stan::math::pow(
                      (((Om *
                          stan::math::pow(
                            (1 +
                              stan::model::rvalue(Baoz, "Baoz",
                                stan::model::index_uni(i))), 3)) + 1) - Om),
-                     (1 / 2)))) *
+                     (1.0 / 2)))) *
                 stan::math::pow(
                   stan::math::integrate_1d(integrand_functor__(), 0,
                     stan::model::rvalue(Baoz, "Baoz",
                       stan::model::index_uni(i)), theta, x_r, x_i, pstream__),
-                  2)), (1 / 3))),
+                  2)), (1.0 / 3))),
           "assigning variable dv_theo", stan::model::index_uni(i));
       }
       if (emit_transformed_parameters__) {
