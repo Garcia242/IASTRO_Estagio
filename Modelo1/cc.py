@@ -7,16 +7,16 @@ import arviz as az
 
 # create a model instance
 model = CmdStanModel(
-    stan_file="Modelo1/Model/total.stan",                         # Stan model file location
+    stan_file="Modelo1/Model/cc.stan",                         # Stan model file location
     cpp_options={
-        "STAN_NO_RANGE_CHECKS": "TRUE",  # don't check for elements out of bounds
+        #"STAN_NO_RANGE_CHECKS": "TRUE",  # don't check for elements out of bounds
         "STAN_THREADS": "TRUE",          # run multiple chains in parallel
         "STAN_CPP_OPTIMS": "TRUE"        # optimizations recommended by the Stan development team
     }
 )
 # configure and fit the model
 fit = model.sample(
-    data="Modelo1/Data/3together.json",                                # the location of the data file
+    data="Modelo1/Data/cc.json",                                # the location of the data file
     iter_sampling=500,                                                 # the number of sampling steps
     iter_warmup=500,                                                   # the number of warmup steps
     save_warmup=False,                                                 # we don't care about the warmup
