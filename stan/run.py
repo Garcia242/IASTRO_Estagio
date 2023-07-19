@@ -14,7 +14,7 @@ model = CmdStanModel(
 # configure and fit the model
 fit = model.sample(
     data="Desktop/stan/data/dL.json",                                # the location of the data file
-    iter_sampling=1000000,                                                 # the number of sampling steps
+    iter_sampling=1000,                                                 # the number of sampling steps
     iter_warmup=500,                                                   # the number of warmup steps
     save_warmup=False,                                                 # we don't care about the warmup
     inits={"m": normal(loc=2, scale=1), "b": normal(loc=1, scale=1)},  # initial values for each parameter
