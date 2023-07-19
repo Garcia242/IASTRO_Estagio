@@ -43,7 +43,7 @@ transformed data {
 
 parameters {
   real H0;
-  real Om;
+  real <lower = 0> Om;
   real M;
 
 }

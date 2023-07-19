@@ -7,13 +7,13 @@ import arviz as az
 
 # create a model instance
 model = CmdStanModel(
-    stan_file="Meu_Codigo/AllTogetherNow/Model/3together.stan",                         # Stan model file location
+    stan_file="Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan",                         # Stan model file location
     cpp_options={'STAN_THREADS': 'TRUE', 'STAN_CPP_OPTIMS': 'TRUE'}   # a few optimizations, feel free to ignore this
 )
 
 # configure and fit the model
 fit = model.sample(
-    data="Meu_Codigo/AllTogetherNow/Data/3together.json",                                # the location of the data file
+    data="Meu_Codigo_Normal_Model/AllTogetherNow/Data/3together.json",                                # the location of the data file
     iter_sampling=500,                                                 # the number of sampling steps
     iter_warmup=500,                                                   # the number of warmup steps
     save_warmup=False,                                                 # we don't care about the warmup

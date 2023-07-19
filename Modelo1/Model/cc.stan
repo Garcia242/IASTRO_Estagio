@@ -79,9 +79,9 @@ transformed parameters {
 model {
   // priors
   //M ~ normal(10, 10);
-  Om ~ normal(0.3, 0.1);
+  Om ~ normal(0.3, 0.5);
   H0 ~ normal (70,10);
-  zeta ~ normal (10,50);
+  zeta ~ normal (0,10);
 
   // likelihood
   //mbtheo ~ normal(mb, dmb);

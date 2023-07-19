@@ -3,9 +3,11 @@ functions {
   real integrand(real x, real xc, array[] real theta, array[] real x_r, array[] int x_i) {
     //real M = theta[1];
     real Om = theta[1];
+    real H0 = theta[2];
+    real zeta = theta[3];
 
 
-    return 1/(Om*(1+x)^3 + 1 - Om)^0.5;
+    return 1/(1 + Om*(((1+x)^3)-1) + 2 * zeta * Om * ((((1+x)^3)- 1)^0.5) + ((4.158*10^-5)/H0^2)*(1 + x)^4 - ((4.158*10^-5)/H0^2) )^0.5;
   }
 
 
@@ -28,13 +30,15 @@ transformed data {
 parameters {
   //real<lower=0> M;
   real<lower=0> Om;
+  real <lower=0> H0;
+  real zeta;
 
 }
 
 // allows new variables to be defined in terms of data and/or parameters, this is where you should compute your model's predictions
 // will be evaluated on each step
 transformed parameters {
-  //   array[2] real theta = {M, Om};
+  array[3] real theta = {Om, H0, zeta};
 
   //   array[40] real dL;
 
@@ -59,7 +63,7 @@ transformed parameters {
 
   for (i in 1:40) {
 
-    Delta[i] = mb[i] - 5.0*log10((1.0+zcmb[i]) * integrate_1d(integrand, 0, zcmb[i], {Om}, x_r, x_i));
+    Delta[i] = mb[i] - 5.0*log10((1.0+zcmb[i]) * integrate_1d(integrand, 0, zcmb[i], theta, x_r, x_i));
     A += (Delta[i]/dmb[i])^2;
     B += Delta[i]/dmb[i]^2;
     C += dmb[i]^(-2);
@@ -73,7 +77,9 @@ transformed parameters {
 model {
   // priors
   //M ~ normal(10, 10);
-  Om ~ normal(0.3, 0.1);
+  Om ~ normal(0.3, 0.5);
+  H0 ~ normal(70, 10);
+  zeta ~ normal(0, 10);
 
   // likelihood
   //mbtheo ~ normal(mb, dmb);
@@ -81,3 +87,5 @@ model {
   //changin the pre planned likelihood function and adding the chi^2 just calculated
 
  target += -A + B^2/C;
+
+}
