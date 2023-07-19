@@ -29,17 +29,17 @@ static constexpr std::array<const char*, 55> locations_array__ =
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 67, column 18 to line 74, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 67, column 2 to line 74, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 84, column 4 to column 150)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 82, column 18 to line 85, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 82, column 2 to line 85, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 102, column 4 to column 272)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 100, column 17 to line 104, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 100, column 2 to line 104, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 117, column 2 to column 24)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 118, column 2 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 82, column 17 to line 85, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 82, column 1 to line 85, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 104, column 4 to column 269)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 100, column 18 to line 106, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 100, column 3 to line 106, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 119, column 2 to column 24)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 126, column 1 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 127, column 1 to column 28)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 128, column 1 to column 32)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 120, column 2 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 121, column 2 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 128, column 1 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 129, column 1 to column 28)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 130, column 1 to column 32)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 29, column 2 to column 22)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 30, column 2 to column 20)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 31, column 2 to column 21)",
@@ -438,10 +438,9 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
         stan::model::assign(dv_theo,
           ((rf / rs(theta, pstream__)) *
             stan::math::pow(
-              (((stan::math::pow((c / H0), 3) *
-                  stan::model::rvalue(Baoz, "Baoz",
-                    stan::model::index_uni(i))) *
-                 (1.0 /
+              (((stan::model::rvalue(Baoz, "Baoz", stan::model::index_uni(i))
+                  * stan::math::pow((c / H0), 3.0)) *
+                 (1 /
                    stan::math::pow(
                      ((((1 +
                           (Om *
@@ -463,12 +462,12 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
                               stan::model::rvalue(Baoz, "Baoz",
                                 stan::model::index_uni(i))), 4))) -
                        ((4.158 * stan::math::pow(10, -5)) /
-                         stan::math::pow(H0, 2))), (1.0 / 2)))) *
+                         stan::math::pow(H0, 2))), 0.5))) *
                 stan::math::pow(
                   stan::math::integrate_1d(integrand_functor__(), 0,
                     stan::model::rvalue(Baoz, "Baoz",
                       stan::model::index_uni(i)), theta, x_r, x_i, pstream__),
-                  2)), (1.0 / 3))),
+                  2)), (1.0 / 3.0))),
           "assigning variable dv_theo", stan::model::index_uni(i));
       }
       {
@@ -477,7 +476,7 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
         current_statement__ = 26;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(H0, 70, 10));
         current_statement__ = 27;
-        lp_accum__.add(stan::math::normal_lpdf<propto__>(zeta, 10, 50));
+        lp_accum__.add(stan::math::normal_lpdf<propto__>(zeta, 0, 10));
         current_statement__ = 28;
         lp_accum__.add((-A + (stan::math::pow(B, 2) / C)));
         current_statement__ = 29;
@@ -628,10 +627,9 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
         stan::model::assign(dv_theo,
           ((rf / rs(theta, pstream__)) *
             stan::math::pow(
-              (((stan::math::pow((c / H0), 3) *
-                  stan::model::rvalue(Baoz, "Baoz",
-                    stan::model::index_uni(i))) *
-                 (1.0 /
+              (((stan::model::rvalue(Baoz, "Baoz", stan::model::index_uni(i))
+                  * stan::math::pow((c / H0), 3.0)) *
+                 (1 /
                    stan::math::pow(
                      ((((1 +
                           (Om *
@@ -653,12 +651,12 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
                               stan::model::rvalue(Baoz, "Baoz",
                                 stan::model::index_uni(i))), 4))) -
                        ((4.158 * stan::math::pow(10, -5)) /
-                         stan::math::pow(H0, 2))), (1.0 / 2)))) *
+                         stan::math::pow(H0, 2))), 0.5))) *
                 stan::math::pow(
                   stan::math::integrate_1d(integrand_functor__(), 0,
                     stan::model::rvalue(Baoz, "Baoz",
                       stan::model::index_uni(i)), theta, x_r, x_i, pstream__),
-                  2)), (1.0 / 3))),
+                  2)), (1.0 / 3.0))),
           "assigning variable dv_theo", stan::model::index_uni(i));
       }
       if (emit_transformed_parameters__) {

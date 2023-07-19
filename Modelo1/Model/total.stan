@@ -79,7 +79,7 @@ transformed parameters {
   array[32] real H_theo;
 
     
-  for (i in 1:32) {
+ for (i in 1:32) {
     // Creating the theoretical values 
     H_theo[i] = H0*(1 + Om*(((1+z[i])^3)-1) + 2 * zeta * Om * ((((1+z[i])^3)- 1)^0.5) + ((4.158*10^-5)/H0^2)*(1 + z[i])^4 - ((4.158*10^-5)/H0^2))^0.5;
   }
@@ -97,10 +97,12 @@ transformed parameters {
     // real wn = 0.0107*0.06;  // neutrinos sum m = 0.06 eV
     // rs = 55.154 * exp(-72.3*(wn+0.0006)^2) / (wm^0.25351*wb^0.12807);
     
-  for (i in 1:6) {
+   for (i in 1:6) {
     
-    dv_theo[i] = (rf/rs(theta))*((c/H0)^3 * Baoz[i] * (1.0/(1 + Om*(((1+Baoz[i])^3)-1) + 2 * zeta * Om * ((((1+Baoz[i])^3)- 1)^0.5) + ((4.158*10^-5)/H0^2)*(1 + Baoz[i])^4 - ((4.158*10^-5)/H0^2))^(1.0/2)) * (integrate_1d(integrand, 0, Baoz[i], theta, x_r, x_i))^2)^(1.0/3);
-    
+
+    // D_A[i] = integrate_1d(integrand, 0, z[i], theta, x_r, x_i) / (1+z[i]^2);
+    dv_theo[i] = (rf/rs(theta))*(Baoz[i]*(c/H0)^3.0 * (1/(1 + Om*(((1+Baoz[i])^3)-1) + 2 * zeta * Om * ((((1+Baoz[i])^3)- 1)^0.5) + ((4.158*10^-5)/H0^2)*(1 + Baoz[i])^4 - ((4.158*10^-5)/H0^2) )^0.5) * (integrate_1d(integrand, 0, Baoz[i], theta, x_r, x_i))^2)^(1.0/3.0);
+  
   }
 
 
@@ -116,7 +118,7 @@ model {
   //M ~ normal(10, 10);
   Om ~ normal(0.3, 0.1);
   H0 ~ normal (70,10);
-  zeta ~ normal (10,50);
+  zeta ~ normal (0,10);
 
   // likelihood
   //mbtheo ~ normal(mb, dmb);

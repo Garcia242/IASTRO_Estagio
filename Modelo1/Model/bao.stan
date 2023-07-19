@@ -3,7 +3,7 @@ functions {
   real integrand(real x, real xc, array[] real theta, array[] real x_r, array[] int x_i) {
     real H0 = theta[1];
     real Om = theta[2];
-    real zeta = theta[3]
+    real zeta = theta[3];
 
 
     return 1/(1 + Om*(((1+x)^3)-1) + 2 * zeta * Om * ((((1+x)^3)- 1)^0.5) + ((4.158*10^-5)/H0^2)*(1 + x)^4 - ((4.158*10^-5)/H0^2) )^0.5;
@@ -46,7 +46,7 @@ parameters {
 // allows new variables to be defined in terms of data and/or parameters, this is where you should compute your model's predictions
 // will be evaluated on each step
 transformed parameters {
-    array[2] real theta = {H0, Om, zeta};
+    array[3] real theta = {H0, Om, zeta};
 
     array[6] real dv_theo;
 
@@ -65,7 +65,7 @@ transformed parameters {
     
 
     // D_A[i] = integrate_1d(integrand, 0, z[i], theta, x_r, x_i) / (1+z[i]^2);
-    dv_theo[i] = (rf/rs(theta))*(z[i]*(c/H0)^3.0 * (1/(1 + Om*(((1+z[i])^3)-1) + 2 * zeta * Om * ((((1+z[i])^3)- 1)^0.5) + ((4.158*10^-5)/H0^2)*(1 + x)^4 - ((4.158*10^-5)/H0^2) )^0.5;) * (integrate_1d(integrand, 0, z[i], theta, x_r, x_i))^2)^(1.0/3.0);
+    dv_theo[i] = (rf/rs(theta))*(z[i]*(c/H0)^3.0 * (1/(1 + Om*(((1+z[i])^3)-1) + 2 * zeta * Om * ((((1+z[i])^3)- 1)^0.5) + ((4.158*10^-5)/H0^2)*(1 + z[i])^4 - ((4.158*10^-5)/H0^2) )^0.5) * (integrate_1d(integrand, 0, z[i], theta, x_r, x_i))^2)^(1.0/3.0);
   
   }
 
@@ -95,7 +95,7 @@ model {
   // priors
   H0 ~ normal(70, 10);
   Om ~ normal(0.3, 0.1);
-  zeta ~ normal (0, 10)
+  zeta ~ normal (0, 10);
 
   // likelihood
   dv_theo ~ normal(dv, error);
