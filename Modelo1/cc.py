@@ -18,8 +18,8 @@ model = CmdStanModel(
 fit = model.sample(
     data="Modelo1/Data/cc.json",                                # the location of the data file
     output_dir="output1/cc",
-    iter_sampling=500,                                                 # the number of sampling steps
-    iter_warmup=500,                                                   # the number of warmup steps
+    iter_sampling=10000,                                                 # the number of sampling steps
+    iter_warmup=10000,                                                   # the number of warmup steps
     save_warmup=False,                                                 # we don't care about the warmup
     inits={"H0": normal(loc=70, scale=10), "Om": normal(loc=0.3, scale=0.1), "zeta":1},  # initial values for each parameter
     parallel_chains= 4                                                # number of chains to run at the same time

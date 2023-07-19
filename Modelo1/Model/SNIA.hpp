@@ -18,7 +18,7 @@ static constexpr std::array<const char*, 28> locations_array__ =
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 45, column 4 to column 22)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 47, column 4 to column 26)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 54, column 4 to column 79)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 55, column 4 to column 37)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 55, column 4 to column 42)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 51, column 18 to line 56, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 51, column 2 to line 56, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 82, column 2 to column 24)",
@@ -238,7 +238,7 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
           "assigning variable dL", stan::model::index_uni(i));
         current_statement__ = 9;
         stan::model::assign(mbtheo,
-          (M +
+          ((M + 25) +
             (5 *
               stan::math::log10(
                 stan::model::rvalue(dL, "dL", stan::model::index_uni(i))))),
@@ -332,7 +332,7 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
           "assigning variable dL", stan::model::index_uni(i));
         current_statement__ = 9;
         stan::model::assign(mbtheo,
-          (M +
+          ((M + 25) +
             (5 *
               stan::math::log10(
                 stan::model::rvalue(dL, "dL", stan::model::index_uni(i))))),

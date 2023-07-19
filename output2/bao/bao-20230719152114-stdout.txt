@@ -1,0 +1,342 @@
+method = sample (Default)
+  sample
+    num_samples = 500
+    num_warmup = 500
+    save_warmup = 0 (Default)
+    thin = 1 (Default)
+    adapt
+      engaged = 1 (Default)
+      gamma = 0.050000000000000003 (Default)
+      delta = 0.80000000000000004 (Default)
+      kappa = 0.75 (Default)
+      t0 = 10 (Default)
+      init_buffer = 75 (Default)
+      term_buffer = 50 (Default)
+      window = 25 (Default)
+    algorithm = hmc (Default)
+      hmc
+        engine = nuts (Default)
+          nuts
+            max_depth = 10 (Default)
+        metric = diag_e (Default)
+        metric_file =  (Default)
+        stepsize = 1 (Default)
+        stepsize_jitter = 0 (Default)
+    num_chains = 4
+id = 1 (Default)
+data
+  file = Model2/Data/bao.json
+init = /var/folders/tg/1rvyy6v13kq9w3s_hnykjpmc0000gp/T/tmpi74gxz5o/5l9pw0u5.json
+random
+  seed = 38171
+output
+  file = /Users/guilhermegarcia/Desktop/IASTRO_Estagio/output2/bao/bao-20230719152114.csv
+  diagnostic_file =  (Default)
+  refresh = 100 (Default)
+  sig_figs = -1 (Default)
+  profile_file = profile.csv (Default)
+num_threads = 4 (Default)
+
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: ub_free: Upper bounded variable is 1, but must be less than or equal to 0.000000 (found before start of program)
+
+Initialization between (-2, 2) failed after 100 attempts. 
+ Try specifying initial values, reducing ranges of constrained values, or reparameterizing the model.
