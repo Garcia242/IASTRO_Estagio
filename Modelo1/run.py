@@ -9,7 +9,7 @@ import arviz as az
 model = CmdStanModel(
     stan_file="Modelo1/Model/total.stan",                         # Stan model file location
     cpp_options={
-        "STAN_NO_RANGE_CHECKS": "TRUE",  # don't check for elements out of bounds
+        #"STAN_NO_RANGE_CHECKS": "TRUE",  # don't check for elements out of bounds
         "STAN_THREADS": "TRUE",          # run multiple chains in parallel
         "STAN_CPP_OPTIMS": "TRUE"        # optimizations recommended by the Stan development team
     }

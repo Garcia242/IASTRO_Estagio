@@ -1,5 +1,21 @@
 // block for user defined functions
 functions {
+
+  real E(real x, array[] real theta){
+
+
+    real Om = theta[1];
+    real H0 = theta[2];
+    real zeta = theta[3];
+
+    return (1 + Om*(((1+x)^3)-1) + 2 * zeta * Om * ((((1+x)^3)- 1)^0.5) + ((4.158*10^-5)/H0^2)*(1 + x)^4 - ((4.158*10^-5)/H0^2) )^0.5;
+
+
+  
+
+  }
+
+
   real integrand(real x, real xc, array[] real theta, array[] real x_r, array[] int x_i) {
     //real M = theta[1];
     real Om = theta[1];
@@ -81,7 +97,7 @@ transformed parameters {
     
  for (i in 1:32) {
     // Creating the theoretical values 
-    H_theo[i] = H0*(1 + Om*(((1+z[i])^3)-1) + 2 * zeta * Om * ((((1+z[i])^3)- 1)^0.5) + ((4.158*10^-5)/H0^2)*(1 + z[i])^4 - ((4.158*10^-5)/H0^2))^0.5;
+    H_theo[i] = H0 * E(z[i], theta);
   }
 
     array[6] real dv_theo;
@@ -101,7 +117,7 @@ transformed parameters {
     
 
     // D_A[i] = integrate_1d(integrand, 0, z[i], theta, x_r, x_i) / (1+z[i]^2);
-    dv_theo[i] = (rf/rs(theta))*(Baoz[i]*(c/H0)^3.0 * (1/(1 + Om*(((1+Baoz[i])^3)-1) + 2 * zeta * Om * ((((1+Baoz[i])^3)- 1)^0.5) + ((4.158*10^-5)/H0^2)*(1 + Baoz[i])^4 - ((4.158*10^-5)/H0^2) )^0.5) * (integrate_1d(integrand, 0, Baoz[i], theta, x_r, x_i))^2)^(1.0/3.0);
+    dv_theo[i] = (rf/rs(theta))* (E(Baoz[i], theta) * (integrate_1d(integrand, 0, Baoz[i], theta, x_r, x_i))^2)^(1.0/3.0);
   
   }
 

@@ -8,63 +8,82 @@ using namespace stan::math;
 
 
 stan::math::profile_map profiles__;
-static constexpr std::array<const char*, 55> locations_array__ = 
+static constexpr std::array<const char*, 60> locations_array__ = 
 {" (found before start of program)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 49, column 2 to column 10)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 50, column 2 to column 10)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 51, column 2 to column 12)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 57, column 2 to column 40)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 62, column 2 to column 13)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 63, column 2 to column 13)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 64, column 2 to column 13)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 65, column 2 to column 17)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 79, column 2 to column 24)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 87, column 4 to column 26)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 89, column 4 to column 18)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 91, column 4 to column 27)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 69, column 4 to column 103)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 70, column 4 to column 29)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 71, column 4 to column 27)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 72, column 4 to column 21)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 67, column 18 to line 74, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 67, column 2 to line 74, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 84, column 4 to column 150)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 82, column 17 to line 85, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 82, column 1 to line 85, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 104, column 4 to column 269)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 100, column 18 to line 106, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 100, column 3 to line 106, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 119, column 2 to column 24)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 120, column 2 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 121, column 2 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 128, column 1 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 129, column 1 to column 28)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 130, column 1 to column 32)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 29, column 2 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 30, column 2 to column 20)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 31, column 2 to column 21)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 32, column 2 to column 19)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 33, column 2 to column 19)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 34, column 2 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 35, column 2 to column 21)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 36, column 2 to column 19)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 37, column 2 to column 24)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 43, column 2 to column 20)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 44, column 2 to column 19)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 5, column 4 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 6, column 4 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 7, column 4 to column 25)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 10, column 4 to column 136)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 3, column 89 to line 11, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 14, column 4 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 15, column 4 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 16, column 4 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 18, column 4 to column 28)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 19, column 4 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 20, column 4 to column 26)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 21, column 4 to column 71)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 13, column 32 to line 22, column 1)"};
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 65, column 2 to column 10)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 66, column 2 to column 10)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 67, column 2 to column 12)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 73, column 2 to column 40)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 78, column 2 to column 13)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 79, column 2 to column 13)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 80, column 2 to column 13)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 81, column 2 to column 17)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 95, column 2 to column 24)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 103, column 4 to column 26)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 105, column 4 to column 18)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 107, column 4 to column 27)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 85, column 4 to column 103)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 86, column 4 to column 29)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 87, column 4 to column 27)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 88, column 4 to column 21)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 83, column 18 to line 90, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 83, column 2 to line 90, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 100, column 4 to column 36)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 98, column 17 to line 101, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 98, column 1 to line 101, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 120, column 4 to column 122)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 116, column 18 to line 122, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 116, column 3 to line 122, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 135, column 2 to column 24)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 136, column 2 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 137, column 2 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 144, column 1 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 145, column 1 to column 28)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 146, column 1 to column 32)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 45, column 2 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 46, column 2 to column 20)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 47, column 2 to column 21)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 48, column 2 to column 19)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 49, column 2 to column 19)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 50, column 2 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 51, column 2 to column 21)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 52, column 2 to column 19)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 53, column 2 to column 24)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 59, column 2 to column 20)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 60, column 2 to column 19)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 7, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 8, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 9, column 4 to column 25)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 11, column 4 to column 134)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 4, column 36 to line 16, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 21, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 22, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 23, column 4 to column 25)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 26, column 4 to column 136)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 19, column 89 to line 27, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 30, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 31, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 32, column 4 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 34, column 4 to column 28)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 35, column 4 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 36, column 4 to column 26)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 37, column 4 to column 71)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 29, column 32 to line 38, column 1)"};
 
+struct rs_functor__ {
+  template <typename T0__,
+            stan::require_all_t<stan::is_stan_scalar<T0__>>* = nullptr>
+  stan::promote_args_t<T0__>
+  operator()(const std::vector<T0__>& theta, std::ostream* pstream__) const;
+};
+struct E_functor__ {
+  template <typename T0__, typename T1__,
+            stan::require_all_t<stan::is_stan_scalar<T0__>,
+                                stan::is_stan_scalar<T1__>>* = nullptr>
+  stan::promote_args_t<T0__, T1__>
+  operator()(const T0__& x, const std::vector<T1__>& theta,
+             std::ostream* pstream__) const;
+};
 struct integrand_functor__ {
   template <typename T0__, typename T1__, typename T2__, typename T3__,
             stan::require_all_t<stan::is_stan_scalar<T0__>,
@@ -76,13 +95,43 @@ struct integrand_functor__ {
              const std::vector<T3__>& x_r, const std::vector<int>& x_i,
              std::ostream* pstream__) const;
 };
-struct rs_functor__ {
-  template <typename T0__,
-            stan::require_all_t<stan::is_stan_scalar<T0__>>* = nullptr>
-  stan::promote_args_t<T0__>
-  operator()(const std::vector<T0__>& theta, std::ostream* pstream__) const;
-};
 
+template <typename T0__, typename T1__,
+          stan::require_all_t<stan::is_stan_scalar<T0__>,
+                              stan::is_stan_scalar<T1__>>* = nullptr>
+  stan::promote_args_t<T0__, T1__>
+  E(const T0__& x, const std::vector<T1__>& theta, std::ostream* pstream__) {
+    using local_scalar_t__ = stan::promote_args_t<T0__, T1__>;
+    int current_statement__ = 0; 
+    static constexpr bool propto__ = true;
+    (void) propto__;
+    local_scalar_t__ DUMMY_VAR__(std::numeric_limits<double>::quiet_NaN());
+    (void) DUMMY_VAR__;  // suppress unused var warning
+    try {
+      local_scalar_t__ Om = DUMMY_VAR__;
+      current_statement__ = 42;
+      Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
+      local_scalar_t__ H0 = DUMMY_VAR__;
+      current_statement__ = 43;
+      H0 = stan::model::rvalue(theta, "theta", stan::model::index_uni(2));
+      local_scalar_t__ zeta = DUMMY_VAR__;
+      current_statement__ = 44;
+      zeta = stan::model::rvalue(theta, "theta", stan::model::index_uni(3));
+      current_statement__ = 45;
+      return stan::math::pow(
+               ((((1 + (Om * (stan::math::pow((1 + x), 3) - 1))) +
+                   (((2 * zeta) * Om) *
+                     stan::math::pow((stan::math::pow((1 + x), 3) - 1), 0.5)))
+                  +
+                  (((4.158 * stan::math::pow(10, -5)) /
+                     stan::math::pow(H0, 2)) * stan::math::pow((1 + x), 4)))
+                 -
+                 ((4.158 * stan::math::pow(10, -5)) / stan::math::pow(H0, 2))),
+               0.5);
+    } catch (const std::exception& e) {
+      stan::lang::rethrow_located(e, locations_array__[current_statement__]);
+    }
+    }
 template <typename T0__, typename T1__, typename T2__, typename T3__,
           stan::require_all_t<stan::is_stan_scalar<T0__>,
                               stan::is_stan_scalar<T1__>,
@@ -100,15 +149,15 @@ template <typename T0__, typename T1__, typename T2__, typename T3__,
     (void) DUMMY_VAR__;  // suppress unused var warning
     try {
       local_scalar_t__ Om = DUMMY_VAR__;
-      current_statement__ = 42;
+      current_statement__ = 47;
       Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
       local_scalar_t__ H0 = DUMMY_VAR__;
-      current_statement__ = 43;
+      current_statement__ = 48;
       H0 = stan::model::rvalue(theta, "theta", stan::model::index_uni(2));
       local_scalar_t__ zeta = DUMMY_VAR__;
-      current_statement__ = 44;
+      current_statement__ = 49;
       zeta = stan::model::rvalue(theta, "theta", stan::model::index_uni(3));
-      current_statement__ = 45;
+      current_statement__ = 50;
       return (1 /
                stan::math::pow(
                  ((((1 + (Om * (stan::math::pow((1 + x), 3) - 1))) +
@@ -136,24 +185,24 @@ template <typename T0__,
     (void) DUMMY_VAR__;  // suppress unused var warning
     try {
       local_scalar_t__ H0 = DUMMY_VAR__;
-      current_statement__ = 47;
+      current_statement__ = 52;
       H0 = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
       local_scalar_t__ Om = DUMMY_VAR__;
-      current_statement__ = 48;
+      current_statement__ = 53;
       Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(2));
       local_scalar_t__ M = DUMMY_VAR__;
-      current_statement__ = 49;
+      current_statement__ = 54;
       M = stan::model::rvalue(theta, "theta", stan::model::index_uni(3));
       local_scalar_t__ wm = DUMMY_VAR__;
-      current_statement__ = 50;
+      current_statement__ = 55;
       wm = (Om * stan::math::pow((H0 / 100), 2));
       local_scalar_t__ wb = DUMMY_VAR__;
-      current_statement__ = 51;
+      current_statement__ = 56;
       wb = 0.02226;
       local_scalar_t__ wn = DUMMY_VAR__;
-      current_statement__ = 52;
+      current_statement__ = 57;
       wn = (0.0107 * 0.06);
-      current_statement__ = 53;
+      current_statement__ = 58;
       return ((55.154 *
                 stan::math::exp((-72.3 * stan::math::pow((wn + 0.0006), 2))))
                /
@@ -162,6 +211,24 @@ template <typename T0__,
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }
     }
+template <typename T0__, stan::require_all_t<stan::is_stan_scalar<T0__>>*>
+stan::promote_args_t<T0__>
+rs_functor__::operator()(const std::vector<T0__>& theta,
+                         std::ostream* pstream__)  const
+{
+  return rs(theta, pstream__);
+}
+
+template <typename T0__, typename T1__,
+          stan::require_all_t<stan::is_stan_scalar<T0__>,
+                              stan::is_stan_scalar<T1__>>*>
+stan::promote_args_t<T0__, T1__>
+E_functor__::operator()(const T0__& x, const std::vector<T1__>& theta,
+                        std::ostream* pstream__)  const
+{
+  return E(x, theta, pstream__);
+}
+
 template <typename T0__, typename T1__, typename T2__, typename T3__,
           stan::require_all_t<stan::is_stan_scalar<T0__>,
                               stan::is_stan_scalar<T1__>,
@@ -175,14 +242,6 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
                                 std::ostream* pstream__)  const
 {
   return integrand(x, xc, theta, x_r, x_i, pstream__);
-}
-
-template <typename T0__, stan::require_all_t<stan::is_stan_scalar<T0__>>*>
-stan::promote_args_t<T0__>
-rs_functor__::operator()(const std::vector<T0__>& theta,
-                         std::ostream* pstream__)  const
-{
-  return rs(theta, pstream__);
 }
 
  class total_model final : public model_base_crtp<total_model> {
@@ -402,27 +461,9 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
         current_statement__ = 19;
         stan::model::assign(H_theo,
           (H0 *
-            stan::math::pow(
-              ((((1 +
-                   (Om *
-                     (stan::math::pow(
-                        (1 +
-                          stan::model::rvalue(z, "z",
-                            stan::model::index_uni(i))), 3) - 1))) +
-                  (((2 * zeta) * Om) *
-                    stan::math::pow(
-                      (stan::math::pow(
-                         (1 +
-                           stan::model::rvalue(z, "z",
-                             stan::model::index_uni(i))), 3) - 1), 0.5))) +
-                 (((4.158 * stan::math::pow(10, -5)) /
-                    stan::math::pow(H0, 2)) *
-                   stan::math::pow(
-                     (1 +
-                       stan::model::rvalue(z, "z", stan::model::index_uni(i))),
-                     4))) -
-                ((4.158 * stan::math::pow(10, -5)) / stan::math::pow(H0, 2))),
-              0.5)), "assigning variable H_theo", stan::model::index_uni(i));
+            E(stan::model::rvalue(z, "z", stan::model::index_uni(i)),
+              theta, pstream__)),
+          "assigning variable H_theo", stan::model::index_uni(i));
       }
       std::vector<local_scalar_t__> dv_theo =
          std::vector<local_scalar_t__>(6, DUMMY_VAR__);
@@ -438,31 +479,9 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
         stan::model::assign(dv_theo,
           ((rf / rs(theta, pstream__)) *
             stan::math::pow(
-              (((stan::model::rvalue(Baoz, "Baoz", stan::model::index_uni(i))
-                  * stan::math::pow((c / H0), 3.0)) *
-                 (1 /
-                   stan::math::pow(
-                     ((((1 +
-                          (Om *
-                            (stan::math::pow(
-                               (1 +
-                                 stan::model::rvalue(Baoz, "Baoz",
-                                   stan::model::index_uni(i))), 3) - 1))) +
-                         (((2 * zeta) * Om) *
-                           stan::math::pow(
-                             (stan::math::pow(
-                                (1 +
-                                  stan::model::rvalue(Baoz, "Baoz",
-                                    stan::model::index_uni(i))), 3) - 1),
-                             0.5))) +
-                        (((4.158 * stan::math::pow(10, -5)) /
-                           stan::math::pow(H0, 2)) *
-                          stan::math::pow(
-                            (1 +
-                              stan::model::rvalue(Baoz, "Baoz",
-                                stan::model::index_uni(i))), 4))) -
-                       ((4.158 * stan::math::pow(10, -5)) /
-                         stan::math::pow(H0, 2))), 0.5))) *
+              (E(
+                 stan::model::rvalue(Baoz, "Baoz", stan::model::index_uni(i)),
+                 theta, pstream__) *
                 stan::math::pow(
                   stan::math::integrate_1d(integrand_functor__(), 0,
                     stan::model::rvalue(Baoz, "Baoz",
@@ -595,27 +614,9 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
         current_statement__ = 19;
         stan::model::assign(H_theo,
           (H0 *
-            stan::math::pow(
-              ((((1 +
-                   (Om *
-                     (stan::math::pow(
-                        (1 +
-                          stan::model::rvalue(z, "z",
-                            stan::model::index_uni(i))), 3) - 1))) +
-                  (((2 * zeta) * Om) *
-                    stan::math::pow(
-                      (stan::math::pow(
-                         (1 +
-                           stan::model::rvalue(z, "z",
-                             stan::model::index_uni(i))), 3) - 1), 0.5))) +
-                 (((4.158 * stan::math::pow(10, -5)) /
-                    stan::math::pow(H0, 2)) *
-                   stan::math::pow(
-                     (1 +
-                       stan::model::rvalue(z, "z", stan::model::index_uni(i))),
-                     4))) -
-                ((4.158 * stan::math::pow(10, -5)) / stan::math::pow(H0, 2))),
-              0.5)), "assigning variable H_theo", stan::model::index_uni(i));
+            E(stan::model::rvalue(z, "z", stan::model::index_uni(i)),
+              theta, pstream__)),
+          "assigning variable H_theo", stan::model::index_uni(i));
       }
       current_statement__ = 11;
       rf = 150;
@@ -627,31 +628,9 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
         stan::model::assign(dv_theo,
           ((rf / rs(theta, pstream__)) *
             stan::math::pow(
-              (((stan::model::rvalue(Baoz, "Baoz", stan::model::index_uni(i))
-                  * stan::math::pow((c / H0), 3.0)) *
-                 (1 /
-                   stan::math::pow(
-                     ((((1 +
-                          (Om *
-                            (stan::math::pow(
-                               (1 +
-                                 stan::model::rvalue(Baoz, "Baoz",
-                                   stan::model::index_uni(i))), 3) - 1))) +
-                         (((2 * zeta) * Om) *
-                           stan::math::pow(
-                             (stan::math::pow(
-                                (1 +
-                                  stan::model::rvalue(Baoz, "Baoz",
-                                    stan::model::index_uni(i))), 3) - 1),
-                             0.5))) +
-                        (((4.158 * stan::math::pow(10, -5)) /
-                           stan::math::pow(H0, 2)) *
-                          stan::math::pow(
-                            (1 +
-                              stan::model::rvalue(Baoz, "Baoz",
-                                stan::model::index_uni(i))), 4))) -
-                       ((4.158 * stan::math::pow(10, -5)) /
-                         stan::math::pow(H0, 2))), 0.5))) *
+              (E(
+                 stan::model::rvalue(Baoz, "Baoz", stan::model::index_uni(i)),
+                 theta, pstream__) *
                 stan::math::pow(
                   stan::math::integrate_1d(integrand_functor__(), 0,
                     stan::model::rvalue(Baoz, "Baoz",
