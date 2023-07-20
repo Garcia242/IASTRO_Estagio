@@ -1,0 +1,191 @@
+method = sample (Default)
+  sample
+    num_samples = 500
+    num_warmup = 500
+    save_warmup = 0 (Default)
+    thin = 1 (Default)
+    adapt
+      engaged = 1 (Default)
+      gamma = 0.050000000000000003 (Default)
+      delta = 0.80000000000000004 (Default)
+      kappa = 0.75 (Default)
+      t0 = 10 (Default)
+      init_buffer = 75 (Default)
+      term_buffer = 50 (Default)
+      window = 25 (Default)
+    algorithm = hmc (Default)
+      hmc
+        engine = nuts (Default)
+          nuts
+            max_depth = 10 (Default)
+        metric = diag_e (Default)
+        metric_file =  (Default)
+        stepsize = 1 (Default)
+        stepsize_jitter = 0 (Default)
+    num_chains = 4
+id = 1 (Default)
+data
+  file = Modelo1/Data/snia.json
+init = /var/folders/tg/1rvyy6v13kq9w3s_hnykjpmc0000gp/T/tmpwtf1_yr5/wy6ynda4.json
+random
+  seed = 25896
+output
+  file = /Users/guilhermegarcia/Desktop/IASTRO_Estagio/output1/snia/SNIA-20230720112126.csv
+  diagnostic_file =  (Default)
+  refresh = 100 (Default)
+  sig_figs = -1 (Default)
+  profile_file = profile.csv (Default)
+num_threads = 4 (Default)
+
+
+Gradient evaluation took 0.004012 seconds
+1000 transitions using 10 leapfrog steps per transition would take 40.12 seconds.
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 0.003902 seconds
+1000 transitions using 10 leapfrog steps per transition would take 39.02 seconds.
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 0.003915 seconds
+1000 transitions using 10 leapfrog steps per transition would take 39.15 seconds.
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 0.003887 seconds
+1000 transitions using 10 leapfrog steps per transition would take 38.87 seconds.
+Adjust your expectations accordingly!
+
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 4.94066e-324 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 61, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 4.94066e-324 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 61, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [3] Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain [2] Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain [4] Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain [1] Iteration:   1 / 1000 [  0%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: gradient_of_f: The gradient of f is nan for parameter 0 (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 61, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: gradient_of_f: The gradient of f is nan for parameter 0 (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 61, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 61, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: gradient_of_f: The gradient of f is nan for parameter 0 (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 61, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 61, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: gradient_of_f: The gradient of f is nan for parameter 0 (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 61, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 61, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 1.97893e-17 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 61, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 61, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 1.97893e-17 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/SNIA.stan', line 61, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [3] Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain [2] Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain [4] Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain [1] Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain [3] Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain [4] Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain [1] Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain [2] Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain [4] Iteration: 300 / 1000 [ 30%]  (Warmup)
+Chain [3] Iteration: 300 / 1000 [ 30%]  (Warmup)
+Chain [2] Iteration: 300 / 1000 [ 30%]  (Warmup)
+Chain [1] Iteration: 300 / 1000 [ 30%]  (Warmup)
+Chain [2] Iteration: 400 / 1000 [ 40%]  (Warmup)
+Chain [4] Iteration: 400 / 1000 [ 40%]  (Warmup)
+Chain [1] Iteration: 400 / 1000 [ 40%]  (Warmup)
+Chain [2] Iteration: 500 / 1000 [ 50%]  (Warmup)
+Chain [2] Iteration: 501 / 1000 [ 50%]  (Sampling)
+Chain [3] Iteration: 400 / 1000 [ 40%]  (Warmup)
+Chain [4] Iteration: 500 / 1000 [ 50%]  (Warmup)
+Chain [4] Iteration: 501 / 1000 [ 50%]  (Sampling)
+Chain [1] Iteration: 500 / 1000 [ 50%]  (Warmup)
+Chain [1] Iteration: 501 / 1000 [ 50%]  (Sampling)
+Chain [2] Iteration: 600 / 1000 [ 60%]  (Sampling)
+Chain [4] Iteration: 600 / 1000 [ 60%]  (Sampling)
+Chain [2] Iteration: 700 / 1000 [ 70%]  (Sampling)
+Chain [3] Iteration: 500 / 1000 [ 50%]  (Warmup)
+Chain [3] Iteration: 501 / 1000 [ 50%]  (Sampling)
+Chain [1] Iteration: 600 / 1000 [ 60%]  (Sampling)
+Chain [4] Iteration: 700 / 1000 [ 70%]  (Sampling)
+Chain [2] Iteration: 800 / 1000 [ 80%]  (Sampling)
+Chain [3] Iteration: 600 / 1000 [ 60%]  (Sampling)
+Chain [2] Iteration: 900 / 1000 [ 90%]  (Sampling)
+Chain [4] Iteration: 800 / 1000 [ 80%]  (Sampling)
+Chain [1] Iteration: 700 / 1000 [ 70%]  (Sampling)
+Chain [3] Iteration: 700 / 1000 [ 70%]  (Sampling)
+Chain [2] Iteration: 1000 / 1000 [100%]  (Sampling)
+
+ Elapsed Time: 99.643 seconds (Warm-up)
+               56.853 seconds (Sampling)
+               156.496 seconds (Total)
+
+Chain [4] Iteration: 900 / 1000 [ 90%]  (Sampling)
+Chain [1] Iteration: 800 / 1000 [ 80%]  (Sampling)
+Chain [3] Iteration: 800 / 1000 [ 80%]  (Sampling)
+Chain [4] Iteration: 1000 / 1000 [100%]  (Sampling)
+
+ Elapsed Time: 102.51 seconds (Warm-up)
+               68.822 seconds (Sampling)
+               171.332 seconds (Total)
+
+Chain [3] Iteration: 900 / 1000 [ 90%]  (Sampling)
+Chain [1] Iteration: 900 / 1000 [ 90%]  (Sampling)
+Chain [3] Iteration: 1000 / 1000 [100%]  (Sampling)
+
+ Elapsed Time: 123.141 seconds (Warm-up)
+               72.68 seconds (Sampling)
+               195.821 seconds (Total)
+
+Chain [1] Iteration: 1000 / 1000 [100%]  (Sampling)
+
+ Elapsed Time: 107.913 seconds (Warm-up)
+               98.161 seconds (Sampling)
+               206.074 seconds (Total)
+

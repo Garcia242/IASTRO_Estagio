@@ -2,35 +2,31 @@
 functions {
 
   real E(real x, array[] real theta){
-
-
-    real Om = theta[1];
-    real H0 = theta[2];
+    real H0 = theta[1];
+    real Om = theta[2];
     real zeta = theta[3];
     real M = theta[4];
 
-    return (1 + Om*(((1+x)^3)-1) + 2 * zeta * Om * ((((1+x)^3)- 1)^0.5) + ((4.158*10^-5)/H0^2)*(1 + x)^4 - ((4.158*10^-5)/H0^2) )^0.5;
-
-
-  
-
+    return (1+Om*((1+x)^3-1)+2*zeta*Om*(((1+x)^(3./2.) -1))  + 4.158*10^(-5)/H0^2*(1+x)^4 - 4.158*10^(-5)/H0^2)^0.5;
   }
-
 
   real integrand(real x, real xc, array[] real theta, array[] real x_r, array[] int x_i) {
-    //real M = theta[1];
-    real Om = theta[1];
-    real H0 = theta[2];
+    real H0 = theta[1];
+    real Om = theta[2];
     real zeta = theta[3];
     real M = theta[4];
 
-    return 1/(1 + Om*(((1+x)^3)-1) + 2 * zeta * Om * ((((1+x)^3)- 1)^0.5) + ((4.158*10^-5)/H0^2)*(1 + x)^4 - ((4.158*10^-5)/H0^2) )^0.5;
-  }
+    return 1/E(x, {H0, Om, zeta, M});
+
+
+}
+  
 
     real rs(array[] real theta) {
     real H0 = theta[1];
     real Om = theta[2];
-    real M = theta[3];
+    real zeta = theta[3];
+    real M = theta[4];
     
     real wm = Om*(H0/100)^2;
     real wb = 0.02226;      // baryonic density
@@ -91,7 +87,7 @@ transformed parameters {
 
   // }
 
-  array[4] real theta = {Om, H0, zeta, M};
+  array[4] real theta = {H0, Om, zeta, M};
 
     array[40] real dL;
 
@@ -134,7 +130,7 @@ transformed parameters {
     
 
     // D_A[i] = integrate_1d(integrand, 0, z[i], theta, x_r, x_i) / (1+z[i]^2);
-    dv_theo[i] = (rf/rs(theta))* (E(Baoz[i], theta) * (integrate_1d(integrand, 0, Baoz[i], theta, x_r, x_i))^2)^(1.0/3.0);
+     dv_theo[i] = (rf/rs(theta))*(Baoz[i]*(c/H0)^3.0 * 1/E(Baoz[i], theta) * (integrate_1d(integrand, 0, Baoz[i], theta, x_r, x_i))^2)^(1.0/3.0);
   
   }
 

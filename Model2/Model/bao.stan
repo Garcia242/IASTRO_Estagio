@@ -89,7 +89,7 @@ transformed parameters {
     
 
     // D_A[i] = integrate_1d(integrand, 0, z[i], theta, x_r, x_i) / (1+z[i]^2);
-    dv_theo[i] = (rf/rs(theta))* (E(z[i], theta) * (integrate_1d(integrand, 0, z[i], theta, x_r, x_i))^2)^(1.0/3.0);
+    dv_theo[i] = (rf/rs(theta))* ((c/H0)^3) * z[i]*(1/(E(z[i], theta)) * (integrate_1d(integrand, 0, z[i], theta, x_r, x_i))^2)^(1.0/3.0);
   
   }
 

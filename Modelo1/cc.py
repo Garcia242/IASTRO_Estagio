@@ -12,17 +12,19 @@ model = CmdStanModel(
         #"STAN_NO_RANGE_CHECKS": "TRUE",  # don't check for elements out of bounds
         "STAN_THREADS": "TRUE",          # run multiple chains in parallel
         "STAN_CPP_OPTIMS": "TRUE"        # optimizations recommended by the Stan development team
+        
     }
 )
 # configure and fit the model
 fit = model.sample(
     data="Modelo1/Data/cc.json",                                # the location of the data file
     output_dir="output1/cc",
-    iter_sampling=10000,                                                 # the number of sampling steps
-    iter_warmup=10000,                                                   # the number of warmup steps
+    iter_sampling=500,                                                 # the number of sampling steps
+    iter_warmup=500,                                                   # the number of warmup steps
     save_warmup=False,                                                 # we don't care about the warmup
-    inits={"H0": normal(loc=70, scale=10), "Om": normal(loc=0.3, scale=0.1), "zeta":1},  # initial values for each parameter
-    parallel_chains= 4                                                # number of chains to run at the same time
+    inits={"H0": normal(loc=70, scale=10), "Om": normal(loc=0.3, scale=0.1), "zeta": 1},  # initial values for each parameter
+    parallel_chains= 4,                                                # number of chains to run at the same time
+    force_one_process_per_chain = True
 )
 
 # print very useful utilities provided by default in Stan
