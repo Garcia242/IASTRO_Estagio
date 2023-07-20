@@ -24,7 +24,7 @@ fit = model.sample(
     save_warmup=False,                                                 # we don't care about the warmup
     inits={"H0": normal(loc=70, scale=10), "Om": normal(loc=0.3, scale=0.1), "zeta": 1},  # initial values for each parameter
     parallel_chains= 4,                                                # number of chains to run at the same time
-    force_one_process_per_chain = True
+    #force_one_process_per_chain = True
 )
 
 # print very useful utilities provided by default in Stan
