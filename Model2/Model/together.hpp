@@ -31,9 +31,9 @@ static constexpr std::array<const char*, 60> locations_array__ =
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 117, column 4 to column 36)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 115, column 17 to line 118, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 115, column 1 to line 118, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 137, column 4 to column 122)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 133, column 18 to line 139, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 133, column 3 to line 139, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 137, column 5 to column 145)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 133, column 17 to line 139, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 133, column 2 to line 139, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 152, column 2 to column 24)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 153, column 2 to column 22)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 154, column 2 to column 23)",
@@ -59,7 +59,7 @@ static constexpr std::array<const char*, 60> locations_array__ =
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 22, column 4 to column 23)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 23, column 4 to column 23)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 24, column 4 to column 25)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 27, column 4 to column 61)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 27, column 4 to column 34)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 20, column 89 to line 28, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 31, column 4 to column 23)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/together.stan', line 32, column 4 to column 23)",
@@ -108,12 +108,12 @@ template <typename T0__, typename T1__,
     local_scalar_t__ DUMMY_VAR__(std::numeric_limits<double>::quiet_NaN());
     (void) DUMMY_VAR__;  // suppress unused var warning
     try {
-      local_scalar_t__ Om = DUMMY_VAR__;
-      current_statement__ = 42;
-      Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
       local_scalar_t__ H0 = DUMMY_VAR__;
+      current_statement__ = 42;
+      H0 = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
+      local_scalar_t__ Om = DUMMY_VAR__;
       current_statement__ = 43;
-      H0 = stan::model::rvalue(theta, "theta", stan::model::index_uni(2));
+      Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(2));
       local_scalar_t__ zeta = DUMMY_VAR__;
       current_statement__ = 44;
       zeta = stan::model::rvalue(theta, "theta", stan::model::index_uni(3));
@@ -141,20 +141,18 @@ template <typename T0__, typename T1__, typename T2__, typename T3__,
     local_scalar_t__ DUMMY_VAR__(std::numeric_limits<double>::quiet_NaN());
     (void) DUMMY_VAR__;  // suppress unused var warning
     try {
-      local_scalar_t__ Om = DUMMY_VAR__;
-      current_statement__ = 47;
-      Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
       local_scalar_t__ H0 = DUMMY_VAR__;
+      current_statement__ = 47;
+      H0 = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
+      local_scalar_t__ Om = DUMMY_VAR__;
       current_statement__ = 48;
-      H0 = stan::model::rvalue(theta, "theta", stan::model::index_uni(2));
+      Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(2));
       local_scalar_t__ zeta = DUMMY_VAR__;
       current_statement__ = 49;
       zeta = stan::model::rvalue(theta, "theta", stan::model::index_uni(3));
       current_statement__ = 50;
       return (1 /
-               stan::math::pow(
-                 ((((1 - Om) - zeta) + (Om * stan::math::pow((1 + x), 3))) +
-                   (zeta * stan::math::pow((1 + x), 6))), 0.5));
+               E(x, std::vector<local_scalar_t__>{H0, Om, zeta}, pstream__));
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }
@@ -393,7 +391,7 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
       std::vector<local_scalar_t__> theta =
          std::vector<local_scalar_t__>(3, DUMMY_VAR__);
       current_statement__ = 4;
-      stan::model::assign(theta, std::vector<local_scalar_t__>{Om, H0, zeta},
+      stan::model::assign(theta, std::vector<local_scalar_t__>{H0, Om, zeta},
         "assigning variable theta");
       local_scalar_t__ A = DUMMY_VAR__;
       current_statement__ = 5;
@@ -465,9 +463,12 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
         stan::model::assign(dv_theo,
           ((rf / rs(theta, pstream__)) *
             stan::math::pow(
-              (E(
-                 stan::model::rvalue(Baoz, "Baoz", stan::model::index_uni(i)),
-                 theta, pstream__) *
+              ((((stan::model::rvalue(Baoz, "Baoz",
+                    stan::model::index_uni(i)) *
+                   stan::math::pow((c / H0), 3.0)) * 1) /
+                 E(
+                   stan::model::rvalue(Baoz, "Baoz",
+                     stan::model::index_uni(i)), theta, pstream__)) *
                 stan::math::pow(
                   stan::math::integrate_1d(integrand_functor__(), 0,
                     stan::model::rvalue(Baoz, "Baoz",
@@ -553,7 +554,7 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
         return ;
       } 
       current_statement__ = 4;
-      stan::model::assign(theta, std::vector<local_scalar_t__>{Om, H0, zeta},
+      stan::model::assign(theta, std::vector<local_scalar_t__>{H0, Om, zeta},
         "assigning variable theta");
       current_statement__ = 5;
       A = 0;
@@ -614,9 +615,12 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
         stan::model::assign(dv_theo,
           ((rf / rs(theta, pstream__)) *
             stan::math::pow(
-              (E(
-                 stan::model::rvalue(Baoz, "Baoz", stan::model::index_uni(i)),
-                 theta, pstream__) *
+              ((((stan::model::rvalue(Baoz, "Baoz",
+                    stan::model::index_uni(i)) *
+                   stan::math::pow((c / H0), 3.0)) * 1) /
+                 E(
+                   stan::model::rvalue(Baoz, "Baoz",
+                     stan::model::index_uni(i)), theta, pstream__)) *
                 stan::math::pow(
                   stan::math::integrate_1d(integrand_functor__(), 0,
                     stan::model::rvalue(Baoz, "Baoz",

@@ -13,8 +13,8 @@ folders = ["output2/cc", "output2/snia", "output2/bao", "output2/together"]
 legends = ["CC", "SnIa", "BAO", "Combined"]
 
 # specify the parameters that were constrained in each model
-paramsperfolder = [["H0", "Om", "zeta"], ["H0", "Om", "zeta"],["H0", "Om", "zeta"], ["H0", "Om", "zeta"]]
-labelsperfolder = [["H0", "\\Omega_m", "zeta"], ["H0", "\\Omega_m", "zeta"], ["H0", "\\Omega_m", "zeta"], ["H0", "\\Omega_m", "zeta"]]
+paramsperfolder = [["H0", "Om", "zeta"], [ "Om", "zeta"],["H0", "Om", "zeta"], ["H0", "Om", "zeta"]]
+labelsperfolder = [["H0", "\\Omega_m", "zeta"], [ "\\Omega_m", "zeta"], ["H0", "\\Omega_m", "zeta"], ["H0", "\\Omega_m", "zeta"]]
 
 # get 'MCSamples' object for each run
 mcsamples = []

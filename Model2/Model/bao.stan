@@ -4,8 +4,8 @@ functions {
   real E(real x, array[] real theta){
 
 
-    real Om = theta[1];
-    real H0 = theta[2];
+    real H0 = theta[1];
+    real Om = theta[2];
     real zeta = theta[3];
     //real M = theta[4];
 
@@ -19,12 +19,12 @@ functions {
 
   real integrand(real x, real xc, array[] real theta, array[] real x_r, array[] int x_i) {
     //real M = theta[1];
-    real Om = theta[1];
-    real H0 = theta[2];
+    real H0 = theta[1];
+    real Om = theta[2];
     real zeta = theta[3];
     //real M = theta[4];
 
-    return 1/(1 - Om - zeta + Om*(1+x)^3 + zeta*(1+x)^6)^0.5;
+    return 1/E(x, {H0, Om, zeta});
   }
 
     real rs(array[] real theta) {
@@ -58,16 +58,16 @@ transformed data {
 
 parameters {
   //real<lower=0> M;
-  real Om;
-  real H0;
-  real <upper = 0>zeta;
+  real <lower = 0 > H0;
+  real <lower = 0 > Om;
+  real zeta;
   //real M;
 
 }
 
 transformed parameters {
   
-  array[3] real theta = {Om, H0, zeta};
+  array[3] real theta = {H0, Om, zeta};
 
 
  
@@ -89,7 +89,7 @@ transformed parameters {
     
 
     // D_A[i] = integrate_1d(integrand, 0, z[i], theta, x_r, x_i) / (1+z[i]^2);
-    dv_theo[i] = (rf/rs(theta))* ((c/H0)^3) * z[i]*(1/(E(z[i], theta)) * (integrate_1d(integrand, 0, z[i], theta, x_r, x_i))^2)^(1.0/3.0);
+    dv_theo[i] = (rf/rs(theta))*(z[i]*(c/H0)^3.0 * 1/E(z[i], theta) * (integrate_1d(integrand, 0, z[i], theta, x_r, x_i))^2)^(1.0/3.0);
   
   }
 

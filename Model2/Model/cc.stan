@@ -4,14 +4,38 @@ functions {
   real E(real x, array[] real theta){
 
 
-    real Om = theta[1];
-    real H0 = theta[2];
+    real H0 = theta[1];
+    real Om = theta[2];
     real zeta = theta[3];
     //real M = theta[4];
 
     return (1 - Om - zeta + Om*(1+x)^3 + zeta*(1+x)^6)^0.5 ;
 
 
+  
+
+  }
+
+
+  real integrand(real x, real xc, array[] real theta, array[] real x_r, array[] int x_i) {
+    //real M = theta[1];
+    real H0 = theta[1];
+    real Om = theta[2];
+    real zeta = theta[3];
+    //real M = theta[4];
+
+    return 1/E(x, {H0, Om, zeta});
+  }
+
+    real rs(array[] real theta) {
+    real H0 = theta[1];
+    real Om = theta[2];
+    real M = theta[3];
+    
+    real wm = Om*(H0/100)^2;
+    real wb = 0.02226;      // baryonic density
+    real wn = 0.0107*0.06;  // neutrinos sum m = 0.06 eV
+    return 55.154 * exp(-72.3*(wn+0.0006)^2) / (wm^0.25351*wb^0.12807);
 }
 }
 // block to declare the variables that will hold the data being used
@@ -39,7 +63,7 @@ parameters {
 
 transformed parameters {
   
-  array[3] real theta = {Om, H0, zeta};
+  array[3] real theta = {H0, Om, zeta};
 
 
   

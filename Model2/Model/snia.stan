@@ -5,8 +5,8 @@ functions {
 
 
     real Om = theta[1];
-    real H0 = theta[2];
-    real zeta = theta[3];
+    //real H0 = theta[1];
+    real zeta = theta[2];
     //real M = theta[4];
 
     return (1 - Om - zeta + Om*(1+x)^3 + zeta*(1+x)^6)^0.5 ;
@@ -20,8 +20,8 @@ functions {
   real integrand(real x, real xc, array[] real theta, array[] real x_r, array[] int x_i) {
     //real M = theta[1];
     real Om = theta[1];
-    real H0 = theta[2];
-    real zeta = theta[3];
+    //real H0 = theta[1];
+    real zeta = theta[2];
     //real M = theta[4];
 
     return 1/(1 - Om - zeta + Om*(1+x)^3 + zeta*(1+x)^6)^0.5;
@@ -59,7 +59,7 @@ transformed data {
 parameters {
   //real<lower=0> M;
   real Om;
-  real H0;
+  //real H0;
   real zeta;
   //real M;
 
@@ -67,7 +67,7 @@ parameters {
 
 transformed parameters {
   
-  array[3] real theta = {Om, H0, zeta};
+  array[2] real theta = {Om, zeta};
 
 
   //SNIA Data 
@@ -117,7 +117,7 @@ model {
   // priors
   //M ~ normal(10, 10);
   Om ~ normal(0.3, 0.1);
-  H0 ~ normal (70,10);
+  //H0 ~ normal (70,10);
   zeta ~ normal (0,10);
   //M ~ normal (-10, 10);
   // likelihood

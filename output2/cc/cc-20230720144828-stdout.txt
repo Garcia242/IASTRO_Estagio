@@ -1,0 +1,1041 @@
+method = sample (Default)
+  sample
+    num_samples = 500
+    num_warmup = 500
+    save_warmup = 0 (Default)
+    thin = 1 (Default)
+    adapt
+      engaged = 1 (Default)
+      gamma = 0.050000000000000003 (Default)
+      delta = 0.80000000000000004 (Default)
+      kappa = 0.75 (Default)
+      t0 = 10 (Default)
+      init_buffer = 75 (Default)
+      term_buffer = 50 (Default)
+      window = 25 (Default)
+    algorithm = hmc (Default)
+      hmc
+        engine = nuts (Default)
+          nuts
+            max_depth = 10 (Default)
+        metric = diag_e (Default)
+        metric_file =  (Default)
+        stepsize = 1 (Default)
+        stepsize_jitter = 0 (Default)
+    num_chains = 4
+id = 1 (Default)
+data
+  file = Model2/Data/cc.json
+init = /var/folders/tg/1rvyy6v13kq9w3s_hnykjpmc0000gp/T/tmpg8x_te24/0hrqdxef.json
+random
+  seed = 22589
+output
+  file = /Users/guilhermegarcia/Desktop/IASTRO_Estagio/output2/cc/cc-20230720144828.csv
+  diagnostic_file =  (Default)
+  refresh = 100 (Default)
+  sig_figs = -1 (Default)
+  profile_file = profile.csv (Default)
+num_threads = 4 (Default)
+
+
+Gradient evaluation took 1.8e-05 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0.18 seconds.
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 4e-06 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0.04 seconds.
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 4e-06 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0.04 seconds.
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 4e-06 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0.04 seconds.
+Adjust your expectations accordingly!
+
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[11] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[11] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[11] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [1] Iteration:   1 / 1000 [  0%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [2] Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain [3] Iteration:   1 / 1000 [  0%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[11] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[12] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,Exception: normal_lpdf: Random variable[14] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)Chain [4] Iteration:   1 / 1000 [  0%]  (Warmup)
+
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[14] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[4] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[10] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[10] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[23] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[10] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[19] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[15] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[29] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[25] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[29] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[27] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[28] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[28] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[29] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[27] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[27] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[30] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[27] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[27] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[29] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[27] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[28] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[26] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[30] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[26] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[27] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[30] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[27] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[20] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[30] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[19] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [2] Iteration: 100 / 1000 [ 10%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[16] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [4] Iteration: 100 / 1000 [ 10%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[23] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[12] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[23] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[28] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[27] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[3] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [2] Iteration: 200 / 1000 [ 20%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[26] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[29] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[21] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[28] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[30] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [2] Iteration: 300 / 1000 [ 30%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[20] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[24] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [2] Iteration: 400 / 1000 [ 40%]  (Warmup)
+Chain [4] Iteration: 200 / 1000 [ 20%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[10] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[27] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[27] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [3] Iteration: 100 / 1000 [ 10%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[10] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [2] Iteration: 500 / 1000 [ 50%]  (Warmup)
+Chain [2] Iteration: 501 / 1000 [ 50%]  (Sampling)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[8] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[29] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [1] Iteration: 100 / 1000 [ 10%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[20] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [4] Iteration: 300 / 1000 [ 30%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[21] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[26] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[10] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [2] Iteration: 600 / 1000 [ 60%]  (Sampling)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [4] Iteration: 400 / 1000 [ 40%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [3] Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain [1] Iteration: 200 / 1000 [ 20%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[30] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[4] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [4] Iteration: 500 / 1000 [ 50%]  (Warmup)
+Chain [4] Iteration: 501 / 1000 [ 50%]  (Sampling)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[10] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [2] Iteration: 700 / 1000 [ 70%]  (Sampling)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[27] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [3] Iteration: 300 / 1000 [ 30%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[27] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [1] Iteration: 300 / 1000 [ 30%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[28] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [4] Iteration: 600 / 1000 [ 60%]  (Sampling)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[27] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [3] Iteration: 400 / 1000 [ 40%]  (Warmup)
+Chain [2] Iteration: 800 / 1000 [ 80%]  (Sampling)
+Chain [1] Iteration: 400 / 1000 [ 40%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[27] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[10] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[28] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [4] Iteration: 700 / 1000 [ 70%]  (Sampling)
+Chain [3] Iteration: 500 / 1000 [ 50%]  (Warmup)
+Chain [3] Iteration: 501 / 1000 [ 50%]  (Sampling)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[31] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [1] Iteration: 500 / 1000 [ 50%]  (Warmup)
+Chain [1] Iteration: 501 / 1000 [ 50%]  (Sampling)
+Chain [2] Iteration: 900 / 1000 [ 90%]  (Sampling)
+Chain [4] Iteration: 800 / 1000 [ 80%]  (Sampling)
+Chain [3] Iteration: 600 / 1000 [ 60%]  (Sampling)
+Chain [1] Iteration: 600 / 1000 [ 60%]  (Sampling)
+Chain [2] Iteration: 1000 / 1000 [100%]  (Sampling)
+
+ Elapsed Time: 0.154 seconds (Warm-up)
+               0.045 seconds (Sampling)
+               0.199 seconds (Total)
+
+Chain [4] Iteration: 900 / 1000 [ 90%]  (Sampling)
+Chain [1] Iteration: 700 / 1000 [ 70%]  (Sampling)
+Chain [3] Iteration: 700 / 1000 [ 70%]  (Sampling)
+Chain [4] Iteration: 1000 / 1000 [100%]  (Sampling)
+
+ Elapsed Time: 0.172 seconds (Warm-up)
+               0.039 seconds (Sampling)
+               0.211 seconds (Total)
+
+Chain [1] Iteration: 800 / 1000 [ 80%]  (Sampling)
+Chain [3] Iteration: 800 / 1000 [ 80%]  (Sampling)
+Chain [1] Iteration: 900 / 1000 [ 90%]  (Sampling)
+Chain [3] Iteration: 900 / 1000 [ 90%]  (Sampling)
+Chain [1] Iteration: 1000 / 1000 [100%]  (Sampling)
+
+ Elapsed Time: 0.189 seconds (Warm-up)
+               0.036 seconds (Sampling)
+               0.225 seconds (Total)
+
+Chain [3] Iteration: 1000 / 1000 [100%]  (Sampling)
+
+ Elapsed Time: 0.188 seconds (Warm-up)
+               0.04 seconds (Sampling)
+               0.228 seconds (Total)
+

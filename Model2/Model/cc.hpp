@@ -8,35 +8,65 @@ using namespace stan::math;
 
 
 stan::math::profile_map profiles__;
-static constexpr std::array<const char*, 21> locations_array__ = 
+static constexpr std::array<const char*, 34> locations_array__ = 
 {" (found before start of program)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 33, column 2 to column 10)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 34, column 2 to column 10)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 35, column 2 to column 12)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 42, column 2 to column 39)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 49, column 2 to column 24)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 54, column 4 to column 36)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 52, column 17 to line 55, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 52, column 1 to line 55, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 69, column 2 to column 24)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 70, column 2 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 71, column 2 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 79, column 1 to column 28)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 20, column 2 to column 19)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 21, column 2 to column 19)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 22, column 2 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 57, column 2 to column 10)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 58, column 2 to column 10)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 59, column 2 to column 12)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 66, column 2 to column 39)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 73, column 2 to column 24)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 78, column 4 to column 36)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 76, column 17 to line 79, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 76, column 1 to line 79, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 93, column 2 to column 24)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 94, column 2 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 95, column 2 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 103, column 1 to column 28)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 44, column 2 to column 19)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 45, column 2 to column 19)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 46, column 2 to column 23)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 7, column 4 to column 23)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 8, column 4 to column 23)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 9, column 4 to column 25)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 12, column 4 to column 60)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 4, column 36 to line 15, column 1)"};
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 4, column 36 to line 17, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 22, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 23, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 24, column 4 to column 25)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 27, column 4 to column 34)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 20, column 89 to line 28, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 31, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 32, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 33, column 4 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 35, column 4 to column 28)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 36, column 4 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 37, column 4 to column 26)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 38, column 4 to column 71)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model2/Model/cc.stan', line 30, column 32 to line 39, column 1)"};
 
+struct rs_functor__ {
+  template <typename T0__,
+            stan::require_all_t<stan::is_stan_scalar<T0__>>* = nullptr>
+  stan::promote_args_t<T0__>
+  operator()(const std::vector<T0__>& theta, std::ostream* pstream__) const;
+};
 struct E_functor__ {
   template <typename T0__, typename T1__,
             stan::require_all_t<stan::is_stan_scalar<T0__>,
                                 stan::is_stan_scalar<T1__>>* = nullptr>
   stan::promote_args_t<T0__, T1__>
   operator()(const T0__& x, const std::vector<T1__>& theta,
+             std::ostream* pstream__) const;
+};
+struct integrand_functor__ {
+  template <typename T0__, typename T1__, typename T2__, typename T3__,
+            stan::require_all_t<stan::is_stan_scalar<T0__>,
+                                stan::is_stan_scalar<T1__>,
+                                stan::is_stan_scalar<T2__>,
+                                stan::is_stan_scalar<T3__>>* = nullptr>
+  stan::promote_args_t<T0__, T1__, T2__, T3__>
+  operator()(const T0__& x, const T1__& xc, const std::vector<T2__>& theta,
+             const std::vector<T3__>& x_r, const std::vector<int>& x_i,
              std::ostream* pstream__) const;
 };
 
@@ -52,12 +82,12 @@ template <typename T0__, typename T1__,
     local_scalar_t__ DUMMY_VAR__(std::numeric_limits<double>::quiet_NaN());
     (void) DUMMY_VAR__;  // suppress unused var warning
     try {
-      local_scalar_t__ Om = DUMMY_VAR__;
-      current_statement__ = 16;
-      Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
       local_scalar_t__ H0 = DUMMY_VAR__;
+      current_statement__ = 16;
+      H0 = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
+      local_scalar_t__ Om = DUMMY_VAR__;
       current_statement__ = 17;
-      H0 = stan::model::rvalue(theta, "theta", stan::model::index_uni(2));
+      Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(2));
       local_scalar_t__ zeta = DUMMY_VAR__;
       current_statement__ = 18;
       zeta = stan::model::rvalue(theta, "theta", stan::model::index_uni(3));
@@ -69,6 +99,84 @@ template <typename T0__, typename T1__,
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }
     }
+template <typename T0__, typename T1__, typename T2__, typename T3__,
+          stan::require_all_t<stan::is_stan_scalar<T0__>,
+                              stan::is_stan_scalar<T1__>,
+                              stan::is_stan_scalar<T2__>,
+                              stan::is_stan_scalar<T3__>>* = nullptr>
+  stan::promote_args_t<T0__, T1__, T2__, T3__>
+  integrand(const T0__& x, const T1__& xc, const std::vector<T2__>& theta,
+            const std::vector<T3__>& x_r, const std::vector<int>& x_i,
+            std::ostream* pstream__) {
+    using local_scalar_t__ = stan::promote_args_t<T0__, T1__, T2__, T3__>;
+    int current_statement__ = 0; 
+    static constexpr bool propto__ = true;
+    (void) propto__;
+    local_scalar_t__ DUMMY_VAR__(std::numeric_limits<double>::quiet_NaN());
+    (void) DUMMY_VAR__;  // suppress unused var warning
+    try {
+      local_scalar_t__ H0 = DUMMY_VAR__;
+      current_statement__ = 21;
+      H0 = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
+      local_scalar_t__ Om = DUMMY_VAR__;
+      current_statement__ = 22;
+      Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(2));
+      local_scalar_t__ zeta = DUMMY_VAR__;
+      current_statement__ = 23;
+      zeta = stan::model::rvalue(theta, "theta", stan::model::index_uni(3));
+      current_statement__ = 24;
+      return (1 /
+               E(x, std::vector<local_scalar_t__>{H0, Om, zeta}, pstream__));
+    } catch (const std::exception& e) {
+      stan::lang::rethrow_located(e, locations_array__[current_statement__]);
+    }
+    }
+template <typename T0__,
+          stan::require_all_t<stan::is_stan_scalar<T0__>>* = nullptr>
+  stan::promote_args_t<T0__>
+  rs(const std::vector<T0__>& theta, std::ostream* pstream__) {
+    using local_scalar_t__ = stan::promote_args_t<T0__>;
+    int current_statement__ = 0; 
+    static constexpr bool propto__ = true;
+    (void) propto__;
+    local_scalar_t__ DUMMY_VAR__(std::numeric_limits<double>::quiet_NaN());
+    (void) DUMMY_VAR__;  // suppress unused var warning
+    try {
+      local_scalar_t__ H0 = DUMMY_VAR__;
+      current_statement__ = 26;
+      H0 = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
+      local_scalar_t__ Om = DUMMY_VAR__;
+      current_statement__ = 27;
+      Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(2));
+      local_scalar_t__ M = DUMMY_VAR__;
+      current_statement__ = 28;
+      M = stan::model::rvalue(theta, "theta", stan::model::index_uni(3));
+      local_scalar_t__ wm = DUMMY_VAR__;
+      current_statement__ = 29;
+      wm = (Om * stan::math::pow((H0 / 100), 2));
+      local_scalar_t__ wb = DUMMY_VAR__;
+      current_statement__ = 30;
+      wb = 0.02226;
+      local_scalar_t__ wn = DUMMY_VAR__;
+      current_statement__ = 31;
+      wn = (0.0107 * 0.06);
+      current_statement__ = 32;
+      return ((55.154 *
+                stan::math::exp((-72.3 * stan::math::pow((wn + 0.0006), 2))))
+               /
+               (stan::math::pow(wm, 0.25351) * stan::math::pow(wb, 0.12807)));
+    } catch (const std::exception& e) {
+      stan::lang::rethrow_located(e, locations_array__[current_statement__]);
+    }
+    }
+template <typename T0__, stan::require_all_t<stan::is_stan_scalar<T0__>>*>
+stan::promote_args_t<T0__>
+rs_functor__::operator()(const std::vector<T0__>& theta,
+                         std::ostream* pstream__)  const
+{
+  return rs(theta, pstream__);
+}
+
 template <typename T0__, typename T1__,
           stan::require_all_t<stan::is_stan_scalar<T0__>,
                               stan::is_stan_scalar<T1__>>*>
@@ -77,6 +185,21 @@ E_functor__::operator()(const T0__& x, const std::vector<T1__>& theta,
                         std::ostream* pstream__)  const
 {
   return E(x, theta, pstream__);
+}
+
+template <typename T0__, typename T1__, typename T2__, typename T3__,
+          stan::require_all_t<stan::is_stan_scalar<T0__>,
+                              stan::is_stan_scalar<T1__>,
+                              stan::is_stan_scalar<T2__>,
+                              stan::is_stan_scalar<T3__>>*>
+stan::promote_args_t<T0__, T1__, T2__, T3__>
+integrand_functor__::operator()(const T0__& x, const T1__& xc,
+                                const std::vector<T2__>& theta,
+                                const std::vector<T3__>& x_r,
+                                const std::vector<int>& x_i,
+                                std::ostream* pstream__)  const
+{
+  return integrand(x, xc, theta, x_r, x_i, pstream__);
 }
 
  class cc_model final : public model_base_crtp<cc_model> {
@@ -173,7 +296,7 @@ E_functor__::operator()(const T0__& x, const std::vector<T1__>& theta,
       std::vector<local_scalar_t__> theta =
          std::vector<local_scalar_t__>(3, DUMMY_VAR__);
       current_statement__ = 4;
-      stan::model::assign(theta, std::vector<local_scalar_t__>{Om, H0, zeta},
+      stan::model::assign(theta, std::vector<local_scalar_t__>{H0, Om, zeta},
         "assigning variable theta");
       std::vector<local_scalar_t__> H_theo =
          std::vector<local_scalar_t__>(32, DUMMY_VAR__);
@@ -250,7 +373,7 @@ E_functor__::operator()(const T0__& x, const std::vector<T1__>& theta,
         return ;
       } 
       current_statement__ = 4;
-      stan::model::assign(theta, std::vector<local_scalar_t__>{Om, H0, zeta},
+      stan::model::assign(theta, std::vector<local_scalar_t__>{H0, Om, zeta},
         "assigning variable theta");
       current_statement__ = 8;
       for (int i = 1; i <= 32; ++i) {
