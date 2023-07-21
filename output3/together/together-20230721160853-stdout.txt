@@ -1,0 +1,361 @@
+method = sample (Default)
+  sample
+    num_samples = 500
+    num_warmup = 500
+    save_warmup = 0 (Default)
+    thin = 1 (Default)
+    adapt
+      engaged = 1 (Default)
+      gamma = 0.050000000000000003 (Default)
+      delta = 0.80000000000000004 (Default)
+      kappa = 0.75 (Default)
+      t0 = 10 (Default)
+      init_buffer = 75 (Default)
+      term_buffer = 50 (Default)
+      window = 25 (Default)
+    algorithm = hmc (Default)
+      hmc
+        engine = nuts (Default)
+          nuts
+            max_depth = 10 (Default)
+        metric = diag_e (Default)
+        metric_file =  (Default)
+        stepsize = 1 (Default)
+        stepsize_jitter = 0 (Default)
+    num_chains = 4
+id = 1 (Default)
+data
+  file = Model3/Data/3together.json
+init = /var/folders/tg/1rvyy6v13kq9w3s_hnykjpmc0000gp/T/tmp27jg97fg/qzlcs4cf.json
+random
+  seed = 23065
+output
+  file = /Users/guilhermegarcia/Desktop/IASTRO_Estagio/output3/together/together-20230721160853.csv
+  diagnostic_file =  (Default)
+  refresh = 100 (Default)
+  sig_figs = -1 (Default)
+  profile_file = profile.csv (Default)
+num_threads = 4 (Default)
+
+
+Gradient evaluation took 0.001897 seconds
+1000 transitions using 10 leapfrog steps per transition would take 18.97 seconds.
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 0.001712 seconds
+1000 transitions using 10 leapfrog steps per transition would take 17.12 seconds.
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 0.001706 seconds
+1000 transitions using 10 leapfrog steps per transition would take 17.06 seconds.
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 0.001707 seconds
+1000 transitions using 10 leapfrog steps per transition would take 17.07 seconds.
+Adjust your expectations accordingly!
+
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -229.10785379122075. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -229.05968473123338. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -228.85835944315124. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -229.38655568009585. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -228.32105811478459. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -229.47003140947345. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -229.48541090160302. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -229.5591388558922. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -57.333374445635826. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -57.140220970221989. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -57.239038319972089. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -57.415406441098412. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -14.353872854537837. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -14.342725644061314. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -14.389642037581229. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -14.47062559721634. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -3.6755405070923652. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -3.6584413608230646. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -3.7184533648748874. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -3.7059342512739581. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -0.99915393891457482. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -0.96175384350252413. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -0.98642773455435739. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -0.98191490901191658. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [2] Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain [4] Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain [3] Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain [1] Iteration:   1 / 1000 [  0%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -18883.335744449731. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -17854.466811640999. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -11936.487546645554. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -540.39955869685082. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -510.54029870959164. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -341.30259649126896. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -11023.275081242498. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -5.2944979124621749. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -3.4653066721574124. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -5.1204744188338598. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -314.78573059033096. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -3.24114192800495. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -0.48347489634290169. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 175, column 1 to column 32)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [4] Iteration: 100 / 1000 [ 10%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 175, column 1 to column 32)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [4] Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain [3] Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain [4] Iteration: 300 / 1000 [ 30%]  (Warmup)
+Chain [4] Iteration: 400 / 1000 [ 40%]  (Warmup)
+Chain [3] Iteration: 200 / 1000 [ 20%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 175, column 1 to column 32)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -0.40888715193053765. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 73, column 3 to column 49)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [4] Iteration: 500 / 1000 [ 50%]  (Warmup)
+Chain [4] Iteration: 501 / 1000 [ 50%]  (Sampling)
+Chain [3] Iteration: 300 / 1000 [ 30%]  (Warmup)
+Chain [4] Iteration: 600 / 1000 [ 60%]  (Sampling)
+Chain [3] Iteration: 400 / 1000 [ 40%]  (Warmup)
+Chain [1] Iteration: 100 / 1000 [ 10%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 175, column 1 to column 32)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 175, column 1 to column 32)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [4] Iteration: 700 / 1000 [ 70%]  (Sampling)
+Chain [3] Iteration: 500 / 1000 [ 50%]  (Warmup)
+Chain [3] Iteration: 501 / 1000 [ 50%]  (Sampling)
+Chain [2] Iteration: 100 / 1000 [ 10%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 175, column 1 to column 32)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [4] Iteration: 800 / 1000 [ 80%]  (Sampling)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 175, column 1 to column 32)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [1] Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain [3] Iteration: 600 / 1000 [ 60%]  (Sampling)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/together.stan', line 175, column 1 to column 32)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [4] Iteration: 900 / 1000 [ 90%]  (Sampling)
+Chain [1] Iteration: 300 / 1000 [ 30%]  (Warmup)
+Chain [2] Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain [3] Iteration: 700 / 1000 [ 70%]  (Sampling)
+Chain [4] Iteration: 1000 / 1000 [100%]  (Sampling)
+
+ Elapsed Time: 20.954 seconds (Warm-up)
+               6.027 seconds (Sampling)
+               26.981 seconds (Total)
+
+Chain [1] Iteration: 400 / 1000 [ 40%]  (Warmup)
+Chain [2] Iteration: 300 / 1000 [ 30%]  (Warmup)
+Chain [3] Iteration: 800 / 1000 [ 80%]  (Sampling)
+Chain [2] Iteration: 400 / 1000 [ 40%]  (Warmup)
+Chain [1] Iteration: 500 / 1000 [ 50%]  (Warmup)
+Chain [1] Iteration: 501 / 1000 [ 50%]  (Sampling)
+Chain [3] Iteration: 900 / 1000 [ 90%]  (Sampling)
+Chain [2] Iteration: 500 / 1000 [ 50%]  (Warmup)
+Chain [2] Iteration: 501 / 1000 [ 50%]  (Sampling)
+Chain [1] Iteration: 600 / 1000 [ 60%]  (Sampling)
+Chain [3] Iteration: 1000 / 1000 [100%]  (Sampling)
+
+ Elapsed Time: 23.822 seconds (Warm-up)
+               6.669 seconds (Sampling)
+               30.491 seconds (Total)
+
+Chain [2] Iteration: 600 / 1000 [ 60%]  (Sampling)
+Chain [1] Iteration: 700 / 1000 [ 70%]  (Sampling)
+Chain [2] Iteration: 700 / 1000 [ 70%]  (Sampling)
+Chain [1] Iteration: 800 / 1000 [ 80%]  (Sampling)
+Chain [2] Iteration: 800 / 1000 [ 80%]  (Sampling)
+Chain [1] Iteration: 900 / 1000 [ 90%]  (Sampling)
+Chain [2] Iteration: 900 / 1000 [ 90%]  (Sampling)
+Chain [1] Iteration: 1000 / 1000 [100%]  (Sampling)
+
+ Elapsed Time: 28.809 seconds (Warm-up)
+               5.74 seconds (Sampling)
+               34.549 seconds (Total)
+
+Chain [2] Iteration: 1000 / 1000 [100%]  (Sampling)
+
+ Elapsed Time: 29.964 seconds (Warm-up)
+               5.459 seconds (Sampling)
+               35.423 seconds (Total)
+
