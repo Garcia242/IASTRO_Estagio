@@ -1,0 +1,456 @@
+method = sample (Default)
+  sample
+    num_samples = 1000 (Default)
+    num_warmup = 1000 (Default)
+    save_warmup = 1
+    thin = 1 (Default)
+    adapt
+      engaged = 1 (Default)
+      gamma = 0.050000000000000003 (Default)
+      delta = 0.80000000000000004 (Default)
+      kappa = 0.75 (Default)
+      t0 = 10 (Default)
+      init_buffer = 75 (Default)
+      term_buffer = 50 (Default)
+      window = 25 (Default)
+    algorithm = hmc (Default)
+      hmc
+        engine = nuts (Default)
+          nuts
+            max_depth = 10 (Default)
+        metric = diag_e (Default)
+        metric_file =  (Default)
+        stepsize = 1 (Default)
+        stepsize_jitter = 0 (Default)
+    num_chains = 4
+id = 1 (Default)
+data
+  file = Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Data/bao.json
+init = /var/folders/tg/1rvyy6v13kq9w3s_hnykjpmc0000gp/T/tmpv_ravs6o/g5_4s2h_.json
+random
+  seed = 19058
+output
+  file = /Users/guilhermegarcia/Desktop/IASTRO_Estagio/normal/bao/BAO-20230722215942.csv
+  diagnostic_file =  (Default)
+  refresh = 100 (Default)
+  sig_figs = -1 (Default)
+  profile_file = profile.csv (Default)
+num_threads = 4 (Default)
+
+
+Gradient evaluation took 0.000176 seconds
+1000 transitions using 10 leapfrog steps per transition would take 1.76 seconds.
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 0.000139 seconds
+1000 transitions using 10 leapfrog steps per transition would take 1.39 seconds.
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 0.000138 seconds
+1000 transitions using 10 leapfrog steps per transition would take 1.38 seconds.
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 0.000136 seconds
+1000 transitions using 10 leapfrog steps per transition would take 1.36 seconds.
+Adjust your expectations accordingly!
+
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+
+
+Chain [1] Iteration:    1 / 2000 [  0%]  (Warmup)
+Chain [2] Iteration:    1 / 2000 [  0%]  (Warmup)
+Chain [4] Iteration:    1 / 2000 [  0%]  (Warmup)
+Chain [3] Iteration:    1 / 2000 [  0%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 1.02577e-20 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 98, column 2 to column 30)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 98, column 2 to column 30)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 98, column 2 to column 30)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [4] Iteration:  100 / 2000 [  5%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [3] Iteration:  100 / 2000 [  5%]  (Warmup)
+Chain [1] Iteration:  100 / 2000 [  5%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [2] Iteration:  100 / 2000 [  5%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 98, column 2 to column 30)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [4] Iteration:  200 / 2000 [ 10%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 98, column 2 to column 30)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [2] Iteration:  200 / 2000 [ 10%]  (Warmup)
+Chain [3] Iteration:  200 / 2000 [ 10%]  (Warmup)
+Chain [1] Iteration:  200 / 2000 [ 10%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 98, column 2 to column 30)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 1.33555e-05 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [4] Iteration:  300 / 2000 [ 15%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [1] Iteration:  300 / 2000 [ 15%]  (Warmup)
+Chain [2] Iteration:  300 / 2000 [ 15%]  (Warmup)
+Chain [3] Iteration:  300 / 2000 [ 15%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 98, column 2 to column 30)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [4] Iteration:  400 / 2000 [ 20%]  (Warmup)
+Chain [1] Iteration:  400 / 2000 [ 20%]  (Warmup)
+Chain [3] Iteration:  400 / 2000 [ 20%]  (Warmup)
+Chain [2] Iteration:  400 / 2000 [ 20%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 1.91682e-05 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [4] Iteration:  500 / 2000 [ 25%]  (Warmup)
+Chain [2] Iteration:  500 / 2000 [ 25%]  (Warmup)
+Chain [1] Iteration:  500 / 2000 [ 25%]  (Warmup)
+Chain [3] Iteration:  500 / 2000 [ 25%]  (Warmup)
+Chain [4] Iteration:  600 / 2000 [ 30%]  (Warmup)
+Chain [2] Iteration:  600 / 2000 [ 30%]  (Warmup)
+Chain [1] Iteration:  600 / 2000 [ 30%]  (Warmup)
+Chain [3] Iteration:  600 / 2000 [ 30%]  (Warmup)
+Chain [2] Iteration:  700 / 2000 [ 35%]  (Warmup)
+Chain [4] Iteration:  700 / 2000 [ 35%]  (Warmup)
+Chain [1] Iteration:  700 / 2000 [ 35%]  (Warmup)
+Chain [3] Iteration:  700 / 2000 [ 35%]  (Warmup)
+Chain [2] Iteration:  800 / 2000 [ 40%]  (Warmup)
+Chain [4] Iteration:  800 / 2000 [ 40%]  (Warmup)
+Chain [1] Iteration:  800 / 2000 [ 40%]  (Warmup)
+Chain [3] Iteration:  800 / 2000 [ 40%]  (Warmup)
+Chain [2] Iteration:  900 / 2000 [ 45%]  (Warmup)
+Chain [4] Iteration:  900 / 2000 [ 45%]  (Warmup)
+Chain [1] Iteration:  900 / 2000 [ 45%]  (Warmup)
+Chain [3] Iteration:  900 / 2000 [ 45%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 1.23627e-05 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/Baryonic_Acoustic_Oscilators/Model/BAO.stan', line 66, column 4 to column 161)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [2] Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Chain [2] Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Chain [1] Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Chain [4] Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Chain [1] Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Chain [4] Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Chain [3] Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Chain [3] Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Chain [2] Iteration: 1100 / 2000 [ 55%]  (Sampling)
+Chain [1] Iteration: 1100 / 2000 [ 55%]  (Sampling)
+Chain [3] Iteration: 1100 / 2000 [ 55%]  (Sampling)
+Chain [4] Iteration: 1100 / 2000 [ 55%]  (Sampling)
+Chain [2] Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Chain [1] Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Chain [3] Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Chain [4] Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Chain [1] Iteration: 1300 / 2000 [ 65%]  (Sampling)
+Chain [3] Iteration: 1300 / 2000 [ 65%]  (Sampling)
+Chain [2] Iteration: 1300 / 2000 [ 65%]  (Sampling)
+Chain [4] Iteration: 1300 / 2000 [ 65%]  (Sampling)
+Chain [1] Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Chain [3] Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Chain [2] Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Chain [4] Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Chain [1] Iteration: 1500 / 2000 [ 75%]  (Sampling)
+Chain [3] Iteration: 1500 / 2000 [ 75%]  (Sampling)
+Chain [4] Iteration: 1500 / 2000 [ 75%]  (Sampling)
+Chain [2] Iteration: 1500 / 2000 [ 75%]  (Sampling)
+Chain [1] Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Chain [3] Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Chain [4] Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Chain [2] Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Chain [1] Iteration: 1700 / 2000 [ 85%]  (Sampling)
+Chain [3] Iteration: 1700 / 2000 [ 85%]  (Sampling)
+Chain [4] Iteration: 1700 / 2000 [ 85%]  (Sampling)
+Chain [2] Iteration: 1700 / 2000 [ 85%]  (Sampling)
+Chain [1] Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Chain [3] Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Chain [4] Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Chain [1] Iteration: 1900 / 2000 [ 95%]  (Sampling)
+Chain [2] Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Chain [3] Iteration: 1900 / 2000 [ 95%]  (Sampling)
+Chain [1] Iteration: 2000 / 2000 [100%]  (Sampling)
+
+ Elapsed Time: 1.404 seconds (Warm-up)
+               1.23 seconds (Sampling)
+               2.634 seconds (Total)
+
+Chain [4] Iteration: 1900 / 2000 [ 95%]  (Sampling)
+Chain [2] Iteration: 1900 / 2000 [ 95%]  (Sampling)
+Chain [3] Iteration: 2000 / 2000 [100%]  (Sampling)
+
+ Elapsed Time: 1.431 seconds (Warm-up)
+               1.228 seconds (Sampling)
+               2.659 seconds (Total)
+
+Chain [4] Iteration: 2000 / 2000 [100%]  (Sampling)
+
+ Elapsed Time: 1.41 seconds (Warm-up)
+               1.361 seconds (Sampling)
+               2.771 seconds (Total)
+
+Chain [2] Iteration: 2000 / 2000 [100%]  (Sampling)
+
+ Elapsed Time: 1.386 seconds (Warm-up)
+               1.403 seconds (Sampling)
+               2.789 seconds (Total)
+

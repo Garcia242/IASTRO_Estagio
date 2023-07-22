@@ -10,56 +10,56 @@ using namespace stan::math;
 stan::math::profile_map profiles__;
 static constexpr std::array<const char*, 51> locations_array__ = 
 {" (found before start of program)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 45, column 2 to column 10)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 46, column 2 to column 10)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 47, column 2 to column 9)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 54, column 4 to column 38)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 56, column 4 to column 26)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 68, column 4 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 70, column 4 to column 26)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 81, column 4 to column 26)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 83, column 4 to column 18)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 85, column 4 to column 27)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 61, column 4 to column 48)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 59, column 18 to line 62, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 59, column 2 to line 62, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 78, column 4 to column 40)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 74, column 18 to line 79, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 74, column 2 to line 79, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 96, column 4 to column 164)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 94, column 17 to line 98, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 94, column 2 to line 98, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 105, column 2 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 106, column 2 to column 24)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 107, column 2 to column 21)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 110, column 2 to column 28)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 111, column 2 to column 28)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 112, column 2 to column 32)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 26, column 2 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 27, column 2 to column 20)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 28, column 2 to column 21)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 29, column 2 to column 19)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 30, column 2 to column 19)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 31, column 2 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 32, column 2 to column 21)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 33, column 2 to column 19)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 34, column 2 to column 24)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 40, column 2 to column 20)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 41, column 2 to column 19)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 4, column 4 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 5, column 4 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 6, column 4 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 9, column 4 to column 39)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 3, column 89 to line 10, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 13, column 4 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 14, column 4 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 15, column 4 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 17, column 4 to column 28)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 18, column 4 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 19, column 4 to column 26)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 20, column 4 to column 71)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo/AllTogetherNow/Model/3together.stan', line 12, column 29 to line 21, column 1)"};
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 45, column 2 to column 10)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 46, column 2 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 47, column 2 to column 9)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 54, column 4 to column 38)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 56, column 4 to column 26)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 68, column 4 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 70, column 4 to column 26)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 81, column 4 to column 26)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 83, column 4 to column 18)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 85, column 4 to column 27)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 61, column 4 to column 48)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 59, column 18 to line 62, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 59, column 2 to line 62, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 78, column 4 to column 40)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 74, column 18 to line 79, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 74, column 2 to line 79, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 96, column 4 to column 164)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 94, column 17 to line 98, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 94, column 2 to line 98, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 105, column 2 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 106, column 2 to column 24)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 107, column 2 to column 21)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 110, column 2 to column 28)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 111, column 2 to column 28)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 112, column 2 to column 32)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 26, column 2 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 27, column 2 to column 20)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 28, column 2 to column 21)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 29, column 2 to column 19)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 30, column 2 to column 19)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 31, column 2 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 32, column 2 to column 21)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 33, column 2 to column 19)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 34, column 2 to column 24)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 40, column 2 to column 20)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 41, column 2 to column 19)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 4, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 5, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 6, column 4 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 9, column 4 to column 39)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 3, column 89 to line 10, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 13, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 14, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 15, column 4 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 17, column 4 to column 28)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 18, column 4 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 19, column 4 to column 26)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 20, column 4 to column 71)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 12, column 29 to line 21, column 1)"};
 
 struct integrand_functor__ {
   template <typename T0__, typename T1__, typename T2__, typename T3__,
@@ -329,7 +329,8 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
       H0 = in__.template read<local_scalar_t__>();
       local_scalar_t__ Om = DUMMY_VAR__;
       current_statement__ = 2;
-      Om = in__.template read<local_scalar_t__>();
+      Om = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(0,
+             lp__);
       local_scalar_t__ M = DUMMY_VAR__;
       current_statement__ = 3;
       M = in__.template read<local_scalar_t__>();
@@ -460,7 +461,8 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
       H0 = in__.template read<local_scalar_t__>();
       double Om = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 2;
-      Om = in__.template read<local_scalar_t__>();
+      Om = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(0,
+             lp__);
       double M = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 3;
       M = in__.template read<local_scalar_t__>();
@@ -584,7 +586,7 @@ rs_functor__::operator()(const std::vector<T0__>& theta,
       out__.write(H0);
       local_scalar_t__ Om = DUMMY_VAR__;
       Om = in__.read<local_scalar_t__>();
-      out__.write(Om);
+      out__.write_free_lb(0, Om);
       local_scalar_t__ M = DUMMY_VAR__;
       M = in__.read<local_scalar_t__>();
       out__.write(M);

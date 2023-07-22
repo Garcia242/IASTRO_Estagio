@@ -1,0 +1,341 @@
+method = sample (Default)
+  sample
+    num_samples = 500
+    num_warmup = 500
+    save_warmup = 0 (Default)
+    thin = 1 (Default)
+    adapt
+      engaged = 1 (Default)
+      gamma = 0.050000000000000003 (Default)
+      delta = 0.80000000000000004 (Default)
+      kappa = 0.75 (Default)
+      t0 = 10 (Default)
+      init_buffer = 75 (Default)
+      term_buffer = 50 (Default)
+      window = 25 (Default)
+    algorithm = hmc (Default)
+      hmc
+        engine = nuts (Default)
+          nuts
+            max_depth = 10 (Default)
+        metric = diag_e (Default)
+        metric_file =  (Default)
+        stepsize = 1 (Default)
+        stepsize_jitter = 0 (Default)
+    num_chains = 4
+id = 1 (Default)
+data
+  file = Meu_Codigo_Normal_Model/AllTogetherNow/Data/3together.json
+init = /var/folders/tg/1rvyy6v13kq9w3s_hnykjpmc0000gp/T/tmpev8vau9s/j19j124t.json
+random
+  seed = 18309
+output
+  file = /Users/guilhermegarcia/Desktop/IASTRO_Estagio/normal/together/3together-20230722215822.csv
+  diagnostic_file =  (Default)
+  refresh = 100 (Default)
+  sig_figs = -1 (Default)
+  profile_file = profile.csv (Default)
+num_threads = 4 (Default)
+
+
+Gradient evaluation took 0.001566 seconds
+1000 transitions using 10 leapfrog steps per transition would take 15.66 seconds.
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 0.001295 seconds
+1000 transitions using 10 leapfrog steps per transition would take 12.95 seconds.
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 0.001324 seconds
+1000 transitions using 10 leapfrog steps per transition would take 13.24 seconds.
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 0.001294 seconds
+1000 transitions using 10 leapfrog steps per transition would take 12.94 seconds.
+Adjust your expectations accordingly!
+
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 3.791e-76 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 3.79097e-76 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 3.66088e-76 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 4.08239e-24 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 3.94059e-76 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 6.76618e-24 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 6.85619e-24 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 7.04741e-24 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 5.56609e-21 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 1.04463e-20 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [4] Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain [2] Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain [3] Iteration:   1 / 1000 [  0%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [1] Iteration:   1 / 1000 [  0%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature found your function to be non-finite everywhere! Please check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/AllTogetherNow/Model/3together.stan', line 77, column 4 to column 100)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [3] Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain [4] Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain [1] Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain [2] Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain [3] Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain [4] Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain [1] Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain [4] Iteration: 300 / 1000 [ 30%]  (Warmup)
+Chain [2] Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain [3] Iteration: 300 / 1000 [ 30%]  (Warmup)
+Chain [1] Iteration: 300 / 1000 [ 30%]  (Warmup)
+Chain [2] Iteration: 300 / 1000 [ 30%]  (Warmup)
+Chain [4] Iteration: 400 / 1000 [ 40%]  (Warmup)
+Chain [3] Iteration: 400 / 1000 [ 40%]  (Warmup)
+Chain [1] Iteration: 400 / 1000 [ 40%]  (Warmup)
+Chain [2] Iteration: 400 / 1000 [ 40%]  (Warmup)
+Chain [4] Iteration: 500 / 1000 [ 50%]  (Warmup)
+Chain [4] Iteration: 501 / 1000 [ 50%]  (Sampling)
+Chain [3] Iteration: 500 / 1000 [ 50%]  (Warmup)
+Chain [3] Iteration: 501 / 1000 [ 50%]  (Sampling)
+Chain [1] Iteration: 500 / 1000 [ 50%]  (Warmup)
+Chain [1] Iteration: 501 / 1000 [ 50%]  (Sampling)
+Chain [2] Iteration: 500 / 1000 [ 50%]  (Warmup)
+Chain [4] Iteration: 600 / 1000 [ 60%]  (Sampling)
+Chain [2] Iteration: 501 / 1000 [ 50%]  (Sampling)
+Chain [3] Iteration: 600 / 1000 [ 60%]  (Sampling)
+Chain [4] Iteration: 700 / 1000 [ 70%]  (Sampling)
+Chain [2] Iteration: 600 / 1000 [ 60%]  (Sampling)
+Chain [1] Iteration: 600 / 1000 [ 60%]  (Sampling)
+Chain [2] Iteration: 700 / 1000 [ 70%]  (Sampling)
+Chain [4] Iteration: 800 / 1000 [ 80%]  (Sampling)
+Chain [1] Iteration: 700 / 1000 [ 70%]  (Sampling)
+Chain [3] Iteration: 700 / 1000 [ 70%]  (Sampling)
+Chain [2] Iteration: 800 / 1000 [ 80%]  (Sampling)
+Chain [4] Iteration: 900 / 1000 [ 90%]  (Sampling)
+Chain [1] Iteration: 800 / 1000 [ 80%]  (Sampling)
+Chain [3] Iteration: 800 / 1000 [ 80%]  (Sampling)
+Chain [2] Iteration: 900 / 1000 [ 90%]  (Sampling)
+Chain [4] Iteration: 1000 / 1000 [100%]  (Sampling)
+
+ Elapsed Time: 25.061 seconds (Warm-up)
+               15.907 seconds (Sampling)
+               40.968 seconds (Total)
+
+Chain [1] Iteration: 900 / 1000 [ 90%]  (Sampling)
+Chain [3] Iteration: 900 / 1000 [ 90%]  (Sampling)
+Chain [2] Iteration: 1000 / 1000 [100%]  (Sampling)
+
+ Elapsed Time: 27.776 seconds (Warm-up)
+               15.985 seconds (Sampling)
+               43.761 seconds (Total)
+
+Chain [1] Iteration: 1000 / 1000 [100%]  (Sampling)
+
+ Elapsed Time: 27.336 seconds (Warm-up)
+               18.023 seconds (Sampling)
+               45.359 seconds (Total)
+
+Chain [3] Iteration: 1000 / 1000 [100%]  (Sampling)
+
+ Elapsed Time: 26.619 seconds (Warm-up)
+               20.964 seconds (Sampling)
+               47.583 seconds (Total)
+
