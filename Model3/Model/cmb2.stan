@@ -12,80 +12,107 @@ functions {
     real Om = theta[2];
     real Or = theta[3];
     real Omb = theta[4];
+    real z_x = theta[5];
+    //real c_s = theta[6];
     real Omc = Om - Omb;
     real h = H0/100;
-
-    real g_1;
-
-    g_1 = (0.0783*(Omb*h^2)^(-0.238))/(1+36.5*(Omb*h^2)^(-0.763));
-
-    real g_2;
-
-    g_2 = 0.560/(1 +21.1*(Omb*h^2)^(1.81));
-
-
-
-    real z_x;
-    z_x =  1048 * (1 + (0.00124/(Omb*h^2)^(0.738)))*((1 + g_1* (Om*h^2)^g_2));
 
     real z;
 
     z = x * z_x;
 
 
-    res[1] = (E^2 - 2*lambda)*exp(lambda/E^2) - Om * (1+z)^3 - Or(1+z)^4;
-    res[2]  = divInt - 1.0/E ;
+    res[1] = (E^2 - 2*lambda)*exp(lambda/E^2) - Om * (1+z)^3 - Or*(1+z)^4;
+    res[2]  = divInt - z_x/E ;
 
     return res;
 
   }
 
- vector residual (real x, vector state, vector state_div, real lambda, array [] real theta){
+ vector residual2 (real x, vector state, vector state_div, real lambda, array [] real theta){
 
+
+    real E = state [1];
+    real Int = state[2];
+    real divInt = state_div[2];
+
+    vector[2] res;
 
     real H0 = theta[1];
     real Om = theta[2];
     real Or = theta[3];
     real Omb = theta[4];
+    real z_x = theta[5];
+    real c_s = theta[6];
     real Omc = Om - Omb;
+    real h = H0/100;
     
     //real H = theta [5];
-
-    real c = 2.9979 * 10^5;
-
-    real g_1;
-
-    g_1 = (0.0783*(Omb*h^2)^(-0.238))/(1+36.5*(Omb*h^2)^(-0.763));
-
-    real g_2;
-
-    g_2 = 0.560/(1 +21.1*(Omb*h^2)^(1.81));
-
-    real z_x;
-    z_x =  1048 * (1 + (0.00124/(Omb*h^2)^(0.738)))*((1 + g_1* (Om*h^2)^g_2));
 
     real z;
 
     z = x * z_x;
 
-    real Tcmb;
+    res[1] = (E^2 - 2*lambda)*exp(lambda/E^2) - Om * (1+z)^3 - Or*(1+z)^4;
 
-    Tcmb = 2.7255;
-
-    real R_b;
-
-    R_b = 31500*Omb*h^2 * (Tcmb/2.7)^(-4);
-
-    real c_s;
-
-    c_s = c / sqrt(3*(1+R_b/(1+z)));
-
-    res[1] = (E^2 - 2*lambda)*exp(lambda/E^2) - Om * (1+z)^3 - Or(1+z)^4;
-
-    res[2] = divInt + c_s/(H0 * E)
+    res[2] = divInt + (c_s * z_x)/(H0 * E);
 
     return res;
 
+}
+
+  vector daesystem(real z, vector y, vector dy, array[] real theta) {
+    real Omega_b = theta[1];
+    real Omega_c = theta[2];
+    real Omega_r = theta[3];
+    real lambda = theta[4];
+    real zstar = theta[5];
+
+    real E = y[1];
+    real dy2 = dy[2];
+
+    // change of variable
+    real x = zstar*z;
+
+    // compute the residuals
+    vector[2] res;
+
+    real lhs = (E^2 - 2*lambda)*exp(lambda/E^2);               // lhs of modified 1st friedmann equation
+    real rhs = (Omega_b + Omega_c)*(1+x)^3 + Omega_r*(1+x)^4;  // rhs of modified 1st friedmann equation
+    res[1] = rhs - lhs;
+
+    res[2] = zstar/E - dy2;
+
+    return res;
+
+  }
+
+// real c_s (array[] real theta, real x ){
+
+//     real H0 = theta[1];
+//     real Om = theta[2];
+//     real Or = theta[3];
+//     real Omb = theta[4];
+//     real z_x = theta[5];
+//     //real c_s = theta[6];
+//     real Omc = Om - Omb;
+//     real h = H0/100;
+
+//     real Tcmb;
+
+//     Tcmb = 2.7255;
+
+//     real R_b;
+
+//     R_b = 31500*Omb*h^2 * (Tcmb/2.7)^(-4);
+
+//     real c_s;
+
+//     c_s = c / sqrt(3*(1+R_b/(1+x)));
+
+//     return c_s;
+
+//}
 }
 
 // block to declare the variables that will hold the data being used
@@ -116,7 +143,7 @@ transformed data {
 parameters {
   //real<lower=0> M;
   real <lower = 0 > H0;
-  real <lower = 0 > Om;
+  real Om;
   real Omb;
   
   //real M;
@@ -129,10 +156,34 @@ transformed parameters {
     real h = H0/100;
     real Or = wr * h^2 ;
     real Omc = Om - Omb;
+    real c_s;
+    real z_x;
 
     real c = 2.9979 * 10^5;
-  
-   array[4] real theta = {H0, Om, Or, Omb};
+
+    real g_1;
+
+    g_1 = (0.0783*(Omb*h^2)^(-0.238))/(1+39.5*(Omb*h^2)^(0.763));
+
+    real g_2;
+
+    g_2 = 0.560/(1 +21.1*(Omb*h^2)^(1.81));
+
+    z_x =  1048 * (1 + (0.00124*((Omb*h^2)^(-0.738))))*((1 + g_1* (Om*h^2)^g_2));
+
+    real Tcmb;
+
+    Tcmb = 2.7255;
+
+    real R_b;
+
+    R_b = 31500*Omb*h^2 * (Tcmb/2.7)^(-4);
+
+    c_s = c / sqrt(3*(1+R_b/(1+z_x)));
+
+    //c_s({H0, Om, Or, Omb, z_x}, z_x);
+
+   array[6] real theta = {H0, Om, Or, Omb, z_x, c_s};
    real lambda;
    lambda = 0.5 + lambert_w0( -Om/(2*exp(0.5)) );
 
@@ -154,32 +205,29 @@ transformed parameters {
 
     array[1] vector[2] S;
 
-    S = dae(residual, yy0, yp0, 0.0, {1}, lambda, theta);
-
-    real H = S[1,1]
-
-    array[4] real theta2 = {H0, Om, Or, Omb, H };
-
-
-
-    real g_1;
-
-    g_1 = (0.0783*(Omb*h^2)^(-0.238))/(1+36.5*(Omb*h^2)^(-0.763));
-
-    real g_2;
-
-    g_2 = 0.560/(1 +21.1*(Omb*h^2)^(1.81));
-
-
-
-    real z_x;
-    z_x =  1048 * (1 + (0.00124/(Omb*h^2)^(0.738)))*((1 + g_1* (Om*h^2)^g_2));
-
     
+    S = dae(residual, yy0, yp0, 0.0, {1}, lambda, {H0, Om, Or, Omb, z_x});
+    print("data =", dae(residual, yy0, yp0, 0.0, {1}, lambda, {H0, Om, Or, Omb, z_x}));
+    
+
+    //S = dae(daesystem, yy0, yp0, 0.0, {1}, {h, Omb, Omc, Or, lambda, z_x} );
+    real H;
+    
+    H = S[1,1];
+    //real H = 1;
+    vector[2] yy20; //initial conditions vector 
+    vector[2] yp20; // initial conditions derivative vector 
+
+    yy20[1] = 1;
+    yy20[2] = 0.0;
+
+    //yp0[1] = (3.0/2.0) * Om * 1./(exp(lambda)*(1- lambda + 2 * lambda^2));
+    yp20[1] = 1/(2*exp(lambda)) * (3*Om + 4* Or)/(1 - lambda + 2*lambda^2);
+    yp20[2] = c_s/H;
 
     array[1] vector[2] A;
 
-    A = dae(residual2, yy0, yp0, {1}, positive_infinity(), lambda, theta);
+    A = dae(residual2, yy20, yp20, 1, {positive_infinity()}, lambda, theta);
 
     real r_s = A[1,2];
 
@@ -198,9 +246,9 @@ transformed parameters {
 
     model {
   // priors
-  h ~ normal(0.7, 1);
-  Om ~ normal(0.3, 1);
-  Omb ~ normal(0.25, 1);
+  H0 ~ normal(70, 10);
+  Om ~ normal(0.3, 0.1);
+  Omb ~ normal(0.25, 0.1);
 
   // likelihood
   target += -x'*Cinv*x;
