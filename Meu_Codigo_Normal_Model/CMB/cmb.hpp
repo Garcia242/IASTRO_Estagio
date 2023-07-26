@@ -8,75 +8,78 @@ using namespace stan::math;
 
 
 stan::math::profile_map profiles__;
-static constexpr std::array<const char*, 68> locations_array__ = 
+static constexpr std::array<const char*, 71> locations_array__ = 
 {" (found before start of program)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 71, column 2 to column 21)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 72, column 2 to column 21)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 73, column 2 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 80, column 4 to column 29)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 81, column 4 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 82, column 4 to column 24)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 83, column 4 to column 24)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 84, column 4 to column 13)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 85, column 4 to column 13)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 86, column 4 to column 27)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 88, column 4 to column 43)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 92, column 4 to column 69)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 93, column 4 to column 48)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 94, column 4 to column 87)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 96, column 4 to column 75)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 98, column 4 to column 86)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 100, column 4 to column 33)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 102, column 4 to column 27)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 104, column 4 to column 24)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 106, column 4 to column 57)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 113, column 2 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 114, column 2 to column 25)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 115, column 2 to column 27)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 118, column 2 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 49, column 2 to column 13)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 50, column 2 to column 15)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 51, column 2 to column 14)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 52, column 2 to column 16)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 53, column 2 to column 14)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 54, column 2 to column 16)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 60, column 2 to column 20)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 61, column 2 to column 19)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 63, column 4 to column 21)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 64, column 2 to column 28)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 64, column 29 to column 57)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 64, column 58 to column 84)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 65, column 2 to column 28)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 65, column 29 to column 57)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 65, column 58 to column 86)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 66, column 2 to column 28)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 66, column 29 to column 57)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 66, column 58 to column 88)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 74, column 2 to column 21)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 75, column 2 to column 21)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 76, column 2 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 83, column 4 to column 29)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 84, column 4 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 85, column 4 to column 24)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 86, column 4 to column 24)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 87, column 4 to column 13)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 88, column 4 to column 13)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 89, column 4 to column 27)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 91, column 4 to column 47)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 95, column 4 to column 69)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 96, column 4 to column 48)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 97, column 4 to column 87)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 99, column 4 to column 75)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 101, column 4 to column 86)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 103, column 4 to column 33)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 105, column 4 to column 27)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 107, column 4 to column 24)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 109, column 4 to column 57)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 116, column 2 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 117, column 2 to column 25)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 118, column 2 to column 27)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 121, column 2 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 52, column 2 to column 13)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 53, column 2 to column 15)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 54, column 2 to column 14)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 55, column 2 to column 16)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 56, column 2 to column 14)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 57, column 2 to column 16)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 63, column 2 to column 20)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 64, column 2 to column 19)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 66, column 4 to column 21)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 67, column 2 to column 28)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 67, column 29 to column 57)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 67, column 58 to column 84)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 68, column 2 to column 28)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 68, column 29 to column 57)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 68, column 58 to column 86)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 69, column 2 to column 28)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 69, column 29 to column 57)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 69, column 58 to column 88)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 5, column 8 to column 28)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 6, column 8 to column 28)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 7, column 8 to column 29)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 8, column 8 to column 27)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 10, column 8 to column 43)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 3, column 40 to line 12, column 5)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 15, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 9, column 8 to column 28)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 11, column 8 to column 63)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 3, column 40 to line 13, column 5)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 16, column 4 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 17, column 4 to column 25)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 18, column 4 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 20, column 4 to column 39)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 13, column 89 to line 21, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 25, column 4 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 26, column 4 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 27, column 4 to column 25)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 17, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 18, column 4 to column 25)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 19, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 20, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 22, column 4 to column 58)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 14, column 89 to line 23, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 27, column 4 to column 23)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 28, column 4 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 30, column 4 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 31, column 8 to column 18)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 33, column 4 to column 18)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 35, column 4 to column 13)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 37, column 4 to column 42)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 38, column 4 to column 41)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 38, column 41 to column 42)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 40, column 4 to column 45)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 23, column 91 to line 43, column 3)"};
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 29, column 4 to column 25)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 30, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 31, column 4 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 33, column 4 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 34, column 8 to column 18)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 36, column 4 to column 18)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 38, column 4 to column 13)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 40, column 4 to column 42)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 41, column 4 to column 41)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 41, column 41 to column 42)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 43, column 4 to column 49)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Meu_Codigo_Normal_Model/CMB/cmb.stan', line 25, column 91 to line 46, column 3)"};
 
 struct E_functor__ {
   template <typename T0__, typename T1__,
@@ -133,10 +136,14 @@ template <typename T0__, typename T1__,
       local_scalar_t__ c = DUMMY_VAR__;
       current_statement__ = 46;
       c = stan::model::rvalue(theta, "theta", stan::model::index_uni(4));
+      local_scalar_t__ Or = DUMMY_VAR__;
       current_statement__ = 47;
+      Or = stan::model::rvalue(theta, "theta", stan::model::index_uni(5));
+      current_statement__ = 48;
       return (1 /
                stan::math::pow(
-                 (((Om * stan::math::pow((1 + x), 3)) + 1) - Om), 0.5));
+                 ((((Om * stan::math::pow((1 + x), 3)) + 1) - (Om + Or)) +
+                   (Or * stan::math::pow((1 + x), 4))), 0.5));
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }
@@ -158,21 +165,25 @@ template <typename T0__, typename T1__, typename T2__, typename T3__,
     (void) DUMMY_VAR__;  // suppress unused var warning
     try {
       local_scalar_t__ H0 = DUMMY_VAR__;
-      current_statement__ = 49;
+      current_statement__ = 50;
       H0 = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
       local_scalar_t__ Om = DUMMY_VAR__;
-      current_statement__ = 50;
+      current_statement__ = 51;
       Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(2));
       local_scalar_t__ Omb = DUMMY_VAR__;
-      current_statement__ = 51;
+      current_statement__ = 52;
       Omb = stan::model::rvalue(theta, "theta", stan::model::index_uni(3));
       local_scalar_t__ c = DUMMY_VAR__;
-      current_statement__ = 52;
-      c = stan::model::rvalue(theta, "theta", stan::model::index_uni(4));
       current_statement__ = 53;
+      c = stan::model::rvalue(theta, "theta", stan::model::index_uni(4));
+      local_scalar_t__ Or = DUMMY_VAR__;
+      current_statement__ = 54;
+      Or = stan::model::rvalue(theta, "theta", stan::model::index_uni(5));
+      current_statement__ = 55;
       return (1 /
                stan::math::pow(
-                 (((Om * stan::math::pow((1 + x), 3)) + 1) - Om), 0.5));
+                 ((((Om * stan::math::pow((1 + x), 3)) + 1) - (Om + Or)) +
+                   (Or * stan::math::pow((1 + x), 4))), 0.5));
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }
@@ -194,36 +205,39 @@ template <typename T0__, typename T1__, typename T2__, typename T3__,
     (void) DUMMY_VAR__;  // suppress unused var warning
     try {
       local_scalar_t__ H0 = DUMMY_VAR__;
-      current_statement__ = 55;
+      current_statement__ = 57;
       H0 = stan::model::rvalue(theta, "theta", stan::model::index_uni(1));
       local_scalar_t__ Om = DUMMY_VAR__;
-      current_statement__ = 56;
+      current_statement__ = 58;
       Om = stan::model::rvalue(theta, "theta", stan::model::index_uni(2));
       local_scalar_t__ Omb = DUMMY_VAR__;
-      current_statement__ = 57;
+      current_statement__ = 59;
       Omb = stan::model::rvalue(theta, "theta", stan::model::index_uni(3));
       local_scalar_t__ c = DUMMY_VAR__;
-      current_statement__ = 58;
+      current_statement__ = 60;
       c = stan::model::rvalue(theta, "theta", stan::model::index_uni(4));
+      local_scalar_t__ Or = DUMMY_VAR__;
+      current_statement__ = 61;
+      Or = stan::model::rvalue(theta, "theta", stan::model::index_uni(5));
       local_scalar_t__ h = DUMMY_VAR__;
-      current_statement__ = 59;
+      current_statement__ = 62;
       h = (H0 / 100.0);
       local_scalar_t__ Tcmb = DUMMY_VAR__;
-      current_statement__ = 61;
+      current_statement__ = 64;
       Tcmb = 2.7255;
       local_scalar_t__ R_b = DUMMY_VAR__;
-      current_statement__ = 63;
+      current_statement__ = 66;
       R_b = (((31500 * Omb) * stan::math::pow(h, 2)) *
               stan::math::pow((Tcmb / 2.7), -4));
       local_scalar_t__ c_s = DUMMY_VAR__;
-      current_statement__ = 64;
+      current_statement__ = 67;
       c_s = (c / stan::math::sqrt((3 * (1 + (R_b / (1 + x))))));
       ;
-      current_statement__ = 66;
+      current_statement__ = 69;
       return (c_s /
                (H0 *
-                 E(x, std::vector<local_scalar_t__>{H0, Om, Omb,
-                   c}, pstream__)));
+                 E(x, std::vector<local_scalar_t__>{H0, Om, Omb, c,
+                   Or}, pstream__)));
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }
@@ -460,10 +474,10 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
       current_statement__ = 10;
       c = (2.9979 * stan::math::pow(10, 5));
       std::vector<local_scalar_t__> theta =
-         std::vector<local_scalar_t__>(4, DUMMY_VAR__);
+         std::vector<local_scalar_t__>(5, DUMMY_VAR__);
       current_statement__ = 11;
       stan::model::assign(theta, std::vector<local_scalar_t__>{H0, Om, Omb,
-        c}, "assigning variable theta");
+        c, Or}, "assigning variable theta");
       local_scalar_t__ g1 = DUMMY_VAR__;
       current_statement__ = 12;
       g1 = ((0.0783 * stan::math::pow((Omb * stan::math::pow(h, 2)), -0.238))
@@ -575,7 +589,7 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
       double z_x = std::numeric_limits<double>::quiet_NaN();
       double c = std::numeric_limits<double>::quiet_NaN();
       std::vector<double> theta =
-         std::vector<double>(4, std::numeric_limits<double>::quiet_NaN());
+         std::vector<double>(5, std::numeric_limits<double>::quiet_NaN());
       double g1 = std::numeric_limits<double>::quiet_NaN();
       double g2 = std::numeric_limits<double>::quiet_NaN();
       double zstar = std::numeric_limits<double>::quiet_NaN();
@@ -607,7 +621,7 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
       c = (2.9979 * stan::math::pow(10, 5));
       current_statement__ = 11;
       stan::model::assign(theta, std::vector<local_scalar_t__>{H0, Om, Omb,
-        c}, "assigning variable theta");
+        c, Or}, "assigning variable theta");
       current_statement__ = 12;
       g1 = ((0.0783 * stan::math::pow((Omb * stan::math::pow(h, 2)), -0.238))
              /
@@ -714,7 +728,7 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
       std::vector<size_t>{}, std::vector<size_t>{}, std::vector<size_t>{
       }, std::vector<size_t>{}, std::vector<size_t>{}, std::vector<size_t>{
       }, std::vector<size_t>{}, std::vector<size_t>{}, std::vector<size_t>{
-      }, std::vector<size_t>{static_cast<size_t>(4)}, std::vector<size_t>{
+      }, std::vector<size_t>{static_cast<size_t>(5)}, std::vector<size_t>{
       }, std::vector<size_t>{}, std::vector<size_t>{}, std::vector<size_t>{
       }, std::vector<size_t>{}, std::vector<size_t>{}, std::vector<size_t>{
       }, std::vector<size_t>{}, std::vector<size_t>{static_cast<size_t>(3)}};
@@ -738,7 +752,7 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
       param_names__.emplace_back(std::string() + "c_s");
       param_names__.emplace_back(std::string() + "z_x");
       param_names__.emplace_back(std::string() + "c");
-      for (int sym1__ = 1; sym1__ <= 4; ++sym1__) {
+      for (int sym1__ = 1; sym1__ <= 5; ++sym1__) {
         {
           param_names__.emplace_back(std::string() + "theta" + '.' + std::to_string(sym1__));
         } 
@@ -781,7 +795,7 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
       param_names__.emplace_back(std::string() + "c_s");
       param_names__.emplace_back(std::string() + "z_x");
       param_names__.emplace_back(std::string() + "c");
-      for (int sym1__ = 1; sym1__ <= 4; ++sym1__) {
+      for (int sym1__ = 1; sym1__ <= 5; ++sym1__) {
         {
           param_names__.emplace_back(std::string() + "theta" + '.' + std::to_string(sym1__));
         } 
@@ -809,13 +823,13 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
     
   inline std::string get_constrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"H0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"Om\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"Omb\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"wr\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"h\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"Or\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"Omc\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"c_s\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"z_x\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"c\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"theta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(4) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"g1\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"g2\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"zstar\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"r\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"r_s\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"R\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"la\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"wb\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"x\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(3) + "},\"block\":\"transformed_parameters\"}]");
+    return std::string("[{\"name\":\"H0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"Om\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"Omb\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"wr\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"h\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"Or\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"Omc\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"c_s\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"z_x\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"c\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"theta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(5) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"g1\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"g2\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"zstar\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"r\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"r_s\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"R\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"la\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"wb\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"x\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(3) + "},\"block\":\"transformed_parameters\"}]");
     
     } // get_constrained_sizedtypes() 
     
   inline std::string get_unconstrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"H0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"Om\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"Omb\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"wr\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"h\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"Or\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"Omc\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"c_s\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"z_x\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"c\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"theta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(4) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"g1\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"g2\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"zstar\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"r\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"r_s\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"R\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"la\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"wb\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"x\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(3) + "},\"block\":\"transformed_parameters\"}]");
+    return std::string("[{\"name\":\"H0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"Om\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"Omb\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"wr\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"h\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"Or\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"Omc\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"c_s\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"z_x\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"c\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"theta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(5) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"g1\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"g2\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"zstar\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"r\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"r_s\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"R\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"la\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"wb\",\"type\":{\"name\":\"real\"},\"block\":\"transformed_parameters\"},{\"name\":\"x\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(3) + "},\"block\":\"transformed_parameters\"}]");
     
     } // get_unconstrained_sizedtypes() 
     
@@ -831,7 +845,7 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
       const size_t num_params__ = 
   ((1 + 1) + 1);
       const size_t num_transformed = emit_transformed_parameters * 
-  ((((((((((((((((1 + 1) + 1) + 1) + 1) + 1) + 1) + 4) + 1) + 1) + 1) + 1) +
+  ((((((((((((((((1 + 1) + 1) + 1) + 1) + 1) + 1) + 5) + 1) + 1) + 1) + 1) +
         1) + 1) + 1) + 1) + 3);
       const size_t num_gen_quantities = emit_generated_quantities * 0;
       const size_t num_to_write = num_params__ + num_transformed +
@@ -853,7 +867,7 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
       const size_t num_params__ = 
   ((1 + 1) + 1);
       const size_t num_transformed = emit_transformed_parameters * 
-  ((((((((((((((((1 + 1) + 1) + 1) + 1) + 1) + 1) + 4) + 1) + 1) + 1) + 1) +
+  ((((((((((((((((1 + 1) + 1) + 1) + 1) + 1) + 1) + 5) + 1) + 1) + 1) + 1) +
         1) + 1) + 1) + 1) + 3);
       const size_t num_gen_quantities = emit_generated_quantities * 0;
       const size_t num_to_write = num_params__ + num_transformed +
