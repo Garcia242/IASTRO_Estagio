@@ -7,24 +7,20 @@ import arviz as az
 
 # create a model instance
 model = CmdStanModel(
-    stan_file="Model3/Model/cmb4_4.stan",                         # Stan model file location
-    cpp_options={
-        #"STAN_NO_RANGE_CHECKS": "TRUE",  # don't check for elements out of bounds
-        "STAN_THREADS": "TRUE",          # run multiple chains in parallel
-        "STAN_CPP_OPTIMS": "TRUE",        # optimizations recommended by the Stan development team
-        "force_one_process_per_chain": "True"
-    }
+    stan_file="Meu_Codigo_Normal_Model/CMB/cmb.stan",                         # Stan model file location
+    cpp_options={'STAN_THREADS': 'TRUE', 'STAN_CPP_OPTIMS': 'TRUE'}   # a few optimizations, feel free to ignore this
 )
+
 # configure and fit the model
 fit = model.sample(
-    data="Model3/Data/cmb.json",                                # the location of the data file
-    output_dir="output3/cmb",
+    data="Meu_Codigo_Normal_Model/CMB/data/cmb.json",                                # the location of the data file
+    output_dir="normal/cmb",
     iter_sampling=500,                                                 # the number of sampling steps
     iter_warmup=500,                                                   # the number of warmup steps
     save_warmup=False,                                                 # we don't care about the warmup
-    inits={"H0": normal(loc=70, scale=1), "Omb": normal(loc=0.05, scale=0.1), "Om": normal(loc=0.3, scale=1)},  # initial values for each parameter
+    inits={"H0": 70, "Omb": 0.05, "Om": 0.3},  # initial values for each parameter
     parallel_chains= 4,                                                # number of chains to run at the same time
-    force_one_process_per_chain= True
+    force_one_process_per_chain = True
 )
 
 # print very useful utilities provided by default in Stan

@@ -86,20 +86,28 @@ transformed data {
 /* block for model parameters */
 parameters {
   // lower bound for physical reasons
-  real h;
+  real <lower = 0>H0;
 
   // no bounds to allow for extra freedom
-  real Omega_b;
-  real Omega_c;
+  real Omb;
+  real Om;
 }
 
 /* block for transformed parameters */
 transformed parameters {
+
+real c = 2.9979 * 10^5;
+
+real h = H0/100.0;
+
+real Omega_b = Omb;
+
+real Omega_c = Om - Omb;
   // Ωr is a derived parameter from ωr
   // Ωr ≤ 2e^(-0.5) - Ωm, otherwise Lambert W function has no solutions
   // no lower bound because it's expected to be close to 0
   real wr = 4.15*10^(-5);
-  real<upper=1.21306131942526684721-Omega_b-Omega_c> Omega_r = wr/h^2;
+  real Omega_r = wr/h^2;
 
   // compute lambda
   real lambda = 0.5 + lambert_w0( -(Omega_b + Omega_c + Omega_r)/(2*exp(0.5)) );
@@ -139,9 +147,9 @@ transformed parameters {
 /* block for model definition */
 model {
   // priors
-  h ~ normal(0.7, 1);
-  Omega_b ~ normal(0.05, 1);
-  Omega_c ~ normal(0.25, 1);
+  H0 ~ normal(70, 10);
+  Omb ~ normal(0.05, 1);
+  Om ~ normal(0.3, 1);
 
   // likelihood
   target += -x'*Cinv*x;

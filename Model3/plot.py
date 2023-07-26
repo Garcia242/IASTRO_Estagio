@@ -9,12 +9,12 @@ import pandas
 import os
 
 # specify the output folders with the output of Stan
-folders = ["output3/cc", "output3/snia", "output3/bao", "output3/together"]
-legends = ["CC", "SnIa", "BAO", "Combined"]
+folders = ["output3/cc", "output3/snia", "output3/bao", "output3/together", "output3/cmb"]
+legends = ["CC", "SnIa", "BAO", "cc + SnIa + BAO", "CMB"]
 
 # specify the parameters that were constrained in each model
-paramsperfolder = [["H0", "Om"], [ "Om", ],["H0", "Om"], ["H0", "Om"]]
-labelsperfolder = [["H0", "\\Omega_m" ], [ "\\Omega_m"], ["H0", "\\Omega_m" ], ["H0", "\\Omega_m" ]]
+paramsperfolder = [["H0", "Om"], [ "Om", ],["H0", "Om"], ["H0", "Om"], ["H0", "Om", "Omb"]]
+labelsperfolder = [["H0", "\\Omega_m" ], [ "\\Omega_m"], ["H0", "\\Omega_m" ], ["H0", "\\Omega_m" ], ["H0", "\\Omega_m", "Omega_mb" ]]
 
 # get 'MCSamples' object for each run
 mcsamples = []

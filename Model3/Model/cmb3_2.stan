@@ -116,7 +116,7 @@ transformed data {
 /* block for model parameters */
 parameters {
   // lower bound for physical reasons
-  real <lower = 0> H0;
+  real H0;
 
   // no bounds to allow for extra freedom
   real Omb;

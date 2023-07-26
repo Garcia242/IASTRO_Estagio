@@ -1,0 +1,137 @@
+method = sample (Default)
+  sample
+    num_samples = 500
+    num_warmup = 500
+    save_warmup = 0 (Default)
+    thin = 1 (Default)
+    adapt
+      engaged = 1 (Default)
+      gamma = 0.050000000000000003 (Default)
+      delta = 0.80000000000000004 (Default)
+      kappa = 0.75 (Default)
+      t0 = 10 (Default)
+      init_buffer = 75 (Default)
+      term_buffer = 50 (Default)
+      window = 25 (Default)
+    algorithm = hmc (Default)
+      hmc
+        engine = nuts (Default)
+          nuts
+            max_depth = 10 (Default)
+        metric = diag_e (Default)
+        metric_file =  (Default)
+        stepsize = 1 (Default)
+        stepsize_jitter = 0 (Default)
+    num_chains = 1 (Default)
+id = 2
+data
+  file = Model3/Data/cmb.json
+init = /var/folders/tg/1rvyy6v13kq9w3s_hnykjpmc0000gp/T/tmpxnpwqt8s/46tdhvv7.json
+random
+  seed = 35252
+output
+  file = /Users/guilhermegarcia/Desktop/IASTRO_Estagio/output3/cmb/cmb4_4-20230726140045_2.csv
+  diagnostic_file =  (Default)
+  refresh = 100 (Default)
+  sig_figs = -1 (Default)
+  profile_file = profile.csv (Default)
+num_threads = 1 (Default)
+
+
+Gradient evaluation took 0.00678 seconds
+1000 transitions using 10 leapfrog steps per transition would take 67.8 seconds.
+Adjust your expectations accordingly!
+
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: dae: initial state derivative[1] is nan, but must be finite! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4_4.stan', line 133, column 2 to column 66)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: dae: initial state derivative[1] is nan, but must be finite! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4_4.stan', line 133, column 2 to column 66)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: dae: initial state derivative[1] is nan, but must be finite! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4_4.stan', line 133, column 2 to column 66)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: dae: initial state derivative[1] is nan, but must be finite! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4_4.stan', line 133, column 2 to column 66)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: dae: initial state derivative[1] is nan, but must be finite! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4_4.stan', line 133, column 2 to column 66)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -1.8425002776635538e+297. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4_4.stan', line 113, column 2 to column 80)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -7.8921102523329167e+70. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4_4.stan', line 113, column 2 to column 80)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -184253423959077.31. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4_4.stan', line 113, column 2 to column 80)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: dae: DAE parameters and data[6] is nan, but must be finite! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4_4.stan', line 133, column 2 to column 66)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: dae: DAE parameters and data[6] is nan, but must be finite! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4_4.stan', line 133, column 2 to column 66)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Iteration:   1 / 1000 [  0%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: dae: initial state derivative[1] is nan, but must be finite! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4_4.stan', line 133, column 2 to column 66)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: dae: initial state derivative[1] is nan, but must be finite! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4_4.stan', line 133, column 2 to column 66)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: dae: initial state derivative[1] is nan, but must be finite! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4_4.stan', line 133, column 2 to column 66)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function boost::math::lambert_w0<double>: Expected z >= -e^-1 (-0.367879...) but got -4.8028488930235602e+24. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4_4.stan', line 113, column 2 to column 80)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: dae: DAE parameters and data[6] is nan, but must be finite! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4_4.stan', line 133, column 2 to column 66)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Iteration: 100 / 1000 [ 10%]  (Warmup)
+Iteration: 200 / 1000 [ 20%]  (Warmup)
+Iteration: 300 / 1000 [ 30%]  (Warmup)
+Iteration: 400 / 1000 [ 40%]  (Warmup)
+Iteration: 500 / 1000 [ 50%]  (Warmup)
+Iteration: 501 / 1000 [ 50%]  (Sampling)
+Iteration: 600 / 1000 [ 60%]  (Sampling)
+Iteration: 700 / 1000 [ 70%]  (Sampling)
+Iteration: 800 / 1000 [ 80%]  (Sampling)
+Iteration: 900 / 1000 [ 90%]  (Sampling)
+Iteration: 1000 / 1000 [100%]  (Sampling)
+
+ Elapsed Time: 120.426 seconds (Warm-up)
+               128.691 seconds (Sampling)
+               249.117 seconds (Total)
+
