@@ -10,50 +10,50 @@ using namespace stan::math;
 stan::math::profile_map profiles__;
 static constexpr std::array<const char*, 76> locations_array__ = 
 {" (found before start of program)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 87, column 2 to column 18)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 90, column 2 to column 15)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 91, column 2 to column 15)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 99, column 2 to column 25)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 100, column 2 to column 70)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 103, column 2 to column 80)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 106, column 2 to column 75)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 107, column 2 to column 50)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 108, column 2 to column 97)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 111, column 2 to column 74)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 115, column 2 to column 16)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 116, column 2 to column 95)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 89, column 2 to column 9)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 92, column 2 to column 15)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 93, column 2 to column 15)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 101, column 2 to column 25)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 102, column 2 to column 70)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 105, column 2 to column 80)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 108, column 2 to column 75)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 109, column 2 to column 50)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 110, column 2 to column 97)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 113, column 2 to column 74)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 117, column 2 to column 16)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 118, column 2 to column 17)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 122, column 2 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 126, column 2 to column 86)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 129, column 2 to column 29)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 130, column 2 to column 43)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 131, column 2 to column 24)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 134, column 2 to column 55)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 123, column 2 to column 66)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 140, column 2 to column 21)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 141, column 2 to column 28)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 142, column 2 to column 28)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 145, column 2 to column 23)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 62, column 2 to column 13)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 63, column 2 to column 15)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 64, column 2 to column 14)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 65, column 2 to column 16)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 118, column 2 to column 95)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 119, column 2 to column 16)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 120, column 2 to column 17)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 124, column 2 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 128, column 2 to column 86)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 131, column 2 to column 29)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 132, column 2 to column 43)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 133, column 2 to column 24)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 136, column 2 to column 55)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 125, column 2 to column 66)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 142, column 2 to column 21)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 143, column 2 to column 28)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 144, column 2 to column 28)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 147, column 2 to column 23)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 64, column 2 to column 13)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 65, column 2 to column 15)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 66, column 2 to column 14)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 67, column 2 to column 16)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 73, column 2 to column 20)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 74, column 2 to column 19)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 78, column 2 to column 19)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 79, column 2 to column 28)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 79, column 29 to column 57)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 79, column 58 to column 84)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 80, column 2 to column 28)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 80, column 29 to column 57)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 80, column 58 to column 86)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 68, column 2 to column 14)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 69, column 2 to column 16)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 75, column 2 to column 20)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 76, column 2 to column 19)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 80, column 2 to column 19)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 81, column 2 to column 28)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 81, column 29 to column 57)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 81, column 58 to column 88)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 122, column 8 to column 9)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 81, column 58 to column 84)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 82, column 2 to column 28)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 82, column 29 to column 57)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 82, column 58 to column 86)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 83, column 2 to column 28)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 83, column 29 to column 57)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 83, column 58 to column 88)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 124, column 8 to column 9)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 6, column 4 to column 28)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 7, column 4 to column 28)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 8, column 4 to column 28)",
@@ -69,22 +69,22 @@ static constexpr std::array<const char*, 76> locations_array__ =
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 25, column 4 to column 27)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 27, column 4 to column 15)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 5, column 68 to line 28, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 32, column 3 to column 21)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 33, column 3 to column 27)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 35, column 3 to column 22)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 36, column 3 to column 48)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 38, column 3 to column 31)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 31, column 37 to line 39, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 43, column 4 to column 28)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 44, column 4 to column 28)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 34, column 3 to column 21)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 35, column 3 to column 27)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 37, column 3 to column 22)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 38, column 3 to column 48)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 40, column 3 to column 31)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 33, column 37 to line 41, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 45, column 4 to column 28)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 46, column 4 to column 27)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 48, column 4 to column 60)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 49, column 4 to column 78)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 51, column 4 to column 13)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 42, column 50 to line 52, column 3)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 56, column 4 to column 52)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 55, column 89 to line 57, column 3)"};
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 46, column 4 to column 28)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 47, column 4 to column 28)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 48, column 4 to column 27)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 50, column 4 to column 60)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 51, column 4 to column 78)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 53, column 4 to column 13)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 44, column 50 to line 54, column 3)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 58, column 4 to column 52)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model3/Model/cmb4.stan', line 57, column 89 to line 59, column 3)"};
 
 struct Ehighredshifts_functor__ {
   template <typename T0__, typename T1__,
@@ -548,8 +548,7 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
     try {
       local_scalar_t__ h = DUMMY_VAR__;
       current_statement__ = 1;
-      h = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(0,
-            lp__);
+      h = in__.template read<local_scalar_t__>();
       local_scalar_t__ Omega_b = DUMMY_VAR__;
       current_statement__ = 2;
       Omega_b = in__.template read<local_scalar_t__>();
@@ -699,8 +698,7 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
     try {
       double h = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 1;
-      h = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(0,
-            lp__);
+      h = in__.template read<local_scalar_t__>();
       double Omega_b = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 2;
       Omega_b = in__.template read<local_scalar_t__>();
@@ -861,7 +859,7 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
       pos__ = 1;
       local_scalar_t__ h = DUMMY_VAR__;
       h = in__.read<local_scalar_t__>();
-      out__.write_free_lb(0, h);
+      out__.write(h);
       local_scalar_t__ Omega_b = DUMMY_VAR__;
       Omega_b = in__.read<local_scalar_t__>();
       out__.write(Omega_b);

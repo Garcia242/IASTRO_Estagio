@@ -27,6 +27,8 @@ functions {
     return res;
   }
 
+
+
   // return f(z)
   real f(real z, array[] real theta) {
    real h = theta[1];
@@ -84,7 +86,7 @@ transformed data {
 /* block for model parameters */
 parameters {
   // lower bound for physical reasons
-  real<lower=0> h;
+  real h;
 
   // no bounds to allow for extra freedom
   real Omega_b;

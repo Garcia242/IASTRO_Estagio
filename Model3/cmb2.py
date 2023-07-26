@@ -7,7 +7,7 @@ import arviz as az
 
 # create a model instance
 model = CmdStanModel(
-    stan_file="Model3/Model/cmb4.stan",                         # Stan model file location
+    stan_file="Model3/Model/cmb4_1.stan",                         # Stan model file location
     cpp_options={
         #"STAN_NO_RANGE_CHECKS": "TRUE",  # don't check for elements out of bounds
         "STAN_THREADS": "TRUE",          # run multiple chains in parallel

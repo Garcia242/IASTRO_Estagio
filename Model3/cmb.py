@@ -7,7 +7,7 @@ import arviz as az
 
 # create a model instance
 model = CmdStanModel(
-    stan_file="Model3/Model/cmb3.stan",                         # Stan model file location
+    stan_file="Model3/Model/cmb3_1.stan",                         # Stan model file location
     cpp_options={
         #"STAN_NO_RANGE_CHECKS": "TRUE",  # don't check for elements out of bounds
         "STAN_THREADS": "TRUE",          # run multiple chains in parallel
@@ -22,7 +22,7 @@ fit = model.sample(
     iter_sampling=500,                                                 # the number of sampling steps
     iter_warmup=500,                                                   # the number of warmup steps
     save_warmup=False,                                                 # we don't care about the warmup
-    inits={"H0": normal(loc=0.7, scale=1), "Om": normal(loc=0.3, scale=0.1), "Omb": normal(loc=0.05, scale=1)},  # initial values for each parameter
+    inits={"H0": normal(loc=70, scale=10), "Omb": normal(loc=0.3, scale=0.1), "Om": normal(loc=0.3, scale=1)},  # initial values for each parameter
     parallel_chains= 4,                                                # number of chains to run at the same time
     force_one_process_per_chain= True
 )
@@ -35,13 +35,13 @@ print(fit.diagnose())
 
 # show the traceplot
 posterior = az.from_cmdstanpy(posterior=fit)
-az.plot_trace(posterior, var_names=('h', 'Om', "Omb"), compact=False, combined=False)
+az.plot_trace(posterior, var_names=('H0', 'Omb', "Om"), compact=False, combined=False)
 plt.tight_layout()
 plt.show()
 
 # show corner plot
-samples = [fit.stan_variable("H0"), fit.stan_variable("Om"), fit.stan_variable("Omb")]
-mcsamples = MCSamples(samples=samples, names=["H0", "Om", "Omb"], labels=["H0", "Om", "Omb"])
+samples = [fit.stan_variable("H0"), fit.stan_variable("Omb"), fit.stan_variable("Om")]
+mcsamples = MCSamples(samples=samples, names=['H0', 'Omb', "Om"], labels=['', 'Omb', "Om"])
 g = plots.get_subplot_plotter()
 g.triangle_plot(mcsamples, filled=True)
 plt.show()
