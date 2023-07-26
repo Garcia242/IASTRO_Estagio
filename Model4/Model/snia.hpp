@@ -24,7 +24,7 @@ static constexpr std::array<const char*, 38> locations_array__ =
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model4/Model/snia.stan', line 80, column 18 to line 87, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model4/Model/snia.stan', line 80, column 2 to line 87, column 3)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model4/Model/snia.stan', line 119, column 2 to column 24)",
- " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model4/Model/snia.stan', line 121, column 2 to column 25)",
+ " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model4/Model/snia.stan', line 121, column 2 to column 26)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model4/Model/snia.stan', line 128, column 1 to column 22)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model4/Model/snia.stan', line 46, column 2 to column 22)",
  " (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Model4/Model/snia.stan', line 47, column 2 to column 20)",
@@ -356,7 +356,7 @@ integrand_functor__::operator()(const T0__& x, const T1__& xc,
         current_statement__ = 14;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(Om, 0.3, 0.1));
         current_statement__ = 15;
-        lp_accum__.add(stan::math::normal_lpdf<propto__>(lambda, 0, 10));
+        lp_accum__.add(stan::math::normal_lpdf<propto__>(lambda, 0, 100));
         current_statement__ = 16;
         lp_accum__.add((-A + (stan::math::pow(B, 2) / C)));
       }

@@ -4,12 +4,12 @@ functions {
   real E(real x, array[] real theta){
 
 
-    real H0 = theta[1];
     real Om = theta[2];
-    real zeta = theta[3];
+    real H0 = theta[1];
+    real lambda = theta[3];
     //real M = theta[4];
 
-    return (1 - Om - zeta + Om*(1+x)^3 + zeta*(1+x)^6)^0.5 ;
+    return ((3/(3-lambda^2))*Om*(1+x)^3 + (1- (3/(3-lambda^2))*Om  )*(1+x)^(lambda^2))^0.5 ;
 
 
   
@@ -19,18 +19,18 @@ functions {
 
   real integrand(real x, real xc, array[] real theta, array[] real x_r, array[] int x_i) {
     //real M = theta[1];
-    real H0 = theta[1];
     real Om = theta[2];
-    real zeta = theta[3];
+    real H0 = theta[1];
+    real lambda = theta[3];
     //real M = theta[4];
 
-    return 1/E(x, {H0, Om, zeta});
+    return 1/E(x, {H0, Om, lambda});
   }
 
     real rs(array[] real theta) {
     real H0 = theta[1];
     real Om = theta[2];
-    real M = theta[3];
+    real lambda = theta[3];
     
     real wm = Om*(H0/100)^2;
     real wb = 0.02226;      // baryonic density
@@ -65,14 +65,14 @@ parameters {
   //real<lower=0> M;
   real Om;
   real H0;
-  real zeta;
+  real lambda;
   //real M;
 
 }
 
 transformed parameters {
   
-  array[3] real theta = {H0, Om, zeta};
+  array[3] real theta = {H0, Om, lambda};
 
 
   //SNIA Data 
@@ -151,7 +151,7 @@ model {
   //M ~ normal(10, 10);
   Om ~ normal(0.3, 0.1);
   H0 ~ normal (70,10);
-  zeta ~ normal (0,10);
+  lambda ~ normal (0,10);
   //M ~ normal (-10, 10);
   // likelihood
   //mbtheo ~ normal(mb, dmb);
