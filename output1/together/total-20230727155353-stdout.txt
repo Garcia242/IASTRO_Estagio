@@ -1,0 +1,301 @@
+method = sample (Default)
+  sample
+    num_samples = 1000 (Default)
+    num_warmup = 500
+    save_warmup = 0 (Default)
+    thin = 1 (Default)
+    adapt
+      engaged = 1 (Default)
+      gamma = 0.050000000000000003 (Default)
+      delta = 0.80000000000000004 (Default)
+      kappa = 0.75 (Default)
+      t0 = 10 (Default)
+      init_buffer = 75 (Default)
+      term_buffer = 50 (Default)
+      window = 25 (Default)
+    algorithm = hmc (Default)
+      hmc
+        engine = nuts (Default)
+          nuts
+            max_depth = 10 (Default)
+        metric = diag_e (Default)
+        metric_file =  (Default)
+        stepsize = 1 (Default)
+        stepsize_jitter = 0 (Default)
+    num_chains = 4
+id = 1 (Default)
+data
+  file = Modelo1/Data/3together.json
+init = /var/folders/tg/1rvyy6v13kq9w3s_hnykjpmc0000gp/T/tmp7c2hgc8p/87rtwbml.json
+random
+  seed = 64094
+output
+  file = /Users/guilhermegarcia/Desktop/IASTRO_Estagio/output1/together/total-20230727155353.csv
+  diagnostic_file =  (Default)
+  refresh = 100 (Default)
+  sig_figs = -1 (Default)
+  profile_file = profile.csv (Default)
+num_threads = 4 (Default)
+
+
+Gradient evaluation took 0.004716 seconds
+1000 transitions using 10 leapfrog steps per transition would take 47.16 seconds.
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 0.004696 seconds
+1000 transitions using 10 leapfrog steps per transition would take 46.96 seconds.
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 0.004672 seconds
+1000 transitions using 10 leapfrog steps per transition would take 46.72 seconds.
+Adjust your expectations accordingly!
+
+
+
+Gradient evaluation took 0.004675 seconds
+1000 transitions using 10 leapfrog steps per transition would take 46.75 seconds.
+Adjust your expectations accordingly!
+
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 7.1649e-30 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 7.34562e-30 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 7.14051e-30 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 7.41568e-30 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 7.37385e-30 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 7.28766e-30 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 7.53446e-30 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 7.61819e-30 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 1.13764e-28 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 1.48324e-28 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 1.08756e-28 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 1.6017e-28 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 4.73212e-27 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 133, column 5 to column 145)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 3.56608e-27 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 133, column 5 to column 145)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 2.76394e-27 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 133, column 5 to column 145)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 7.36924e-27 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 133, column 5 to column 145)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 1.62481e-24 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 2.61427e-25 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [1] Iteration:    1 / 1500 [  0%]  (Warmup)
+Chain [4] Iteration:    1 / 1500 [  0%]  (Warmup)
+Chain [2] Iteration:    1 / 1500 [  0%]  (Warmup)
+Chain [3] Iteration:    1 / 1500 [  0%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 3.48114e-42 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 3.99845e-42 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 3.63029e-42 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 2.92214e-31 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 3.98493e-13 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 159, column 1 to column 32)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 2.40908e-31 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: integrate: error estimate of integral 8.33631e-13 exceeds the given relative tolerance times norm of integral (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[1] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 159, column 1 to column 32)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [3] Iteration:  100 / 1500 [  6%]  (Warmup)
+Chain [2] Iteration:  100 / 1500 [  6%]  (Warmup)
+Chain [3] Iteration:  200 / 1500 [ 13%]  (Warmup)
+Chain [3] Iteration:  300 / 1500 [ 20%]  (Warmup)
+Chain [2] Iteration:  200 / 1500 [ 13%]  (Warmup)
+Chain [3] Iteration:  400 / 1500 [ 26%]  (Warmup)
+Chain [2] Iteration:  300 / 1500 [ 20%]  (Warmup)
+Chain [3] Iteration:  500 / 1500 [ 33%]  (Warmup)
+Chain [3] Iteration:  501 / 1500 [ 33%]  (Sampling)
+Chain [1] Iteration:  100 / 1500 [  6%]  (Warmup)
+Chain [2] Iteration:  400 / 1500 [ 26%]  (Warmup)
+Chain [3] Iteration:  600 / 1500 [ 40%]  (Sampling)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: normal_lpdf: Random variable[32] is nan, but must be not nan! (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 158, column 1 to column 28)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [2] Iteration:  500 / 1500 [ 33%]  (Warmup)
+Chain [2] Iteration:  501 / 1500 [ 33%]  (Sampling)
+Chain [1] Iteration:  200 / 1500 [ 13%]  (Warmup)
+Chain [3] Iteration:  700 / 1500 [ 46%]  (Sampling)
+Chain [2] Iteration:  600 / 1500 [ 40%]  (Sampling)
+Chain [1] Iteration:  300 / 1500 [ 20%]  (Warmup)
+Chain [3] Iteration:  800 / 1500 [ 53%]  (Sampling)
+Chain [4] Iteration:  100 / 1500 [  6%]  (Warmup)
+Chain [2] Iteration:  700 / 1500 [ 46%]  (Sampling)
+Chain [1] Iteration:  400 / 1500 [ 26%]  (Warmup)
+Chain [3] Iteration:  900 / 1500 [ 60%]  (Sampling)
+Chain [2] Iteration:  800 / 1500 [ 53%]  (Sampling)
+Chain [4] Iteration:  200 / 1500 [ 13%]  (Warmup)
+Chain [1] Iteration:  500 / 1500 [ 33%]  (Warmup)
+Chain [1] Iteration:  501 / 1500 [ 33%]  (Sampling)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: Error in function tanh_sinh<double>::integrate: The tanh_sinh quadrature evaluated your function at a singular point and got nan. Please narrow the bounds of integration or check your function for singularities. (in '/Users/guilhermegarcia/Desktop/IASTRO_Estagio/Modelo1/Model/total.stan', line 101, column 4 to column 79)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Chain [3] Iteration: 1000 / 1500 [ 66%]  (Sampling)
+Chain [2] Iteration:  900 / 1500 [ 60%]  (Sampling)
+Chain [4] Iteration:  300 / 1500 [ 20%]  (Warmup)
+Chain [1] Iteration:  600 / 1500 [ 40%]  (Sampling)
+Chain [2] Iteration: 1000 / 1500 [ 66%]  (Sampling)
+Chain [3] Iteration: 1100 / 1500 [ 73%]  (Sampling)
+Chain [4] Iteration:  400 / 1500 [ 26%]  (Warmup)
+Chain [1] Iteration:  700 / 1500 [ 46%]  (Sampling)
+Chain [2] Iteration: 1100 / 1500 [ 73%]  (Sampling)
+Chain [3] Iteration: 1200 / 1500 [ 80%]  (Sampling)
+Chain [4] Iteration:  500 / 1500 [ 33%]  (Warmup)
+Chain [4] Iteration:  501 / 1500 [ 33%]  (Sampling)
+Chain [1] Iteration:  800 / 1500 [ 53%]  (Sampling)
+Chain [2] Iteration: 1200 / 1500 [ 80%]  (Sampling)
+Chain [3] Iteration: 1300 / 1500 [ 86%]  (Sampling)
+Chain [4] Iteration:  600 / 1500 [ 40%]  (Sampling)
+Chain [2] Iteration: 1300 / 1500 [ 86%]  (Sampling)
+Chain [1] Iteration:  900 / 1500 [ 60%]  (Sampling)
+Chain [3] Iteration: 1400 / 1500 [ 93%]  (Sampling)
+Chain [4] Iteration:  700 / 1500 [ 46%]  (Sampling)
+Chain [2] Iteration: 1400 / 1500 [ 93%]  (Sampling)
+Chain [1] Iteration: 1000 / 1500 [ 66%]  (Sampling)
+Chain [3] Iteration: 1500 / 1500 [100%]  (Sampling)
+
+ Elapsed Time: 38.37 seconds (Warm-up)
+               60.41 seconds (Sampling)
+               98.78 seconds (Total)
+
+Chain [2] Iteration: 1500 / 1500 [100%]  (Sampling)
+
+ Elapsed Time: 47.959 seconds (Warm-up)
+               54.925 seconds (Sampling)
+               102.884 seconds (Total)
+
+Chain [4] Iteration:  800 / 1500 [ 53%]  (Sampling)
+Chain [1] Iteration: 1100 / 1500 [ 73%]  (Sampling)
+Chain [4] Iteration:  900 / 1500 [ 60%]  (Sampling)
+Chain [1] Iteration: 1200 / 1500 [ 80%]  (Sampling)
+Chain [4] Iteration: 1000 / 1500 [ 66%]  (Sampling)
+Chain [1] Iteration: 1300 / 1500 [ 86%]  (Sampling)
+Chain [1] Iteration: 1400 / 1500 [ 93%]  (Sampling)
+Chain [4] Iteration: 1100 / 1500 [ 73%]  (Sampling)
+Chain [1] Iteration: 1500 / 1500 [100%]  (Sampling)
+
+ Elapsed Time: 67.447 seconds (Warm-up)
+               58.676 seconds (Sampling)
+               126.123 seconds (Total)
+
+Chain [4] Iteration: 1200 / 1500 [ 80%]  (Sampling)
+Chain [4] Iteration: 1300 / 1500 [ 86%]  (Sampling)
+Chain [4] Iteration: 1400 / 1500 [ 93%]  (Sampling)
+Chain [4] Iteration: 1500 / 1500 [100%]  (Sampling)
+
+ Elapsed Time: 84.041 seconds (Warm-up)
+               59.214 seconds (Sampling)
+               143.255 seconds (Total)
+

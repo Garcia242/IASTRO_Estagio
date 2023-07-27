@@ -1,21 +1,19 @@
 // block for user defined functions
 functions {
   real E(real x, array[] real theta){
-    real H0 = theta[1];
-    real Om = theta[2];
-    real zeta = theta[3];
-    real M = theta[4];
+    
+    real Om = theta[1];
+    real zeta = theta[2];
+    
 
-    return (1+Om*((1+x)^3-1)+2*zeta*Om*(((1+x)^(3./2.) -1))  + 4.158*10^(-5)/H0^2*(1+x)^4 - 4.158*10^(-5)/H0^2)^0.5;
+    return (1+Om*((1+x)^3-1)+2*zeta*Om*(((1+x)^(3./2.) -1)) )^0.5;
   }
 
   real integrand(real x, real xc, array[] real theta, array[] real x_r, array[] int x_i) {
-    real H0 = theta[1];
-    real Om = theta[2];
-    real zeta = theta[3];
-    real M = theta[4];
+    real Om = theta[1];
+    real zeta = theta[2];
 
-    return 1/E(x, {H0, Om, zeta, M});
+    return 1/E(x, { Om, zeta});
 
 
 }
@@ -38,16 +36,16 @@ transformed data {
 parameters {
   //real<lower=0> M;
   real<lower=0> Om;
-  real <lower=0> H0;
+  //real <lower=0> H0;
   real zeta;
-  real M;
+  //real M;
 
 }
 
 // allows new variables to be defined in terms of data and/or parameters, this is where you should compute your model's predictions
 // will be evaluated on each step
 transformed parameters {
-  array[4] real theta = {H0, Om, zeta, M};
+  array[2] real theta = { Om, zeta};
 
     array[40] real dL;
 
@@ -55,11 +53,18 @@ transformed parameters {
 
     
   
+  real A = 0;
+  real B = 0;
+  real C = 0;
+  real Delta[40];
+
   for (i in 1:40) {
-    // using c/H₀ ≈ 2.9979/h (Gpc)
-    // new approximation gives c/H₀ ≈ 3000h^-1 = 3000/0.7
-    dL[i] = (1+zcmb[i]) * integrate_1d(integrand, 0, zcmb[i], theta, x_r, x_i);
-    mbtheo[i] = M + 25 + 5 * log10(dL[i]);
+
+    Delta[i] = mb[i] - 5.0*log10((1.0+zcmb[i]) * integrate_1d(integrand, 0, zcmb[i], {Om, zeta}, x_r, x_i));
+    A += (Delta[i]/dmb[i])^2;
+    B += Delta[i]/dmb[i]^2;
+    C += dmb[i]^(-2);
+
   }
 
 //need to deal with the likelihood function
@@ -87,15 +92,15 @@ model {
   // priors
   //M ~ normal(10, 10);
   Om ~ normal(0.3, 0.5);
-  H0 ~ normal(70, 10);
+  //H0 ~ normal(70, 10);
   zeta ~ normal(0, 10);
-  M ~ normal (-10, 10);
+  //M ~ normal (-10, 10);
 
   // likelihood
-  mbtheo ~ normal(mb, dmb);
+  //mbtheo ~ normal(mb, dmb);
 
   //changin the pre planned likelihood function and adding the chi^2 just calculated
 
-//  target += -A + B^2/C;
+ target += -A + B^2/C;
 
 }

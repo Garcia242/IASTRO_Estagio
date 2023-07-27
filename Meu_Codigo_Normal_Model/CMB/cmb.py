@@ -7,7 +7,7 @@ import arviz as az
 
 # create a model instance
 model = CmdStanModel(
-    stan_file="Meu_Codigo_Normal_Model/CMB/cmb.stan",                         # Stan model file location
+    stan_file="Meu_Codigo_Normal_Model/CMB/cmb2.stan",                         # Stan model file location
     cpp_options={'STAN_THREADS': 'TRUE', 'STAN_CPP_OPTIMS': 'TRUE'}   # a few optimizations, feel free to ignore this
 )
 

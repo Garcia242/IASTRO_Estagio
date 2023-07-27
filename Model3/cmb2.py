@@ -19,7 +19,7 @@ model = CmdStanModel(
 fit = model.sample(
     data="Model3/Data/cmb.json",                                # the location of the data file
     output_dir="output3/cmb",
-    iter_sampling=500,                                                 # the number of sampling steps
+    iter_sampling=5000,                                                 # the number of sampling steps
     iter_warmup=500,                                                   # the number of warmup steps
     save_warmup=False,                                                 # we don't care about the warmup
     inits={"H0": normal(loc=70, scale=1), "Omb": normal(loc=0.05, scale=0.1), "Om": normal(loc=0.3, scale=1)},  # initial values for each parameter
